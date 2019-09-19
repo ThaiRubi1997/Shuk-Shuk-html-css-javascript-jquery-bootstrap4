@@ -1,0 +1,109 @@
+body{
+	font-size: 14px;
+	font-family: 'Inter Regular';
+}
+h1{
+	font-size: 36px;
+	line-height: 44px;
+	letter-spacing: -0.022em;
+	color: #222831;
+	font-weight: bold;
+}
+h2{
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: -0.019em;
+	color: #222831;
+	font-weight: bold;
+}
+h3{
+	font-size: 16px;
+	line-height: 150%;
+	font-weight: 600;
+	letter-spacing: -0.014em;
+	color: #222831;
+	margin: 0;
+}
+p{
+	font-size: 14px;
+	line-height: 175%;
+	letter-spacing: -0.006em;
+	color: #4E5662;
+}
+span{
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.011em;
+}
+.container{
+	max-width: 1184px;
+	padding: 0;
+}
+.header-top {
+    background-color: #30B6A4;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+.header-top p {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+}
+.header-top .right {
+    width: 189px;
+}
+.header-top a {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+.header-main {
+    box-shadow: 0px 12px 48px rgba(0, 0, 0, 0.04);
+}
+a.logo{
+	margin-right: 100px;
+}
+a.logo img {
+    padding-top: 5px;
+}
+a.logo span {
+    color: #222831;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.019em;
+    padding-left: 10px;
+}
+a.logo span font{
+	color:#30B6A4;
+}
+nav.navbar.navbar-expand-lg {
+    padding: 0;
+}
+.header-main form {
+    position: relative;
+}
+input.form-control.mr-sm-2.input-menu {
+    width: 352px;
+    margin-left: 30px;
+    height: 48px;
+}
+.header-main form button {
+    color: #30B6A4;
+}
+.header-main form button {
+    padding: 0;
+    position: absolute;
+    right: 15px;
+    background-color: #ffff;
+}
+.header-main ul li a{
+	color: #413EC1;
+}
