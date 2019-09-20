@@ -1324,6 +1324,7 @@ p.or-with{
 .footer-sidepannel{
 	background-color: #413EC1;
 	padding: 35px;
+	height: 34%;
 }
 .footer-sidepannel p{
 	margin-bottom: 30px;
@@ -1348,6 +1349,10 @@ a.closebtn{
 }
 .body-sidepanel{
 	background-color: rgba(19, 15, 20, 0.7);
+	height: 100%;
+}
+.wrap-body{
+	height: 100%;
 }
 .sidepanel{
 	width: 0;
@@ -1356,7 +1361,8 @@ a.closebtn{
 	top: 0;
 	left: 0;
 	overflow-x: hidden; 
-	transition: 0.5s; 
+	transition: 0.5s;
+	height: 100%; 
 }
 .amount-cart{
 	width: 145px;
@@ -1388,6 +1394,24 @@ a.closebtn{
 .cart-mobi .text-total{
 	margin-top: 15px;
 }
+.detail-product .amount{
+	margin-bottom: 16px;
+}
+.close-cart{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+.wrap-mdi{
+	position: relative;
+}
+.header-cart-mobi{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	box-shadow: 0px 12px 48px rgba(0, 0, 0, 0.04);
+	background-color: #ffffff;
+	margin-bottom: 20px;
+	}
 /*mobile*/
 @media (max-width: 576px){
 	h1{
@@ -1549,21 +1573,6 @@ a.closebtn{
 	.register-screen p.login-with{
 		margin-top: 60px;
 	}
-	.close-cart{
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
-	.wrap-mdi{
-		position: relative;
-	}
-	.header-cart-mobi{
-		padding-top: 20px;
-		padding-bottom: 20px;
-		box-shadow: 0px 12px 48px rgba(0, 0, 0, 0.04);
-    	background-color: #ffffff;
-    	margin-bottom: 20px;
-	}
 }
 /*tablet*/
 @media (min-width: 768px) and (max-width: 1024px){
@@ -1572,6 +1581,13 @@ a.closebtn{
 	}
 	.category{
 		width: 100%;
+	}
+	.tablet-hidden{
+		display: none;
+	}
+	.tablet-show-b
+	{
+		display: block;
 	}
 	.col-product{
 		flex: 0 0 33.333333%;
