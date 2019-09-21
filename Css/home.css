@@ -262,23 +262,24 @@ a.coming-soon span{
 	margin-right: -1px;
 }
 .col-product{
-	padding-bottom: 16px;
+	padding-bottom: 25px;
 }
 .featured-product .load-more{
 	margin-top: 19px;
 }
 .add-card{
-	position: absolute;
 	background-color: #30B6A4;
 	padding-top: 10px;
 	padding-left: 20px;
 	padding-bottom: 10px;
 	width: 160px;
-	left: 32px;
-	top: 199px;
 	border-radius: 4px;
 	cursor: pointer;
 	transition: 0.2s;
+	margin-top: -20px;
+	margin-bottom: 16px;
+	margin-right: auto;
+	margin-left: auto;
 }
 .add-card:hover{
 	opacity: 0.85;
@@ -297,7 +298,6 @@ a.coming-soon span{
 	padding-right: 32px;
 }
 p.seller-name {
-	margin-top: 40px;
 	color: #ACB4B4;
 	margin-bottom: 15px;
 	font-weight: 500;
@@ -1690,7 +1690,6 @@ a.btn-filter:hover{
 		margin-bottom: 10px;
 	}
 	p.seller-name{
-		margin-top: 22px;
 		margin-bottom: 5px;
 	}
 	a.load-more{
@@ -1839,8 +1838,7 @@ a.btn-filter:hover{
 		margin-right: -8px;
 	}
 	.add-card{
-		top: 100px;
-		left: 29px;
+		margin-bottom: 10px;
 	}
 }
 /*tablet*/
@@ -1895,5 +1893,8 @@ a.btn-filter:hover{
 		margin-right: 0;
 		padding-right: 15px;
 		padding-left: 15px;
+	}
+	.col-why:after{
+		left: 33%;
 	}
 }
