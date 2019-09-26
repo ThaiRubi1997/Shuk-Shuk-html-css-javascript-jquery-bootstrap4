@@ -8,23 +8,23 @@
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-		<link rel="stylesheet" href="font/Inter/style.css">
-		<link rel="stylesheet" href="Css/menu.css">
+		<link rel="stylesheet" href="font/Inter/style.css">		
 		<link rel="stylesheet" type="text/css" href="Css/home.css">
 		<script type="text/javascript" src="script/menu.js"></script>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
 		</script>
 		<script type="text/javascript" src="script/jquery.simplyscroll.js"></script>
-		<link rel="stylesheet" href="script/jquery.simplyscroll.css" media="all" type="text/css">
+		<script type="text/javascript" src="script/jquery-1.js"></script>
 		<script type="text/javascript">
 			(function($) {
 				$(function() {
 					$("#scroller,#scroller-1").simplyScroll({
-						pauseOnTouch: true,
-						pauseOnHover: false
-			 		});
-			 	});
-			 })(jQuery);
+						auto: false,
+						manualMode: 'loop',
+						speed: 5
+					});
+				});
+			})(jQuery);
 		</script>
 	</head>
 	<body id="home">
@@ -195,63 +195,64 @@
 					          			<img src="Img/Icon 24px.svg">
 					          			<span>0</span>
 					        		</li>
-					      			<li class="nav-item dropdown cart">
-								        <a class="nav-link dropdown-toggle d-flex w-100 justify-content-between" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								          	<div class="content-dropdown d-flex">
-								          		<img src="Img/Vector.svg" alt="">
-								          		<span>Empty</span>
-								          	</div>
-								          	<img class="icon" src="Img/arrow-bottom.svg">
-								        </a>
-								       <div class="dropdown-menu cart" aria-labelledby="navbarDropdown">
-											<a class   ="dropdown-item cart-item" href="#">
-												<div class="cart-name-product d-flex">
-													<span>1</span>
-													<span class="cart-name">Sumatra Coffee Bean</span>
-												</div>												
-												<div class="row amount-main">
-													<div class ="col main-reduction"><img src="Img/reduction.svg" alt=""></div>
-													<div class ="col number-main">1</div>
-													<div class ="col main-add"><img src="Img/add.svg" alt=""></div>
-												</div>
-												<p>Price: $25</p>
-											</a>
-											<div class ="dropdown-divider"></div>
-											<a class   ="dropdown-item cart-item" href="#">
-												<div class="cart-name-product d-flex">
-													<span>2</span>
-													<span class="cart-name">Sumatra Coffee Bean</span>
-												</div>												
-												<div class="row amount-main">
-													<div class ="col main-reduction"><img src="Img/reduction.svg" alt=""></div>
-													<div class ="col number-main">1</div>
-													<div class ="col main-add"><img src="Img/add.svg" alt=""></div>
-												</div>
-												<p>Price: $25</p>
-											</a>											
-											<div class ="dropdown-divider"></div>
-											<h2 class="text-right">Total: $55</h2>
-											<a class="btn btn-primary btn-buy btn-check" href="#" role="button">Check Out</a>
-								       </div>
-								     </li>					        		
+					        		<div class="wrap-dropdown">
+					        			<li class="nav-item dropdown cart">
+									        <a class="nav-link dropdown-toggle d-flex w-100 justify-content-between" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									          	<div class="content-dropdown d-flex">
+									          		<img src="Img/Vector.svg" alt="">
+									          		<span>Empty</span>
+									          	</div>
+									          	<img class="icon" src="Img/arrow-bottom.svg">
+									        </a>
+									        <div class="dropdown-menu cart detail-cart" aria-labelledby="navbarDropdown">
+									        	<a class   ="dropdown-item cart-item dis" href="#">
+													<div class="cart-name-product d-flex">
+														<span>1</span>
+														<span class="cart-name">Sumatra Coffee Bean</span>
+													</div>												
+													<div class="row amount-main">
+														<div class ="col main-reduction"><img src="Img/reduction.svg" alt=""></div>
+														<div class ="col number-main">1</div>
+														<div class ="col main-add"><img src="Img/add.svg" alt=""></div>
+													</div>											
+													<div class ="dropdown-divider"></div>
+												</a>
+												<a class   ="dropdown-item cart-item dis" href="#">
+													<div class="cart-name-product d-flex">
+														<span>2</span>
+														<span class="cart-name">Sumatra Coffee Bean</span>
+													</div>												
+													<div class="row amount-main">
+														<div class ="col main-reduction"><img src="Img/reduction.svg" alt=""></div>
+														<div class ="col number-main">1</div>
+														<div class ="col main-add"><img src="Img/add.svg" alt=""></div>
+													</div>
+													<p>Price: $25</p>
+												</a>											
+												<div class ="dropdown-divider"></div>
+												<h2 class="text-right">Total: $55</h2>
+												<a class="btn btn-primary btn-buy btn-check" href="#" role="button">Check Out</a>
+									    </div>								
+								    	</li>
+								    	
+					        		</div>      								        		
 					        		<li class="nav-item log-in">
 					          			<a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter">Register</a>
-										<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-											<div class="modal-dialog modal-dialog-centered" role="document">
+										<div class="modal fade moda-register" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class=" modal-dialog modal-dialog-centered" role="document">
 												<div class="modal-content">													
 													<div class="modal-body">
-														<div class="container">
-															
+														<div class="container">												
 																<div class="login">
 																	<div class="login-title d-flex justify-content-between">
 																		<h2>Register</h2>
-																		<span class="Register">Back To Login</span>
+																		<a class="nav-link back-to-login" href="#" data-toggle="modal" data-target="#exampleModal" data-dismiss="modal"><span class="Register">Back To Login</span></a>
 																	</div>
-																	<div class="row">
-																		<div class="col-6">
+																	<div class="row row-register-home">
+																		<div class="col-6 col-register-home">
 																			<input type="text" class="form-control" id="validationCustom01" placeholder="First Name" required>
 																		</div>
-																		<div class="col-6">
+																		<div class="col-6 col-register-home">
 																			<input type="text" class="form-control" id="validationCustom01" placeholder="Last Name" required>
 																		</div>
 																	</div>
@@ -261,7 +262,7 @@
 																		<img src="Img/password.svg" alt="">
 																	</div>
 																	<input type="text" class="form-control" id="validationCustom01" placeholder="Password, type again please" required>
-																	<a class="btn btn-primary btn-buy btn-check btn-login" href="#" role="button">Register</a>		
+																	<a class="btn btn-primary btn-buy btn-check btn-login btn-register" href="#" role="button">Register</a>		
 																	<p class="login-with Register">Or login with:</p>
 																	<div class="row">
 																		<div class="col-6"><a href="#"><img src="Img/FB Sign In.png" alt=""></a></div>
@@ -276,7 +277,7 @@
 					        		</li>
 					        		<li class="nav-item log-in">
 					          			<a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Log In</a>
-										<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal modal-login fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 											<div class="modal-dialog modal-dialog-centered" role="document">
 												<div class="modal-content">													
 													<div class="modal-body">
@@ -284,14 +285,19 @@
 																<div class="login">
 																	<div class="login-title d-flex justify-content-between">
 																		<h2>Login</h2>
-																		<span class="Register">Register</span>
-																	</div>
-																	<input type="text" class="form-control" id="validationCustom01" placeholder="Email" value="email@gmail.com" required>
+																		<a class="nav-link back-register" href="#" data-toggle="modal" data-target="#exampleModalCenter" data-dismiss="modal"><span class="Register">Register</span></a></div>
+																	<input class="form-control" type="text" name="email" id="email" onkeyup="check()" placeholder="Enter email">
+																	<div class="invalid-feedback" id="z-email" >
+															          	
+															        </div>
 																	<div class="pass-word">
-																		<input type="text" class="form-control" id="validationCustom01" placeholder="Pass Word" value="******" required>
+																		<input class="form-control" type="password" name="password" id="password" onkeyup="check()" placeholder="Password" >
 																		<img src="Img/password.svg" alt="">
 																	</div>
-																	<a class="btn btn-primary btn-buy btn-check btn-login" href="#" role="button">Check Out</a>
+																	<div class="invalid-feedback invalid-password" id="z-password">
+															         
+															        </div>
+																	<a type="submit" class="btn btn-primary btn-buy btn-check btn-login" href="#" role="button">Check Out</a>
 																	<a class="forgot text-center" href="#"><span>Forgot Password?</span></a>
 																	<p class="login-with">Or login with:</p>
 																	<div class="row">
@@ -299,7 +305,7 @@
 																		<div class="col-6"><a href="#"><img class="d-block w-100" src="Img/Google Sign In.png" alt=""></a></div>
 																	</div>
 																</div>															
-															</div>
+														</div>
 													</div>
 												</div>
 											</div>
@@ -787,7 +793,7 @@
 									<a href="#"><img src="Img/linkein.svg"></a>
 								</div>
 						</div>
-						<div class="col-xl-6 col-md-12 col-f-sm-12">
+						<div class="col-xl-6 col-md-12 col-f-sm-12 footer-right">
 							<div class="menu-footer">
 								<div class="row">
 									<div class="col-4 col-f-sm-12">
