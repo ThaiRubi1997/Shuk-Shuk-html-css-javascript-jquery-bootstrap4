@@ -1746,6 +1746,11 @@ div#z-password{
 input#password {
     margin-bottom: 16px;
 }
+.wrap-cart-web{
+	border-radius: 0;
+	box-shadow: none;
+	height: 100%;
+}
 /*.show{
 	z-index: 10;
 }*/
