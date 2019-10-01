@@ -60,10 +60,10 @@
 										<img class="img-your-cart img-cart-mobile" src="Img/yourcart-1.png" alt="">
 										<div class="detail-product-yourcart">
 											<span class="name-product">Itern Name</span>
-											<div class="row amount amount-main amount-cart">
-												<div class="col main-reduction"><img src="Img/reduction.svg" alt=""></div>
-												<div class="col number-main">1</div>
-												<div class="col main-add"><img src="Img/add.svg" alt=""></div>
+											<div class="d-flex amount-main">
+												<div class="button-1 col main-reduction"><img src="Img/reduction.svg" alt=""></div>
+												<input type="text" class="input number numbar-main" value="1">
+												<div class="col button-2 main-add"><img src="Img/add.svg" alt=""></div>
 											</div>
 										</div>	
 									</div>
@@ -75,10 +75,10 @@
 										<img class="img-your-cart img-cart-mobile" src="Img/yourcart-1.png" alt="">
 										<div class="detail-product-yourcart">
 											<span class="name-product">Itern Name</span>
-											<div class="row amount amount-main amount-cart">
-												<div class="col main-reduction"><img src="Img/reduction.svg" alt=""></div>
-												<div class="col number-main">1</div>
-												<div class="col main-add"><img src="Img/add.svg" alt=""></div>
+											<div class="d-flex amount-main">
+												<div class="button-1 col main-reduction"><img src="Img/reduction.svg" alt=""></div>
+												<input type="text" class="input number numbar-main" value="1">
+												<div class="col button-2 main-add"><img src="Img/add.svg" alt=""></div>
 											</div>
 										</div>	
 									</div>
@@ -90,10 +90,10 @@
 										<img class="img-your-cart img-cart-mobile" src="Img/yourcart-1.png" alt="">
 										<div class="detail-product-yourcart">
 											<span class="name-product">Itern Name</span>
-											<div class="row amount amount-main amount-cart">
-												<div class="col main-reduction"><img src="Img/reduction.svg" alt=""></div>
-												<div class="col number-main">1</div>
-												<div class="col main-add"><img src="Img/add.svg" alt=""></div>
+											<div class="d-flex amount-main">
+												<div class="button-1 col main-reduction"><img src="Img/reduction.svg" alt=""></div>
+												<input type="text" class="input number numbar-main" value="1">
+												<div class="col button-2 main-add"><img src="Img/add.svg" alt=""></div>
 											</div>
 										</div>	
 									</div>
@@ -121,8 +121,8 @@
 										<a class="btn btn-primary btn-buy btn-check btn-login btn-login-mobi" href="#" role="button">Login</a>
 										<p class="text-center or-with">or login with</p>
 										<div class="row face-google">
-											<div class="col-6"><a href="#"><img class="w-100 d-block" src="Img/FB Sign In.png" alt=""></a></div>
-											<div class="col-6"><a href="#"><img class="d-block w-100" src="Img/Google Sign In.png" alt=""></a></div>
+											<div class="col-6"><a href="#"><img class="w-100 d-block" src="Img/FB-Sign-In.svg" alt=""></a></div>
+											<div class="col-6"><a href="#"><img class="d-block w-100" src="Img/Google-Sign-In.svg" alt=""></a></div>
 										</div>
 									</div>
 								</div>
@@ -181,7 +181,7 @@
 							</form>
 							<ul class="navbar-nav menu-main tablet-show-b mobi-block">
 								<li class="nav-item mobi">
-								    <a onclick="openCart()" class="nav-link dropdown-toggle d-flex w-100 justify-content-between" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">								       	
+								    <a onclick="openCart()" class="nav-link dropdown-toggle d-flex w-100 justify-content-between" href="#" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">								       	
 								        <img src="Img/Vector.svg" alt="">   						          	
 								    </a>
 								</li>					        		
@@ -196,7 +196,7 @@
 					          			<span>0</span>
 					        		</li>
 					        		<div class="wrap-dropdown">
-					        			<li class="nav-item dropdown cart">
+					        			<li class="nav-item dropdown wrap-cart-web cart">
 									        <a class="nav-link dropdown-toggle d-flex w-100 justify-content-between" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 									          	<div class="content-dropdown d-flex">
 									          		<img src="Img/Vector.svg" alt="">
@@ -205,31 +205,61 @@
 									          	<img class="icon" src="Img/arrow-bottom.svg">
 									        </a>
 									        <div class="dropdown-menu cart detail-cart" aria-labelledby="navbarDropdown">
-									        	<a class   ="dropdown-item cart-item dis" href="#">
-													<div class="cart-name-product d-flex">
-														<span>1</span>
-														<span class="cart-name">Sumatra Coffee Bean</span>
-													</div>												
-													<div class="row amount-main">
-														<div class ="col main-reduction"><img src="Img/reduction.svg" alt=""></div>
-														<div class ="col number-main">1</div>
-														<div class ="col main-add"><img src="Img/add.svg" alt=""></div>
-													</div>											
-													<div class ="dropdown-divider"></div>
-												</a>
-												<a class   ="dropdown-item cart-item dis" href="#">
-													<div class="cart-name-product d-flex">
-														<span>2</span>
-														<span class="cart-name">Sumatra Coffee Bean</span>
-													</div>												
-													<div class="row amount-main">
-														<div class ="col main-reduction"><img src="Img/reduction.svg" alt=""></div>
-														<div class ="col number-main">1</div>
-														<div class ="col main-add"><img src="Img/add.svg" alt=""></div>
+									        	<div class="wrap-cart-item">
+									        		<div class   ="cart-item dis" href="#">
+														<div class="cart-name-product d-flex">
+															<span>1</span>
+															<span class="cart-name">Sumatra Coffee Bean</span>
+														</div>												
+														<div class="d-flex amount-main">
+															<div class  ="button-1 col main-reduction"><img src="Img/reduction.svg" alt=""></div>
+															<input type ="text" class="input number numbar-main" value="1">
+															<div class  ="col button-2 main-add"><img src="Img/add.svg" alt=""></div>
+														</div>
+														<p class="price">Price: $25</p>											
+														<div class ="dropdown-divider"></div>
 													</div>
-													<p>Price: $25</p>
-												</a>											
-												<div class ="dropdown-divider"></div>
+													<div class   ="cart-item dis" href="#">
+														<div class="cart-name-product d-flex">
+															<span>2</span>
+															<span class="cart-name">Sumatra Coffee Bean</span>
+														</div>												
+														<div class="d-flex amount-main">
+															<div class  ="button-1 col main-reduction"><img src="Img/reduction.svg" alt=""></div>
+															<input type ="text" class="input number numbar-main" value="1">
+															<div class  ="col button-2 main-add"><img src="Img/add.svg" alt=""></div>
+														</div>
+														<p class="price">Price: $25</p>											
+														<div class ="dropdown-divider"></div>
+													</div>
+													<div class   ="cart-item dis" href="#">
+														<div class="cart-name-product d-flex">
+															<span>3</span>
+															<span class="cart-name">Sumatra Coffee Bean</span>
+														</div>												
+														<div class="d-flex amount-main">
+															<div class  ="button-1 col main-reduction"><img src="Img/reduction.svg" alt=""></div>
+															<input type ="text" class="input number numbar-main" value="1">
+															<div class  ="col button-2 main-add"><img src="Img/add.svg" alt=""></div>
+														</div>
+														<p class="price">Price: $25</p>											
+														<div class ="dropdown-divider"></div>
+													</div>
+													<div class   ="cart-item dis" href="#">
+														<div class="cart-name-product d-flex">
+															<span>4</span>
+															<span class="cart-name">Sumatra Coffee Bean</span>
+														</div>												
+														<div class="d-flex amount-main">
+															<div class  ="button-1 col main-reduction"><img src="Img/reduction.svg" alt=""></div>
+															<input type ="text" class="input number numbar-main" value="1">
+															<div class  ="col button-2 main-add"><img src="Img/add.svg" alt=""></div>
+														</div>
+														<p class="price">Price: $25</p>											
+														<div class ="dropdown-divider"></div>
+													</div>
+									        	</div>   																		
+												<!-- <div class ="dropdown-divider"></div> -->
 												<h2 class="text-right">Total: $55</h2>
 												<a class="btn btn-primary btn-buy btn-check" href="#" role="button">Check Out</a>
 									    </div>								
@@ -258,15 +288,15 @@
 																	</div>
 																	<input type="text" class="form-control" id="validationCustom01" placeholder="Email Address" required>
 																	<div class="pass-word">
-																		<input type="text" class="form-control" id="validationCustom01" placeholder="Pass Word" value="Password" required>
-																		<img src="Img/password.svg" alt="">
+																		<input type="password" class="form-control" id="password" placeholder="Pass Word" value="Password" required>
+																		<img class="show-password" src="Img/password.svg" alt="" onclick="myFunction()">
 																	</div>
 																	<input type="text" class="form-control" id="validationCustom01" placeholder="Password, type again please" required>
 																	<a class="btn btn-primary btn-buy btn-check btn-login btn-register" href="#" role="button">Register</a>		
 																	<p class="login-with Register">Or login with:</p>
 																	<div class="row">
-																		<div class="col-6"><a href="#"><img src="Img/FB Sign In.png" alt=""></a></div>
-																		<div class="col-6"><a href="#"><img src="Img/Google Sign In.png" alt=""></a></div>
+																		<div class="col-6"><a href="#"><img src="Img/FB-Sign-In.svg" alt=""></a></div>
+																		<div class="col-6"><a href="#"><img src="Img/Google-Sign-In.svg" alt=""></a></div>
 																	</div>
 																</div>
 														</div>
@@ -292,7 +322,7 @@
 															        </div>
 																	<div class="pass-word">
 																		<input class="form-control" type="password" name="password" id="password" onkeyup="check()" placeholder="Password" >
-																		<img src="Img/password.svg" alt="">
+																		<img class="show-password" onclick="myFunction()" src="Img/password.svg" alt="">
 																	</div>
 																	<div class="invalid-feedback invalid-password" id="z-password">
 															         
@@ -301,7 +331,7 @@
 																	<a class="forgot text-center" href="#"><span>Forgot Password?</span></a>
 																	<p class="login-with">Or login with:</p>
 																	<div class="row">
-																		<div class="col-6"><a href="#"><img class="w-100 d-block" src="Img/FB Sign In.png" alt=""></a></div>
+																		<div class="col-6"><a href="#"><img class="w-100 d-block" src="Img/FB-Sign-In.svg" alt=""></a></div>
 																		<div class="col-6"><a href="#"><img class="d-block w-100" src="Img/Google Sign In.png" alt=""></a></div>
 																	</div>
 																</div>															
@@ -548,49 +578,7 @@
 				<div class="featured-product">
 					<div class="container">
 						<h2 class="seller-title title">Featured Product</h2>
-						<div class="row">
-							<div class="col-product col-md-4">
-								<div class="card card-product">
-								    <img class="img-fluid" src="Img/product-first.jpg" class="card-img-top" alt="...">
-								    <div class="card-body">
-									    <div class="add-card d-flex">
-								      		<img src="Img/card.svg" alt="">
-								      		<span>Add to Cart</span>
-								      	</div>						
-								    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
-								      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&...</a></h3>			      
-								      	<p class="card-text text-muted"><a href="#">$5.00</a></p>					
-								    </div>
-								</div>
-							</div>
-							<div class="col-product col-md-4">
-								<div class="card card-product">
-								    <img class="img-fluid" src="Img/product-2.png" class="card-img-top" alt="...">
-								    <div class="card-body">
-									    <div class="add-card d-flex">
-								      		<img src="Img/card.svg" alt="">
-								      		<span>Add to Cart</span>
-								      	</div>						
-								    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
-								      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&...</a></h3>			      
-								      	<p class="card-text text-muted"><a href="#">$5.00</a></p>					
-								    </div>
-								</div>
-							</div>
-							<div class="col-product col-md-4">
-								<div class="card card-product">
-								    <img class="img-fluid" src="Img/product-2.png" class="card-img-top" alt="...">
-								    <div class="card-body">
-									    <div class="add-card d-flex">
-								      		<img src="Img/card.svg" alt="">
-								      		<span>Add to Cart</span>
-								      	</div>						
-								    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
-								      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&...</a></h3>			      
-								      	<p class="card-text text-muted"><a href="#">$5.00</a></p>					
-								    </div>
-								</div>
-							</div>
+						<div class="row">							
 							<div class="col-product col-md-4">
 								<div class="card card-product">
 								    <img class="img-fluid" src="Img/product-2.png" class="card-img-top" alt="...">
@@ -622,14 +610,18 @@
 							<div class="col-product col-md-4">
 								<div class="card card-product">
 								    <img class="img-fluid" src="Img/product-first.jpg" class="card-img-top" alt="...">
+								    <p class="sale-off text-center">50% off</p>
 								    <div class="card-body">
 									    <div class="add-card d-flex">
 								      		<img src="Img/card.svg" alt="">
 								      		<span>Add to Cart</span>
 								      	</div>						
 								    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
-								      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&...</a></h3>			      
-								      	<p class="card-text text-muted"><a href="#">$5.00</a></p>					
+								      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&...</a></h3>
+								      	<div class="d-flex">
+								      		<p class="text-sale-off">$10.00</p>	
+								      		<p class="card-text text-muted"><a href="#">$5.00</a></p>		      		
+								      	</div>						      					
 								    </div>
 								</div>
 							</div>
@@ -663,6 +655,42 @@
 							</div>
 							<div class="col-product col-md-4">
 								<div class="card card-product">
+								    <img class="img-fluid" src="Img/product-first.jpg" class="card-img-top" alt="...">
+								    <p class="sale-off text-center">50% off</p>
+								    <div class="card-body">
+									    <div class="add-card d-flex">
+								      		<img src="Img/card.svg" alt="">
+								      		<span>Add to Cart</span>
+								      	</div>						
+								    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
+								      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&...</a></h3>
+								      	<div class="d-flex">
+								      		<p class="text-sale-off">$10.00</p>	
+								      		<p class="card-text text-muted"><a href="#">$5.00</a></p>		      		
+								      	</div>						      					
+								    </div>
+								</div>
+							</div>
+							<div class="col-product col-md-4">
+								<div class="card card-product">
+								    <img class="img-fluid" src="Img/product-first.jpg" class="card-img-top" alt="...">
+								    <p class="sale-off text-center">50% off</p>
+								    <div class="card-body">
+									    <div class="add-card d-flex">
+								      		<img src="Img/card.svg" alt="">
+								      		<span>Add to Cart</span>
+								      	</div>						
+								    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
+								      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&...</a></h3>
+								      	<div class="d-flex">
+								      		<p class="text-sale-off">$10.00</p>	
+								      		<p class="card-text text-muted"><a href="#">$5.00</a></p>		      		
+								      	</div>						      					
+								    </div>
+								</div>
+							</div>
+							<div class="col-product col-md-4">
+								<div class="card card-product">
 								    <img class="img-fluid" src="Img/product-2.png" class="card-img-top" alt="...">
 								    <div class="card-body">
 									    <div class="add-card d-flex">
@@ -675,7 +703,7 @@
 								    </div>
 								</div>
 							</div>
-							<div class="col-product col-md-4 tablet-hidden">
+							<div class="col-product col-md-4">
 								<div class="card card-product">
 								    <img class="img-fluid" src="Img/product-2.png" class="card-img-top" alt="...">
 								    <div class="card-body">
@@ -686,6 +714,24 @@
 								    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
 								      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&...</a></h3>			      
 								      	<p class="card-text text-muted"><a href="#">$5.00</a></p>					
+								    </div>
+								</div>
+							</div>
+							<div class="col-product col-md-4">
+								<div class="card card-product">
+								    <img class="img-fluid" src="Img/product-first.jpg" class="card-img-top" alt="...">
+								    <p class="sale-off text-center">50% off</p>
+								    <div class="card-body">
+									    <div class="add-card d-flex">
+								      		<img src="Img/card.svg" alt="">
+								      		<span>Add to Cart</span>
+								      	</div>						
+								    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
+								      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&...</a></h3>
+								      	<div class="d-flex">
+								      		<p class="text-sale-off">$10.00</p>	
+								      		<p class="card-text text-muted"><a href="#">$5.00</a></p>		      		
+								      	</div>						      					
 								    </div>
 								</div>
 							</div>
