@@ -5,18 +5,17 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Page Title</title>
-
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-		<link rel="stylesheet" href="font/Inter/style.css">		
 		<link rel="stylesheet" type="text/css" href="Css/home.css">
+		<link rel="stylesheet" href="font/Inter/style.css">
 		<script type="text/javascript" src="script/menu.js"></script>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script type="text/javascript" src="script/jquery-1.js"></script>
+		<script type="text/javascript" src="script/jquery-1.js"></script>	
 	</head>
 	<body id="product-detail-lite">
 		<div class="wrapper">
-			<header class="web-block">
+			<header>
 				<div class="header-top">
 					<div class="container d-flex justify-content-between">
 						<div class="left">
@@ -156,7 +155,7 @@
 							</div>	
 						</div>
 					</div>
-					<div class="container">
+					<div class="container web-block">
 					    <nav class="navbar navbar-expand-lg">
 					    	<a class="navbar-brand logo d-flex" href="#">
 					    		<img class="d-block w-100 h-50" src="img/logo.png">
@@ -343,7 +342,7 @@
 							<div class="container">
 								<div class="container wrap-mdi">
 									<p class="text-center">Cart</p>
-									<div onclick="closeCart()" class="close-cart">
+									<div onclick="closeCart()"  class="close-cart">
 										<img src="Img/mdi_menu.svg" alt="">
 									</div>
 								</div>
@@ -404,7 +403,7 @@
 								</div>					
 							</div>
 						</div>			
-			</div>
+					</div>
 			<div class="header-bottom mobi-block">
 				<header class="header-cart-mobi">
 					<div class="container">
@@ -420,7 +419,38 @@
 					</div>							
 				</header>
 			</div>
-			<div class="content">
+			<div class="content menu-fixed">
+				<div class="container web-block">
+					<div class="row d-flex justify-content-between cart-fixed">
+						<div class="text">
+							<p>Honeycomb Tea Signature by Tea&Co</p>
+						</div>
+						<div class="button col-xl-4 col-md-6">
+							<div class="row small-row">
+							    <div class="col-6 collap-small">
+							    	<div class="add-card d-flex add-card-product product-add-cart">
+										<img src="Img/card.svg" alt="">
+										<span>Add to Cart</span>
+									</div>
+							    </div>
+							    <div class="col-6 collap-small"><a class="btn btn-primary btn-buy" href="#" role="button">Buy Now</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart-fixed mobi-block">	
+					<div class="container">
+						<div class="row flex-row-reverse">
+							 <div class="col-6 collap-small">
+						    	<div class="add-product d-flex">
+								    <img src="Img/card.svg" alt="">
+								    <span>Add to Cart</span>
+								</div>
+						    </div>
+						    <div class="col-6 collap-small"><a class="btn btn-primary btn-buy" href="#" role="button">Buy Now</a></div>
+						</div>
+					</div>																
+				</div>
 				<div class="container">
 					<nav class="web-block" aria-label="breadcrumb">
 				  		<ol class="breadcrumb">
@@ -430,61 +460,67 @@
 				  		</ol>
 					</nav>
 					<div class="detail-product">
-						<div class="row">
-							<div class="col-md-4 col-sm-12 detail">
-								<div class="wrap-img web-block">
+						<div class="siler-mobi mobi-block">							
+							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="3" class=""></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="Img/product-demo.png" alt="">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="Img/product-demo.png" alt="">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="Img/product-demo.png" alt="">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="Img/product-demo.png" alt="">
+									</div>
+								</div>					
+							</div>
+						</div>
+						<div class="row small-row">
+							<div class="col-md-4 detail web-block">
+								<div class="wrap-img wrap-img-standard">
 									<img class="d-block w-100" src="Img/product-demo.png" alt="">
 								</div>
-								<div class="siler mobi-block">
-									<div class="heart-2 d-flex heart-absolute">
-										<img src="Img/heart-2.svg" alt="">
-										<h3>450</h3>																	
+								<div class="row mini-demo">
+									<div class="col-3 active mini-product">
+										<img class="d-block w-100" src="Img/mini-image-active.png" alt="">
 									</div>
-									<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-										<ol class="carousel-indicators">
-											<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-											<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-											<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-											<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-										</ol>
-										<div class="carousel-inner">
-											<div class="carousel-item active">
-												<img class="d-block w-100" src="Img/product-demo.png" alt="">
-											</div>
-											<div class="carousel-item">
-												<img class="d-block w-100" src="Img/product-demo.png" alt="">
-											</div>
-											<div class="carousel-item">
-												<img class="d-block w-100" src="Img/product-demo.png" alt="">
-											</div>
-											<div class="carousel-item">
-												<img class="d-block w-100" src="Img/product-demo.png" alt="">
-											</div>
-										</div>					
+									<div class="col-3 mini-product">
+										<img class="d-block w-100" src="Img/mini-image.png" alt="">
+									</div>
+									<div class="col-3 mini-product">
+										<img class="d-block w-100" src="Img/mini-image.png" alt="">
+									</div>
+									<div class="col-3 mini-product">
+										<img class="d-block w-100" src="Img/mini-image.png" alt="">
 									</div>
 								</div>
-							</div>
-							<div class="col-md-5 col-sm-12 detail">
+							</div>													
+							<div class="col-md-7 col-sm-12 details-standard">
 								<h1>Honeycomb Tea</h1>
 								<span class="author">By Seller Name</span>
 								<h2>US$ 30</h2>
-								<div class="heart-2 d-flex hidden-mobi">
-									<img src="Img/heart-2.svg" alt="">
-									<h3>Add To Wishlist</h3>																	
-								</div>
-								<p class="web-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
-							</div>
-							<div class="col-xl-2 col-md-3 col-sm-12 style-product-mobi ">
-								<div class="wrap-style-product">									
-									<div class="col-md-12 col-sm-6 wrap-amount">
-										<div class="d-flex amount-main amount-details">
-											<div class="button-1 col main-reduction"><img src="Img/reduction.svg" alt=""></div>
-											<input type="text" class="input number numbar-main" value="1">
-											<div class="col button-2 main-add"><img src="Img/add.svg" alt=""></div>
-										</div>
+								<div class="row">									
+									<div class="col-lg-4 col-md-6 col-sm-6 only">
+										<span class="title">Quantity</span>
+										<div class="col-md-12 wrap-amount">
+											<div class="d-flex amount-main amount-details">
+												<div class="button-1 col main-reduction"><img src="Img/reduction.svg" alt=""></div>
+												<input type="text" class="input number numbar-main" value="1">
+												<div class="col button-2 main-add"><img src="Img/add.svg" alt=""></div>
+											</div>
+										</div>									
 									</div>
-									<div class="col-12 mobi-block">
-										<span class="title">Color</span>
+									<div class="col-lg-4 col-md-6 col-sm-12">
+										<span  class="title">Color</span>
 										<div class="dropdown ">
 											 <a class="btn dropdown-toggle btn-dropdown d-flex justify-content-between" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											    <span>Light Brown</span>
@@ -497,8 +533,8 @@
 											 </div>
 										</div>									
 									</div>
-									<div class="col-12 mobi-block">
-										<span class="title">Size</span>
+									<div class="col-lg-4 col-md-6 col-sm-12">
+										<span  class="title">Size</span>
 										<div class="dropdown ">
 											 <a class="btn dropdown-toggle btn-dropdown d-flex justify-content-between" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											    <span>Mixed</span>
@@ -510,177 +546,171 @@
 											    <a class="dropdown-item" href="#">Something else here</a>
 											 </div>
 										</div>									
+									</div>				
+								</div>
+								<div class="note">
+									<span class="title">Notes To Seller</span>
+									<div class="detail-note">
+										<p>S (4 pcs), M (10 pcs), L (6 pcs)</p>
 									</div>
-									<div class="note mobi-block">
-										<span class="title">Notes To Seller</span>
-										<div class="detail-note">
-											<p>S (4 pcs), M (10 pcs), L (6 pcs)</p>
+								</div>
+								<span class="title">Product Description</span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui...</p>	
+								<a href="#"><span class="author">Read More</span></a>												
+							    <div class="row small-row web-flex">
+							    	<div class="col-xl-3 col-md-6 collap-small">
+							    		<div class="add-card product-add-cart add-card-product d-flex">
+										    <img src="Img/card.svg" alt="">
+										    <span>Add to Cart</span>
 										</div>
-									</div>
-									<div class="mobi-block">
-										<span class="title">Product Description</span>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui...</p>
-										<a href="#"><span class="author">Read More</span></a>
-									</div>
-									<div class="cart-fixed mobi-block">	
-										<div class="container">
-											<div class="row flex-row-reverse">
-												 <div class="col-6 collap-small">
-											    	<div class="add-product d-flex">
-													    <img src="Img/card.svg" alt="">
-													    <span>Add to Cart</span>
-													</div>
-											    </div>
-											    <div class="col-6 collap-small"><a class="btn btn-primary btn-buy" href="#" role="button">Buy Now</a></div>
-											</div>
-										</div>																
-									</div>									
-								</div>
-								<div class="add-card d-flex product-add-cart add-card-product hidden-mobi">
-								    <img src="Img/card.svg" alt="">
-								    <span>Add to Cart</span>
-								</div>
-								    <a class="btn btn-primary btn-buy web-block" href="#" role="button">Buy Now</a>
+							    	</div>
+							    	<div class="col-xl-3 col-md-6 collap-small"><a class="btn btn-primary btn-buy" href="#" role="button">Buy Now</a></div>
+							    </div>						    
 							</div>
 						</div>
+						<div class="heart-2 d-flex heart-absolute">
+							<img src="Img/heart-2.svg" alt="">
+							<h3>450</h3>																	
+						</div>							
 					</div>
-					<div class="related-product web-block related-product-standard">
-						<h2>Related Product</h2>
-						<div class="row">
-						<div class="col-product col-md-4">
-							<div class="card card-product">
-							    <img class="img-fluid" src="Img/product-first.jpg" class="card-img-top" alt="...">
-							    <div class="card-body">
-								    <div class="add-card d-flex">
-							      		<img src="Img/card.svg" alt="">
-							      		<span>Add to Cart</span>
-							      	</div>						
-							    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
-							      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&...</a></h3>			      
-							      	<p class="card-text text-muted"><a href="#">$5.00</a></p>					
-							    </div>
-							</div>
-						</div>
-						<div class="col-product col-md-4">
-							<div class="card card-product">
-							    <img class="img-fluid" src="Img/product-2.png" class="card-img-top" alt="...">
-							    <div class="card-body">
-								    <div class="add-card d-flex">
-							      		<img src="Img/card.svg" alt="">
-							      		<span>Add to Cart</span>
-							      	</div>						
-							    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
-							      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&...</a></h3>			      
-							      	<p class="card-text text-muted"><a href="#">$5.00</a></p>					
-							    </div>
-							</div>
-						</div>
-						<div class="col-product col-md-4">
-							<div class="card card-product">
-							    <img class="img-fluid" src="Img/product-2.png" class="card-img-top" alt="...">
-							    <div class="card-body">
-								    <div class="add-card d-flex">
-							      		<img src="Img/card.svg" alt="">
-							      		<span>Add to Cart</span>
-							      	</div>						
-							    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
-							      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&...</a></h3>			      
-							      	<p class="card-text text-muted"><a href="#">$5.00</a></p>					
-							    </div>
-							</div>
-						</div>
-						<div class="col-product col-md-4">
-							<div class="card card-product">
-							    <img class="img-fluid" src="Img/product-2.png" class="card-img-top" alt="...">
-							    <div class="card-body">
-								    <div class="add-card d-flex">
-							      		<img src="Img/card.svg" alt="">
-							      		<span>Add to Cart</span>
-							      	</div>						
-							    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
-							      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&...</a></h3>			      
-							      	<p class="card-text text-muted"><a href="#">$5.00</a></p>					
-							    </div>
-							</div>
-						</div>
-						<div class="col-product col-md-4">
-							<div class="card card-product">
-							    <img class="img-fluid" src="Img/product-2.png" class="card-img-top" alt="...">
-							    <div class="card-body">
-								    <div class="add-card d-flex">
-							      		<img src="Img/card.svg" alt="">
-							      		<span>Add to Cart</span>
-							      	</div>						
-							    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
-							      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&...</a></h3>			      
-							      	<p class="card-text text-muted"><a href="#">$5.00</a></p>					
-							    </div>
-							</div>
-						</div>																										
-					</div>
-					</div>
-				</div>			
-			</div>
-			<footer class="web-block">
-				<div class="container wrap-footer">
-					<div class="row">
-						<div class="col-3 footer-about">
-								<div class="logo-footer">
-									<img src="Img/logo-footer.svg" alt="">
-									<span>Shukshuk</span>
-								</div>
-								<p>We are lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								<div class="social">
-									<a href="#"><img src="Img/facebook.svg" alt=""></a>
-									<a href="#"><img src="Img/instagram.svg"></a>
-									<a href="#"><img src="Img/twiter.svg"></a>
-									<a href="#"><img src="Img/linkein.svg"></a>
-								</div>
-						</div>
-						<div class="col-6">
-							<div class="menu-footer">
-								<div class="row">
-									<div class="col-4">
-										<h3 class="title-menu">Shukshuk</h3>
-										<ul>
-											<li><a href="#">About Us</a></li>
-											<li><a href="#">Terms &amp; Conditions</a></li>
-											<li><a href="#">Privacy Policy</a> </li>
-											<li><a href="#">Legal</a></li>
-										</ul>
-									</div>
-									<div class="col-4">
-										<h3 class="title-menu">Seller</h3>
-										<ul>
-											<li><a href="#">Register as Seller</a></li>
-											<li><a href="#">Store Tour</a></li>
-											<li><a href="#"> Selling 101</a> </li>											
-										</ul>
-									</div>
-									<div class="col-4">
-										<h3 class="title-menu">Buyer</h3>
-										<ul>
-											<li><a href="#">Shopping Tutorial</a></li>
-											<li><a href="#">Payment Methods</a></li>
-											<li><a href="#">Refund Policy</a> </li>											
-										</ul>
+						<div class="related-product related-product-standard web-block">
+							<h2>Related Product</h2>
+							<div class="row">
+								<div class="col-product col-md-4">
+									<div class="card card-product">
+									    <img class="img-fluid" src="Img/product-first.jpg" alt="...">
+									    <div class="card-body">
+										    <div class="add-card d-flex">
+									      		<img src="Img/card.svg" alt="">
+									      		<span>Add to Cart</span>
+									      	</div>						
+									    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
+									      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&amp;...</a></h3>			      
+									      	<p class="card-text text-muted"><a href="#">$5.00</a></p>					
+									    </div>
 									</div>
 								</div>
-								<p>Shukshuk © 2019. Shukshuk Pte. Ltd.</p>							
+								<div class="col-product col-md-4">
+									<div class="card card-product">
+									    <img class="img-fluid" src="Img/product-2.png" alt="...">
+									    <div class="card-body">
+										    <div class="add-card d-flex">
+									      		<img src="Img/card.svg" alt="">
+									      		<span>Add to Cart</span>
+									      	</div>						
+									    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
+									      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&amp;...</a></h3>			      
+									      	<p class="card-text text-muted"><a href="#">$5.00</a></p>					
+									    </div>
+									</div>
+								</div>
+								<div class="col-product col-md-4">
+									<div class="card card-product">
+									    <img class="img-fluid" src="Img/product-2.png" alt="...">
+									    <div class="card-body">
+										    <div class="add-card d-flex">
+									      		<img src="Img/card.svg" alt="">
+									      		<span>Add to Cart</span>
+									      	</div>						
+									    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
+									      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&amp;...</a></h3>			      
+									      	<p class="card-text text-muted"><a href="#">$5.00</a></p>					
+									    </div>
+									</div>
+								</div>
+								<div class="col-product col-md-4">
+									<div class="card card-product">
+									    <img class="img-fluid" src="Img/product-2.png" alt="...">
+									    <div class="card-body">
+										    <div class="add-card d-flex">
+									      		<img src="Img/card.svg" alt="">
+									      		<span>Add to Cart</span>
+									      	</div>						
+									    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
+									      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&amp;...</a></h3>			      
+									      	<p class="card-text text-muted"><a href="#">$5.00</a></p>					
+									    </div>
+									</div>
+								</div>
+								<div class="col-product col-md-4">
+									<div class="card card-product">
+									    <img class="img-fluid" src="Img/product-2.png" alt="...">
+									    <div class="card-body">
+										    <div class="add-card d-flex">
+									      		<img src="Img/card.svg" alt="">
+									      		<span>Add to Cart</span>
+									      	</div>						
+									    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
+									      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&amp;...</a></h3>			      
+									      	<p class="card-text text-muted"><a href="#">$5.00</a></p>					
+									    </div>
+									</div>
+								</div>																								
 							</div>
-						</div>						
-					</div>
-					<div class="dowload d-flex">
-						<a href="#">
-							<img src="Img/appstore.png" alt="">
-						</a>
-						<a href="#">
-							<img class="google-play" src="Img/googleplay.png" alt="">
-						</a>
-					</div>
+						</div>
+					</div>			
 				</div>
-			</footer>
-		</div>
+			</div>
+		<footer class="web-block">
+			<div class="container wrap-footer">
+				<div class="row">
+					<div class="col-3 footer-about">
+							<div class="logo-footer">
+								<img src="Img/logo-footer.svg" alt="">
+								<span>Shukshuk</span>
+							</div>
+							<p>We are lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<div class="social">
+								<a href="#"><img src="Img/facebook.svg" alt=""></a>
+								<a href="#"><img src="Img/instagram.svg"></a>
+								<a href="#"><img src="Img/twiter.svg"></a>
+								<a href="#"><img src="Img/linkein.svg"></a>
+							</div>
+					</div>
+					<div class="col-6">
+						<div class="menu-footer">
+							<div class="row">
+								<div class="col-4">
+									<h3 class="title-menu">Shukshuk</h3>
+									<ul>
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Terms &amp; Conditions</a></li>
+										<li><a href="#">Privacy Policy</a> </li>
+										<li><a href="#">Legal</a></li>
+									</ul>
+								</div>
+								<div class="col-4">
+									<h3 class="title-menu">Seller</h3>
+									<ul>
+										<li><a href="#">Register as Seller</a></li>
+										<li><a href="#">Store Tour</a></li>
+										<li><a href="#"> Selling 101</a> </li>											
+									</ul>
+								</div>
+								<div class="col-4">
+									<h3 class="title-menu">Buyer</h3>
+									<ul>
+										<li><a href="#">Shopping Tutorial</a></li>
+										<li><a href="#">Payment Methods</a></li>
+										<li><a href="#">Refund Policy</a> </li>											
+									</ul>
+								</div>
+							</div>
+							<p>Shukshuk © 2019. Shukshuk Pte. Ltd.</p>							
+						</div>
+					</div>						
+				</div>
+				<div class="dowload d-flex">
+					<a href="#">
+						<img src="Img/appstore.png" alt="">
+					</a>
+					<a href="#">
+						<img class="google-play" src="Img/googleplay.png" alt="">
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
 		
 		
 		<!-- Optional JavaScript -->
