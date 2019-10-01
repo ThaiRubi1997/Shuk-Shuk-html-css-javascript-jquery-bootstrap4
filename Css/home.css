@@ -1279,11 +1279,16 @@ a.back{
 .pass-word{
 	position: relative;
 }
-.pass-word img{
+.pass-word .show-hidden{
 	position: absolute;
-	top: 15px;
+	top: 12px;
 	right: 15px;
 	z-index: 1;
+}
+.show-hidden i{
+	width: 24px;
+	height: 24px;
+	color: #4E5662;
 }
 a.forgot{
 	display: block;
@@ -1987,6 +1992,11 @@ p.price{
 .body-cart-mobi .amount-main{
 	max-width: 145px;
 	margin-left: 0;
+}
+.select{
+	background-color: #F6F8F8;
+	border-radius: 4px;
+	height: 48px !important;
 }
 /*.show{
 	z-index: 10;

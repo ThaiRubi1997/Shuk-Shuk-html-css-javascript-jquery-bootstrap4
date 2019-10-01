@@ -287,9 +287,11 @@
 																		</div>
 																	</div>
 																	<input type="text" class="form-control" id="validationCustom01" placeholder="Email Address" required>
-																	<div class="pass-word">
-																		<input type="password" class="form-control" id="password" placeholder="Pass Word" value="Password" required>
-																		<img class="show-password" src="Img/password.svg" alt="" onclick="myFunction()">
+																	<div class="pass-word" id="show_hide_password">
+																		<input class="form-control" type="password" name="password" onkeyup="check()" placeholder="Password">
+																		<div class="show-hidden">
+																			<a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+																		</div>
 																	</div>
 																	<input type="text" class="form-control" id="validationCustom01" placeholder="Password, type again please" required>
 																	<a class="btn btn-primary btn-buy btn-check btn-login btn-register" href="#" role="button">Register</a>		
@@ -320,9 +322,11 @@
 																	<div class="invalid-feedback" id="z-email" >
 															          	
 															        </div>
-																	<div class="pass-word">
-																		<input class="form-control" type="password" name="password" id="password" onkeyup="check()" placeholder="Password" >
-																		<img class="show-password" onclick="myFunction()" src="Img/password.svg" alt="">
+																	<div class="pass-word" id="show_hide_password">
+																		<input class="form-control" type="password" name="password" onkeyup="check()" placeholder="Password">
+																		<div class="show-hidden">
+																			<a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+																		</div>
 																	</div>
 																	<div class="invalid-feedback invalid-password" id="z-password">
 															         
