@@ -2084,6 +2084,16 @@ padding-top: 16px;
 #nav-1{
 	transition: 2s;
 }
+.transform-dropdown-menu{
+	transform:  translate3d(0px, 48px, 0px)!important;
+}
+.span-heart{
+	margin-top: 14px;
+}
+.dropdown-profile .nav-link{
+	margin-top: 12px;
+	margin-left: 16px;
+}
 /*.show{
 	z-index: 10;
 }*/
@@ -2560,6 +2570,9 @@ padding-top: 16px;
 	}
 	.payment-right{
 		margin-left: 55px;
+	}
+	.detail-step-w20 {
+    flex: 0 0 25%;
 	}
 	
 }
