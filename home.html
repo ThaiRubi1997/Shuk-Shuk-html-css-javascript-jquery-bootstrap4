@@ -11,21 +11,9 @@
 		<link rel="stylesheet" href="font/Inter/style.css">		
 		<link rel="stylesheet" type="text/css" href="Css/home.css">
 		<script type="text/javascript" src="script/menu.js"></script>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
-		</script>
-		<script type="text/javascript" src="script/jquery.simplyscroll.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>		
 		<script type="text/javascript" src="script/jquery-1.js"></script>
-		<script type="text/javascript">
-			(function($) {
-				$(function() {
-					$("#scroller,#scroller-1").simplyScroll({
-						auto: false,
-						manualMode: 'loop',
-						speed: 5
-					});
-				});
-			})(jQuery);
-		</script>
+		
 	</head>
 	<body id="home">
 		<div class="wrapper">
@@ -424,36 +412,49 @@
 								</div>
 							</div>
 						</div>
-						<div class="scrolling-category scrolling-mobi mobi-block">
-							<ul id="scroller">
-							    <li>
-							    	<a href="#">
-								    	<div class="category bg-category-1">										
-											<div class="detail">
-												<h3>Silk</h3>
-											</div>																			
-										</div>
-									</a>
-							    </li>
-							    <li>
-							    	<a href="#">
-								    	<div class="category bg-category-2">									
-											<div class="detail">
-												<h3>Spices</h3>
-											</div>																			
-										</div>
-									</a>
-							    </li>
-							    <li>
-							    	<a href="#">								    											
-										<div class="category bg-category-3">									
-											<div class="detail">
-												<h3>Incense</h3>
-											</div>																				
-										</div>									
-									</a>
-							    </li>					     
-							</ul>
+						<div class="container mobi-block">
+						    <div class="wrap-scroll">
+						    	 <div id="next_nav">
+					              	<img src="Img/button-right.png" alt="">
+					            </div>
+					            <div id="pre_nav">
+					               
+					                <img src="Img/button-left.png" alt="">
+					            </div>
+						        <div class="container-scroll">						           
+						            <div id="nav">
+						                <div class="d-flex">
+						                    <div class="item-category">
+						                        <div class="category bg-category-1">
+						                            <a href="#">
+						                                <div class="detail">
+						                                    <h3>Silk</h3>
+						                                </div>
+						                            </a>                                    
+						                        </div>
+						                    </div>
+						                    <div class="item-category">
+						                        <div class="category bg-category-2">
+						                            <a href="#">
+						                                <div class="detail">
+						                                    <h3>Spices</h3>
+						                                </div>
+						                            </a>                                    
+						                        </div>
+						                    </div>
+						                    <div class="item-category">
+						                        <div class="category bg-category-3">
+						                            <a href="#">
+						                                <div class="detail">
+						                                    <h3>Incense</h3>
+						                                </div>
+						                            </a>                                    
+						                        </div>
+						                    </div>
+						                </div>
+						            </div>            
+						        </div>
+						    </div>
 						</div>
 					</div>
 				</div>
@@ -512,67 +513,71 @@
 								</div>
 							</div>
 						</div>
-						<div class="scrolling-mobi mobi-block scrolling-seller">
-							<ul id="scroller-1">
-							    <li>
-							    	<a href="#">
-								    	<div class="seller">
-											<div class="info d-flex">
-												<img src="Img/user.svg" alt="">
-												<h3>Individual</h3>
+						<div class="container mobi-block">
+						    <div class="wrap-scroll-seller">
+						    	<div id="next_nav-1">
+					              	<img src="Img/button-right.png" alt="">
+					            </div>
+					            <div id="pre_nav-1">
+					                <img src="Img/button-left.png" alt="">
+					            </div>
+						        <div class="container-scroll">						           
+						            <div id="nav-1">
+						                <div class="d-flex">
+											<div class="item-seller">
+												<div class="seller">
+													<div class="info d-flex">
+														<img src="Img/user.svg" alt="">
+														<h3>Individual</h3>
+													</div>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+													<a href="#" class="d-flex">
+														<span>View all</span>
+														<i class="fas fa-arrow-right" aria-hidden="true"></i>
+													</a>
+												</div>
 											</div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-											<a href="#" class="d-flex">
-												<span>View all</span>
-												<i class="fas fa-arrow-right"></i>
-											</a>
+											<div class="item-seller">
+												<div class="seller">
+													<div class="info d-flex">
+														<img src="Img/seller-2.svg" alt="">
+														<h3>NGO</h3>
+													</div>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+													<a href="#" class="d-flex">
+														<span>View all</span>
+														<i class="fas fa-arrow-right" aria-hidden="true"></i>
+													</a>
+												</div>
+											</div>
+											<div class="item-seller">
+												<div class="seller">
+													<div class="info info-coming d-flex">
+														<img src="Img/seller-3.svg" alt="">
+														<h3>Individual</h3>
+													</div>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+													<a href="#" class="d-flex coming-soon">
+														<span>Coming Soon</span>										
+													</a>
+												</div>
+											</div>
+											<div class="item-seller">
+												<div class="seller">
+													<div class="info info-coming d-flex">
+														<img src="Img/seller-4.svg" alt="">
+														<h3>Individual</h3>
+													</div>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+													<a href="#" class="d-flex coming-soon">
+														<span>Coming Soon</span>							
+													</a>
+												</div>
+											</div>
 										</div>
-									</a>
-							    </li>
-							    <li>
-							    	<a href="#">
-								    	<div class="seller">
-											<div class="info d-flex">
-												<img src="Img/seller-2.svg" alt="">
-												<h3>NGO</h3>
-											</div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-											<a href="#" class="d-flex">
-												<span>View all</span>
-												<i class="fas fa-arrow-right"></i>
-											</a>
-										</div>
-									</a>
-							    </li>
-							    <li>
-							    	<a href="#">								    											
-										<div class="seller">
-											<div class="info info-coming d-flex">
-												<img src="Img/seller-3.svg" alt="">
-												<h3>Individual</h3>
-											</div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-											<a href="#" class="d-flex coming-soon">
-												<span>Coming Soon</span>										
-											</a>
-										</div>									
-									</a>
-							    </li>
-							     <li>
-							    	<a href="#">								    											
-										<div class="seller">
-											<div class="info info-coming d-flex">
-												<img src="Img/seller-4.svg" alt="">
-												<h3>Individual</h3>
-											</div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-											<a href="#" class="d-flex coming-soon">
-												<span>Coming Soon</span>							
-											</a>
-										</div>								
-									</a>
-							    </li>					     
-							</ul>
+						            </div>            
+						        </div>
+						    </div>
 						</div>
 	
 					</div>
