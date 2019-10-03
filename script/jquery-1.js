@@ -55,16 +55,16 @@ $('body').on("click", ".dropdown-menu", function (e) {
         var newVal = parseFloat(oldValue) + 1;   
     $parent.find('.input').val(newVal);
  });
-  $("#show_hide_password a").on('click', function(event) {
-        event.preventDefault();
+  $("#show_hide_password i").on('click', function() {
         if($('#show_hide_password input').attr("type") == "text"){
             $('#show_hide_password input').attr('type', 'password');
-            $('#show_hide_password i').addClass( "fa-eye-slash" );
-            $('#show_hide_password i').removeClass( "fa-eye" );
-        }else if($('#show_hide_password input').attr("type") == "password"){
-            $('#show_hide_password input').attr('type', 'text');
-            $('#show_hide_password i').removeClass( "fa-eye-slash" );
             $('#show_hide_password i').addClass( "fa-eye" );
+            $('#show_hide_password i').removeClass( "fa-eye-slash" );
+        }
+        else if($('#show_hide_password input').attr("type") == "password"){
+            $('#show_hide_password input').attr('type', 'text');
+            $('#show_hide_password i').removeClass( "fa-eye" );
+            $('#show_hide_password i').addClass( "fa-eye-slash" );
         }
     });
   $(document).ready(function (){

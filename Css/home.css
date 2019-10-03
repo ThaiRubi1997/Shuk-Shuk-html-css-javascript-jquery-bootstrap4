@@ -1611,9 +1611,14 @@ a.btn-filter:hover{
 .detail-store .wrap-name{
 	margin-bottom: 16px;
 }
-/*.store{
-	padding-bottom: 116px;
-}*/
+.pass{
+	color: #EB4242;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 175%;
+	letter-spacing: -0.006em;
+}
+a.
 .show{
 	margin-top: auto;
 }
@@ -1755,10 +1760,16 @@ input.form-control.is-invalid{
 	margin-bottom: 14px;
 }
 div#z-password{
-	margin-top: -13px;
+	margin-bottom: 14px;
 }
 input#password {
-    margin-bottom: 16px;
+    margin-bottom: 0px;
+}
+div#z-password-1{
+	margin-bottom: 14px;
+}
+input#password-1 {
+    margin-bottom: 0px;
 }
 .wrap-cart-web{
 	border-radius: 0;

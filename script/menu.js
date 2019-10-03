@@ -39,6 +39,17 @@ function checkpass() {
       document.getElementById("password").classList.remove("is-invalid");
     }
 }
+function checkpass1() {
+  var pass = document.getElementById('password-1').value.length;
+  if (pass<8){
+      document.getElementById('z-password-1').innerHTML = "<span>Your password must be longer than 8 characters</span>";
+      document.getElementById("password-1").classList.add("is-invalid");
+    }
+    else{
+      document.getElementById('z-password-1').innerHTML ="";
+      document.getElementById("password-1").classList.remove("is-invalid");
+    }
+}
 function myFunction() {
   var x = document.getElementById("password");
   if (x.type === "password") {
