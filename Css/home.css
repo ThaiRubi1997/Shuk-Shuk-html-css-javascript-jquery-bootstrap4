@@ -2124,9 +2124,11 @@ padding-top: 16px;
 .color-red{
 	color: #EB4242;
 }
-/*.show{
-	z-index: 10;
-}*/
+.dropdown-wishlist{
+	padding-left: 0;
+	padding-right: 0;
+}
+
 /*-------------------------------------------------------mobile---------------------------------------------------------*/
 @media (max-width: 576px){
 	.only{
@@ -2553,6 +2555,18 @@ padding-top: 16px;
 		transform: translateX(-50%) translateY(-60%);
 		width: 91%;
 	}
+	.wrap-wishlist{
+		margin-left: -8px;
+		margin-right: -8px;
+		margin-bottom: 25px;
+	}
+	.container-whishlish{
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.whishlist{
+		margin-bottom: 89px;
+	}
 }
 @media (min-width: 1000px) and (max-width: 1100px){
 	.container{
@@ -2606,6 +2620,10 @@ padding-top: 16px;
 	}
 	.payment-right{
 		margin-left: 0px;
+	}
+	p.wishlist-empty{
+		margin-top: 320px;
+		margin-bottom: 430px;
 	}
 	
 }
