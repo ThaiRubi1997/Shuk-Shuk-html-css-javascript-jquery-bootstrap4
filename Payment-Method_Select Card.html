@@ -15,7 +15,7 @@
 		<script type="text/javascript" src="script/jquery-1.js"></script>
 	</head>
 	<body id="home">
-		<div class="wrapper h-sm-100">
+		<div class="wrapper payment-method">
 			<header class="web-block">
 				<div class="header-top">
 					<div class="container d-flex justify-content-between">
@@ -280,9 +280,23 @@
 				    </div>
 				</div>				    
 			</header>
-			<div class="content web-block">
+			<div class="header-bottom mobi-block">
+				<div class="header-bottom mobi-block">
+					<header class="header-cart-mobi">
+						<div class="container">
+							<div class="container wrap-mdi d-flex tow-element">
+								 <a href="#">
+							    	<img src="Img/back.svg" alt="">
+							    </a>
+								<p class="text-center w-100">Delivery Information</p>							
+							</div>
+						</div>							
+					</header>
+				</div>
+			</div>
+			<div class="content">
 				<div class="container">
-					<div class="step d-flex justify-content-center">
+					<div class="step d-flex justify-content-center hidden-mobi">
 						<div class="detail-step d-flex detail-step-w20 step-active">
 							<span class="d-block rounded-circle number">1</span>
 							<span class="text">Delivery Information</span>
@@ -291,118 +305,180 @@
 							<span class="d-block rounded-circle number">2</span>
 							<span class="text">Payment Method</span>
 						</div>
-						<div class="detail-step d-flex step-active">
+						<div class="detail-step d-flex">
 							<span class="d-block rounded-circle number">3</span>
 							<span class="text">Complete Order</span>
 						</div>							
 					</div>
-					<div class="payment payment-invoice">						
+					<div class="payment payment-cart">
 						<div class="row">
-							<div class="col-5">						
+							<div class="col-xl-7 col-md-7 web-block">						
 								<div class="your-cart">
-									<h2 class="title">INV1234567890</h2>
+									<h2 class="title">Your Cart</h2>
 									<div class="product d-flex justify-content-between">
 										<div class="left d-flex">
-											<div class="wrap-img-invoice d-flex">
-												<span>1</span>
-												<img class="img-invoice" src="Img/yourcart-1.png" alt="">
-											</div>					
-											<div class="detail-product-yourcart detail-product-invoice">
+											<img class="img-your-cart" src="Img/yourcart-1.png" alt="">
+											<div class="detail-product-yourcart">
 												<span class="name-product">Itern Name</span>
 												<p>Qty: 1</p>
+												<div class="d-flex text">
+													<p>Color: White</p>
+													<p>Size: XL</p>
+												</div>
 											</div>	
 										</div>
 										<h3>US$ 30</h3>
 									</div>
 									<div class="product d-flex justify-content-between">
 										<div class="left d-flex">
-											<div class="wrap-img-invoice d-flex">
-												<span>2</span>
-												<img class="img-invoice" src="Img/your-cart-2.png" alt="">
-											</div>					
-											<div class="detail-product-yourcart detail-product-invoice">
+											<img class="img-your-cart" src="Img/your-cart-2.png" alt="">
+											<div class="detail-product-yourcart">
 												<span class="name-product">Itern Name</span>
 												<p>Qty: 1</p>
+												<div class="d-flex text">
+													<p>Color: White</p>
+													<p>Size: XL</p>
+												</div>
 											</div>	
 										</div>
 										<h3>US$ 30</h3>
-									</div>										
+									</div>
+									<div class="text-method d-flex justify-content-between">
+										<p>Delivery Method:</p>
+										<p>Shukshuk Delivery</p>
+									</div>
+									<div class="text-method d-flex justify-content-between">
+										<p>Duration:</p>
+										<p>One-Day Shipping</p>
+									</div>
 									<div class="text-method d-flex justify-content-between">
 										<p>Delivery Fee:</p>
-										<h3>US$ 15</h3>
-									</div>							
-									<div class="text-total d-flex justify-content-between">
-										<p>All price are inclusive Tax 10%</p>
-										<h3>Total</h3>
+										<p>US$ 15</p>
 									</div>
-									<h1 class="text-right money-invoice">US$ 55</h1>
-									<div class="text-method d-flex justify-content-between">
-										<p>Payment Method:</p>
-										<p>Credit Cards (4410 **** **** ****)</p>
-									</div>	
+									<div class="text-total d-flex justify-content-between">										
+										<div>
+											<p class="color-gray">All price are inclusive Tax 10%</p>
+											<div class="d-flex promo-code">
+												<input type="text" class="form-control code" id="formGroupExampleInput" placeholder="Promo Code">
+												<a class="btn btn-primary btn-buy btn-yourcart web-block" href="#" role="button">Continue</a>
+											</div>
+										</div>
+										<div class="total-selectcart">
+											<h3>Total</h3>
+											<h1 class="text-right">US$ 55</h1>
+										</div>																				
+									</div>
+									
 								</div>
 							</div>
-							<div class="col-5 payment-right">
-								<div class="wrap-paid d-flex justify-content-end">
-									<div class="paid">
-										<span>PAID</span>
-									</div>
-								</div>
+							<div class="col-xl-4 col-md-5 col-sm-12 payment-right">
 								<div class="change d-flex justify-content-between">
-									<p>Delivered to:</p>									
+									<p>Delivered to:</p>
+									<a class="pain d-flex hidden-mobi" href="#">
+										<img src="Img/pain.svg" alt="">
+										<span>Change Shipping Address</span>
+									</a>
 								</div>								
 								<div class="payment-name">
 									<h2>John Doe</h2>
 									<p>+6281234567890</p>
 								</div>								
-								<p class="p-invoice">
-									Street name no. 07 Apartment name level 12 Central Jakarta, Indonesia, 12345
+								<p class="p-payment">
+									Street name no. 07 <br> Apartment name level 12 <br>Central Jakarta, Indonesia, 12345
 								</p>
-								<div class="method invoice d-flex justify-content-between">
-									<p>Select Payment Method</p>
-									<p class="font-weight-bold">Shukshuk Delivery</p>
-								</div>
-								<div class="method invoice d-flex justify-content-between">
-									<p>Duration:</p>
-									<p class="font-weight-bold">One-Day Shipping</p>
+								<div class="mobi-block">
+									<a class="pain d-flex" href="#">
+										<img src="Img/pain.svg" alt="">
+										<span>Change Shipping Address</span>
+									</a>
 								</div>								
+								<div class="method">
+									<p>Select Payment Method</p>
+									<div class="dropdown">
+										<a class="btn dropdown-toggle btn-dropdown d-flex justify-content-between your-cart-dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<span>Country</span>
+											<img src="Img/arrow-black.svg" alt="">										
+										</a>
+										<div class="dropdown-menu dropdown-detail transform-dropdown-menu" aria-labelledby="dropdownMenuLink" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 46px, 0px); top: 0px; left: 0px; will-change: transform;">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</div>
+								<div class="wrap-check mb-1">
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input">
+										<span class="custom-control-indicator"></span>
+										<span class="custom-text">Save My Card</span>
+									</label>
+								</div>
+								<div class="name-customer">
+									<input type="text" class="form-control" id="validationCustom01" value="John Doe" required="">
+								</div>
+								<div class="name-customer visa justify-content-between">									
+									<input type="text" class="form-control" id="validationCustom01" value="4410 1234 1234 1234" required="">									
+									<img src="Img/visa.png" alt="">
+								</div>
+								<div class="wrap-datepass d-flex small-row">
+									<div class="col-3 col-small">
+										<input type="text" class="form-control" id="validationCustom01" value="02/21" required="">
+									</div>
+									<div class="col-3 col-small">
+										<input type="password" class="form-control" id="validationCustom01" value="***" required="">
+									</div>									
+								</div>				
+								<a class="btn btn-primary btn-buy btn-yourcart btn-payment btn-pay d-flex justify-content-center hidden-mobi" href="#" role="button">
+									<img src="Img/block.svg">
+									<p>Pay Now</p>
+								</a>
 							</div>
-						</div>						
-					</div>
-					<div class="btn-invoice d-flex justify-content-center">
-						<a class="btn btn-primary btn-buy btn-yourcart" href="#" role="button">Pay Now</a>		
-					</div>
-					<p class="note-invoice text-center">Note: You can also find menu “My Order” in the header menu under your profile name.</p>
+						</div>
+						
+					</div>		
 				</div>
-			</div>
-			<div class="mobi-block h-100">
-				<div class="Payment-Success h-100">
-					<img class="close" src="Img/close.svg" alt="">
-					<div class="main-success">
-						<img class="truck" src="Img/Truck.png" alt="">
-						<h2 class="text-center">Payment Success</h2>
-						<p class="text-center">Imperdiet potenti aenean tortor magna et viverra ut. Libero nisi curabitur tincidunt in commodo in integer.</p>						
-					</div>
-					<div class="col-12 btn-position">
-						<a class="btn btn-primary btn-buy" href="#" role="button">Go To My Order</a>
-					</div>
-				</div>
+				<div class="mobi-block grand-total">
+					<div class="container">
+						<div class="d-flex justify-content-between in-line">
+							<p>Your Cart</p>
+							<h3>US$ 90</h3>
+						</div>			
+						<div class="d-flex justify-content-between in-line">
+							<p>Your Cart</p>
+							<h3>US$ 90</h3>
+						</div>
+						<hr>
+						<div class="d-flex justify-content-between wrap-total">
+							<p class="color-gray tax">All price are inclusive Tax 10%</p>
+							<div>
+								<p class="text-right">Total</p>
+								<h2>US$ 100</h2>
+							</div>
+						</div>
+						<div class="mobi-block">
+							<a class="btn btn-primary btn-buy btn-payment btn-pay d-flex justify-content-center" href="#" role="button">
+								<img src="Img/block.svg">
+								<p>Pay Now</p>
+							</a>
+						</div>
+					</div>				
+				</div>						
 			</div>
 			<footer class="web-block">
 				<div class="container wrap-footer">
 					<div class="row">
 						<div class="col-xl-3 col-md-12 col-f-sm-12 footer-about">
-								<div class="logo-footer">
-									<img src="Img/logo-footer.svg" alt="">
-									<span>Shukshuk</span>
-								</div>
-								<p>We are lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								<div class="social">
-									<a href="#"><img src="Img/facebook.svg" alt=""></a>
-									<a href="#"><img src="Img/instagram.svg"></a>
-									<a href="#"><img src="Img/twiter.svg"></a>
-									<a href="#"><img src="Img/linkein.svg"></a>
-								</div>
+							<div class="logo-footer">
+								<img src="Img/logo-footer.svg" alt="">
+								<span>Shukshuk</span>
+							</div>
+							<p>We are lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<div class="social">
+								<a href="#"><img src="Img/facebook.svg" alt=""></a>
+								<a href="#"><img src="Img/instagram.svg"></a>
+								<a href="#"><img src="Img/twiter.svg"></a>
+								<a href="#"><img src="Img/linkein.svg"></a>
+							</div>
 						</div>
 						<div class="col-xl-6 col-md-12 col-f-sm-12 footer-right">
 							<div class="menu-footer">
