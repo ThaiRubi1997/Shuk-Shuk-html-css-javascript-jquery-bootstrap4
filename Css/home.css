@@ -2144,7 +2144,72 @@ padding-top: 16px;
 	padding-left: 0;
 	padding-right: 0;
 }
-
+.ui-corner-all{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.ui-corner-all p{
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: -0.0048em;
+	color: #4E5662;
+}
+.ui-corner-all span{
+	font-size: 14px;
+	line-height: 17px;
+	text-align: right;
+	letter-spacing: -0.0048em;
+	color: #ACB4B4;
+}
+ul.ui-autocomplete{
+	padding: 24px;
+	width: 445px !important;
+	margin-top: 30px !important;
+	top: 82px !important;
+	 }
+ul.ui-autocomplete li.ui-menu-item{
+	margin-bottom: 16px;
+}
+ul.ui-autocomplete li.ui-menu-item:last-child{
+		margin-bottom: 0;
+}
+a.ui-corner-all{
+	background-image: none !important;
+	border: none !important;
+	background-color: none !important;
+	background: none !important;
+}
+.bootstrap-select{
+	width: 100% !important;
+	height: 48px;
+}
+.wrap-select{
+	position: relative;
+}
+.img-select{
+	display: block;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+.dropdown-item.active{
+	color: #4E5662;
+	background-color: #ffff;
+}
+.filter-option-inner-inner{
+	color: #4E5662;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.011em;
+}
+.wrap-select .dropdown-toggle{
+	height: 100%;
+}
+.wrap-select .dropdown-menu{
+	transform: translate3d(0px, 48px, 0px) !important;
+}
 /*-------------------------------------------------------mobile---------------------------------------------------------*/
 @media (max-width: 576px){
 	.only{
@@ -2583,42 +2648,18 @@ padding-top: 16px;
 	.whishlist{
 		margin-bottom: 89px;
 	}
+	ul.ui-autocomplete{
+		width: 209px !important;
+		top: 36px !important;
+		margin-top: 0;
+	}
+	.ui-corner-all{
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
 }
-.ui-corner-all{
-	display: flex;
-	justify-content: space-between;
-}
-.ui-corner-all p{
-	font-size: 16px;
-	line-height: 150%;
-	letter-spacing: -0.0048em;
-	color: #4E5662;
-}
-.ui-corner-all span{
-	font-size: 14px;
-	line-height: 17px;
-	text-align: right;
-	letter-spacing: -0.0048em;
-	color: #ACB4B4;
-}
-ul.ui-autocomplete{
-	padding: 24px;
-	width: 445px !important;
-	margin-top: 30px !important;
-	top: 82px !important;
-	 }
-ul.ui-autocomplete li.ui-menu-item{
-	margin-bottom: 16px;
-}
-ul.ui-autocomplete li.ui-menu-item:last-child{
-		margin-bottom: 0;
-}
-a.ui-corner-all{
-	background-image: none !important;
-	border: none !important;
-	background-color: none !important;
-	background: none !important;
-}
+
 @media (min-width: 1000px) and (max-width: 1100px){
 	.container{
 	max-width: 960px;
