@@ -1284,13 +1284,14 @@ a.back{
 }
 .pass-word .show-hidden{
 	position: absolute;
-	top: 12px;
-	right: 15px;
+	top: 50%;
+	right: 1%;
+	transform: translate(-50%,-50%);
 	z-index: 1;
 }
 .show-hidden i{
-	width: 24px;
-	height: 24px;
+	font-size: 16px;
+	line-height: 150%;
 	color: #4E5662;
 }
 a.forgot{
@@ -1315,6 +1316,10 @@ p.login-with{
 .mobi-block{
 	display: none;
 }
+.form-control:focus {
+        border-color: #ACB4B4;
+        box-shadow: none;
+    } 
 .title-login a{
 	padding-left: 8px;
 	margin-bottom: 20px;
