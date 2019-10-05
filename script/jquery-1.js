@@ -19,20 +19,31 @@ $(function()
      			$('.on-off').addClass('on-show');
      		}
     })
-    $('#click-login').click(function(){
+    $('.item-step').click(function(){
+        if ($('.item-step').hasClass("step-active"))
+          {$('.item-step').removeClass('step-active');}
+        
+           $(this).addClass('step-active');
+        
+    })
+    $('#click-login,.btn-login-mobi').click(function(){
           $('.wrap-login').removeClass('d-flex');
           $('.wrap-login').addClass('d-none');
           $('.customer').removeClass('d-none');
-          $('.customer').addClass('d-block');
+          $('.customer').addClass('d-block');        
+          $('.wrap-login-mobi').addClass('d-none');
+          $('.account-mobi').removeClass('d-none');
     })
-    $('#log-out-1').click(function(){
+    $('#log-out-1,.log-out-mobi').click(function(){
           $('.wrap-login').removeClass('d-none');
           $('.wrap-login').addClass('d-flex');
           $('.customer').removeClass('d-block');
           $('.customer').addClass('d-none');
+          $('.account-mobi').addClass('d-none');
+          $('.wrap-login-mobi').removeClass('d-none');
     })
 
-    $('body').on("click", ".dropdown-menu", function (e) {
+    $('body').on("click", ".detail-cart", function (e) {
         $(this).parent().is(".show") && e.stopPropagation();
     });
 
@@ -56,13 +67,13 @@ $(function()
     $("#show_hide_password i").on('click', function() {
         if($('#show_hide_password input').attr("type") == "text"){
             $('#show_hide_password input').attr('type', 'password');
-            $('#show_hide_password i').addClass( "fa-eye" );
-            $('#show_hide_password i').removeClass( "fa-eye-slash" );
+            $('#show_hide_password i').addClass( "fa-eye-slash" );
+            $('#show_hide_password i').removeClass( "fa-eye" );
         }
         else if($('#show_hide_password input').attr("type") == "password"){
             $('#show_hide_password input').attr('type', 'text');
-            $('#show_hide_password i').removeClass( "fa-eye" );
-            $('#show_hide_password i').addClass( "fa-eye-slash" );
+            $('#show_hide_password i').removeClass( "fa-eye-slash" );
+            $('#show_hide_password i').addClass( "fa-eye" );
         }
     });
 
@@ -153,6 +164,6 @@ $(function()
                       };
                   });
       jQuery.curCSS = function(element, prop, val) {
-    return jQuery(element).css(prop, val);
+
 };
 })

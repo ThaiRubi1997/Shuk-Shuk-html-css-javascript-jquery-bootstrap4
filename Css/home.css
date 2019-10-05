@@ -2207,8 +2207,14 @@ a.ui-corner-all{
 .wrap-select .dropdown-toggle{
 	height: 100%;
 }
-.wrap-select .dropdown-menu{
+.wrap-select div.dropdown-menu{
 	transform: translate3d(0px, 48px, 0px) !important;
+}
+.wrap-select{
+	margin-bottom: 16px;
+}
+.account-mobi{
+	margin-top: 6%;
 }
 /*-------------------------------------------------------mobile---------------------------------------------------------*/
 @media (max-width: 576px){
