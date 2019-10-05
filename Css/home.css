@@ -2216,6 +2216,10 @@ a.ui-corner-all{
 .account-mobi{
 	margin-top: 6%;
 }
+.col-select{
+	padding-right: 0;
+	padding-left: 0;
+}
 /*-------------------------------------------------------mobile---------------------------------------------------------*/
 @media (max-width: 576px){
 	.only{
@@ -2723,6 +2727,9 @@ a.ui-corner-all{
 		margin-top: 320px;
 		margin-bottom: 430px;
 	}
+	ul.ui-autocomplete{
+		width: 300px !important;
+	}
 	
 }
 /*tablet*/
@@ -2825,5 +2832,8 @@ a.ui-corner-all{
 	}
 	.your-cart{
 		padding: 20px;
+	}
+	ul.ui-autocomplete{
+		width: 360px !important;
 	}
 }
