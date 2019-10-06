@@ -5,7 +5,6 @@ $(function()
     	$('.moda-register').removeClass('show')
     	$('.modal-login').addClass('show');
     })
-
     $('.back-register').click(function(){
     	$('.modal-backdrop').removeClass('show')
     	$('.modal-login').removeClass('show');
@@ -22,9 +21,26 @@ $(function()
     $('.item-step').click(function(){
         if ($('.item-step').hasClass("step-active"))
           {$('.item-step').removeClass('step-active');}
-        
-           $(this).addClass('step-active');
-        
+           $(this).addClass('step-active');   
+    })
+    $('#btn-step1,#item-step-2').click(function () {
+        $('#item-step-2').addClass('step-active');
+        $('#item-step-1,#item-step-3').removeClass('step-active');
+        $('#step1,#step3').removeClass('active');
+        $('#step2').addClass('active');
+    })
+     $('#btn-step2,#btn-mobi-step2').click(function () {
+        $('#item-step-3').addClass('step-active');
+        $('#item-step-1,#item-step-2').removeClass('step-active');
+        $('#step1,#step2').removeClass('active');
+        $('#step3').addClass('active');
+    })
+     $('#close-step,#change-address').click(function () {
+        $('#item-step-1').addClass('step-active');
+        $('#item-step-3,#item-step-2').removeClass('step-active');
+        $('#step3,#step2').removeClass('active');
+        $('#step1').addClass('active');
+        $('#btn-mobi-step2').removeClass('active');
     })
     $('#click-login,.btn-login-mobi').click(function(){
           $('.wrap-login').removeClass('d-flex');
@@ -47,6 +63,19 @@ $(function()
         $(this).parent().is(".show") && e.stopPropagation();
     });
 
+ $('#credit-card').click(function(){
+        if ($('#credit-card button').attr("title")=="Credit Cards")
+          {$('#show-credit-card').removeClass('d-none');
+           $('#show-btn-payment').removeClass('d-none');
+           $('#continue-disabled').addClass('d-none');
+           $('#continue-disabled-mobi').addClass('d-none')}
+        else{
+          $('#show-credit-card').addClass('d-none');
+          $('#continue-disabled').removeClass('d-none');
+          $('#continue-disabled-mobi').removeClass('d-none');
+          $('#show-btn-payment').addClass('d-none')
+        }
+    })
      $(".button-1").on("click", function() {
         var $button = $(this);
         var $parent = $button.parent(); 
@@ -63,7 +92,6 @@ $(function()
         var newVal = parseFloat(oldValue) + 1;   
     $parent.find('.input').val(newVal);
     });
-
     $("#show_hide_password i").on('click', function() {
         if($('#show_hide_password input').attr("type") == "text"){
             $('#show_hide_password input').attr('type', 'password');
@@ -76,7 +104,6 @@ $(function()
             $('#show_hide_password i').addClass( "fa-eye" );
         }
     });
-
       $(document).ready(function (){
            $("#next_nav").on("click", function() {
               var $left = $("#nav").css('margin-left');
@@ -164,6 +191,5 @@ $(function()
                       };
                   });
       jQuery.curCSS = function(element, prop, val) {
-
 };
 })

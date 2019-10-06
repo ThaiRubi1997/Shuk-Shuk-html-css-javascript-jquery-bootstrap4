@@ -1953,6 +1953,12 @@ input#password-1 {
 	padding-left: 8px;
 	padding-right: 8px;
 }
+.custom-control:focus{
+	outline:none;
+}
+.custom-control-input:focus~.custom-control-indicator{
+	box-shadow: none;
+}
 .custom-control-indicator:active,.custom-control-indicator:.btn:focus{
 	 outline:none !important;
 }
@@ -2103,6 +2109,10 @@ padding-top: 16px;
 .transform-dropdown-menu{
 	transform:  translate3d(0px, 48px, 0px)!important;
 }
+.header-item-cart ul li{
+	padding-top: 22px;
+	padding-bottom: 22px;
+}
 .span-heart{
 	margin-top: 12px;
 	font-weight: bold;
@@ -2190,7 +2200,7 @@ a.ui-corner-all{
 .img-select{
 	display: block;
 	position: absolute;
-	top: 15px;
+	top: 20px;
 	right: 15px;
 }
 .dropdown-item.active{
@@ -2219,6 +2229,26 @@ a.ui-corner-all{
 .col-select{
 	padding-right: 0;
 	padding-left: 0;
+}
+.dropdown-item{
+	padding-left: 17px;
+}
+.method label{
+	margin-bottom: 8px;
+}
+label{
+	margin-bottom: 0;
+	color: #222831;
+	letter-spacing: -0.011em;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+}
+.wrap-check.save-card label{
+	margin-bottom: 19px;
+}
+a.customer-item{
+	margin-top: 13px !important;
 }
 /*-------------------------------------------------------mobile---------------------------------------------------------*/
 @media (max-width: 576px){
@@ -2668,6 +2698,19 @@ a.ui-corner-all{
 		align-items: flex-start;
 		justify-content: flex-start;
 	}
+	.mobi-step-3{
+		background-color: #ffffff;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+	}
+	.from-check{
+		align-items: flex-start!important;
+}
+
 }
 
 @media (min-width: 1000px) and (max-width: 1100px){
@@ -2729,8 +2772,7 @@ a.ui-corner-all{
 	}
 	ul.ui-autocomplete{
 		width: 300px !important;
-	}
-	
+	}	
 }
 /*tablet*/
 @media (min-width: 768px) and (max-width: 1000px){
@@ -2835,5 +2877,8 @@ a.ui-corner-all{
 	}
 	ul.ui-autocomplete{
 		width: 360px !important;
+	}
+	.login-menu-mobi{
+		margin-top: 50px;
 	}
 }
