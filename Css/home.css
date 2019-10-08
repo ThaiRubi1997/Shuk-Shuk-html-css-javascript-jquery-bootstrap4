@@ -1562,8 +1562,21 @@ a.closebtn{
 	line-height: 19px;
 	letter-spacing: -0.0048em;
 	color: #ffff;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+.wrap-filter .wrap-select{
+	margin-bottom: 0;
+}
+.wrap-filter .dropdown-menu.show{
+	max-width: 100% !important;
+	min-width: 100% !important;
+}
+.wrap-filter .inner.show{
+	overflow-y: hidden !important;
+}
+.bootstrap-select button{
+	background-color: #F6F8F8;
 }
 a.btn-filter:hover{
 	opacity: 0.85;
@@ -1942,6 +1955,7 @@ input#password-1 {
 	padding-bottom: 10px;
 	background-color: #30B6A4;
 	border: none;
+	color: #ffff;
 }
 .method p{
 	margin-bottom: 12px;
@@ -2250,6 +2264,165 @@ label{
 a.customer-item{
 	margin-top: 13px !important;
 }
+.openbtn{
+	padding-right: 0;
+}
+.btn-customer{
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 14px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	border-radius: 4px;
+	width: 100%;
+	transition: 0.2s;
+}
+.primary{
+	background-color: #413EC1;
+	color: #ffffff;
+}
+.primary:hover{
+	background-color: #413EC1;
+	color: #ffffff;
+	opacity: 0.85;
+}
+.btn-cancel{
+	background-color: #DCE0E0;
+	color: #4E5662;
+}
+.btn-cancel:hover{
+	background-color: #DCE0E0;
+	color: #4E5662;
+	opacity: 0.85;
+}
+.btn-disabled{
+	background-color: #DCE0E0;
+	color: #ACB4B4;
+}
+.btn-disabled:hover{
+	background-color: #DCE0E0;
+	color: #ACB4B4;
+	opacity: 0.85;
+}
+.secondary{
+	background-color: #30B6A4;
+	color: #ffffff;
+}
+.secondary:hover{
+	background-color: #30B6A4;
+	color: #ffffff;
+	opacity: 0.85; 
+}
+.primary-icon{
+	background-color: #413EC1;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.primary-icon:hover{
+	background-color: #413EC1;
+	color: #ffffff;
+	opacity: 0.85;
+}
+.primary-icon p{
+	color: #ffff;
+	margin-left: 11px;
+}
+.primary-icon img{
+	width: 24px;
+	height: 24px;
+}
+.secondary-icon{
+	background-color: #30B6A4;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.secondary-icon:hover{
+	background-color: #30B6A4;
+	color: #ffffff;
+	opacity: 0.85;
+}
+.secondary-icon p{
+	color: #ffff;
+	margin-left: 11px;
+}
+.secondary-icon img{
+	width: 24px;
+	height: 24px;
+}
+.btn-load {
+	border: 1px solid #E4E8E8;
+	background-color: #FFFFFF;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+}
+.btn-load:hover{
+	text-decoration: underline;
+}
+.tertiary-icon {
+	background-color:#ffffff ;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border: 1px solid #E4E8E8;
+}
+.tertiary-icon p{
+	color: #4E5662;
+	margin-left: 11px;
+}
+.tertiary-icon img{
+	width: 24px;
+	height: 24px;
+}
+.tertiary-icon:hover {
+	background-color: #F6F8F8;
+}
+.input-customer{
+	border: 1px solid #E4E8E8;
+	border-radius: 4px;
+	height: 48px;
+}
+.from-customer label{
+	margin-bottom: 11px;
+}
+.from-customer{
+	margin-bottom: 16px;
+}
+.form-step1-1 input,.form-step1-1 textarea{
+	margin-bottom: 16px;
+}
+.form-step1-1 .group-input,.form-step1-1{
+	margin-bottom: 32px;
+}
+.form-step2 input{
+	margin-bottom: 16px;
+}
+.col-collap{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.form-step2 .primary-icon {
+	margin-top: 32px;
+}
+input.input-error{
+	border: 1px solid #EB4242;
+}
+.text-error{
+	color: #EB4242;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 175%;
+	letter-spacing: -0.006em;
+}
 /*-------------------------------------------------------mobile---------------------------------------------------------*/
 @media (max-width: 576px){
 	.only{
@@ -2308,7 +2481,7 @@ a.customer-item{
 		display: none;
 	}
 	.web-block{
-		display: none;
+		display: none !important;
 	}
 	.mobi-flex{
 		display: flex;
@@ -2579,8 +2752,12 @@ a.customer-item{
 		font-weight: 500;
 		color: #222831;
 	}
-	.information .from-check{
+	.form-check{
 		flex-direction: column;
+		align-items: flex-start !important;
+	}
+	.form-step1-1 .wrap-check{
+		margin-bottom: 23px;
 	}
 	.mb-text{
 		margin-bottom: 21px;
@@ -2709,7 +2886,20 @@ a.customer-item{
 	}
 	.from-check{
 		align-items: flex-start!important;
-}
+	}
+	.wrap-title{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.header-body{
+		background-color: #ffff;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin-top: 3px;
+	}
+	.store-product {
+		margin-bottom: 52px;
+	}
 
 }
 
