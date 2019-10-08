@@ -467,52 +467,43 @@
 	                            </div>
 	                            <div class="col-md-5 col-sm-12">
 	                                <div class="from-information">
-	                                    <form class="from-check d-flex justify-content-between align-items-center">
-	                                        <label class="person">Contact Person</label>
-	                                        <div class="wrap-check web-block">
-	                                            <label class="custom-control custom-checkbox">
-	                                                <input type="checkbox" class="custom-control-input">
-	                                                <span class="custom-control-indicator"></span>
-	                                                <span class="custom-text">Same As My Contact</span>
-	                                            </label>
-	                                        </div>                                                                      
-	                                    </form>
-	                                    <form class="from-group">
-	                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Full Name">
-	                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Phone Number">
-	                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Note (Optional)">
-	                                    </form>
-	                                    <form class="from-check d-flex justify-content-between align-items-center">
-	                                        <label class="person mb-text">Shipping Address</label>
-	                                        <div class="wrap-check">
-	                                            <label class="custom-control custom-checkbox">
-	                                                <input type="checkbox" class="custom-control-input">
-	                                                <span class="custom-control-indicator"></span>
-	                                                <span class="custom-text">Same As Billing Address</span>
-	                                            </label>
+	                                	<form class="form-step1-1">
+	                                		<div class="form-check form-group d-flex justify-content-between align-items-center">
+												<label class="person mb-text">Contact Person</label>
+		                                        <div class="wrap-check">
+		                                            <label class="custom-control custom-checkbox">
+		                                                <input type="checkbox" class="custom-control-input">
+		                                                <span class="custom-control-indicator"></span>
+		                                                <span class="custom-text">Same As My Contact</span>
+		                                            </label>
+		                                        </div>
+											</div>
+											<div class="group-input">
+												<input type="text" class="form-control" placeholder="Full Name">
+		                                        <input type="text" class="form-control"  placeholder="Phone Number">
+		                                        <input type="text" class="form-control"  placeholder="Note (Optional)">
+											</div>
+	                                        <div class="form-check form-group d-flex justify-content-between align-items-center">
+	                                        	<label class="person mb-text">Shipping Address</label>
+		                                        <div class="wrap-check">
+		                                            <label class="custom-control custom-checkbox">
+		                                                <input type="checkbox" class="custom-control-input">
+		                                                <span class="custom-control-indicator"></span>
+		                                                <span class="custom-text">Same As Billing Address</span>
+		                                            </label>
+		                                        </div>
 	                                        </div>
-	                                    </form>                           
-	                                    <form class="from-group">
-	                                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Address" rows="3"></textarea>
-	                                       <div class="wrap-select">
+	                                         <textarea class="form-control" placeholder="Address" rows="3"></textarea>
+	                                         <div class="wrap-select">
 	                                            <select class="selectpicker" title="Country">
 	                                              <option>Mustard</option>
 	                                              <option>Ketchup</option>
 	                                              <option>Relish</option>
 	                                            </select>
 	                                            <img class="img-select" src="Img/arrow-black.svg" alt="">
-	                                        </div> 
-	                                        <div class="wrap-select">
-	                                            <select class="selectpicker" title="Province">
-	                                              <option>Mustard</option>
-	                                              <option>Ketchup</option>
-	                                              <option>Relish</option>
-	                                            </select>
-	                                            <img class="img-select" src="Img/arrow-black.svg" alt="">
-	                                        </div> 
-	                                                                          
+	                                        </div>
 	                                        <input type="text" class="form-control code" id="formGroupExampleInput" placeholder="ZIP Code">
-	                                    </form>
+	                                	</form>
 	                                    <div class="delivery">
 	                                        <p>Delivery Method</p>
 	                                        <h2>Shukshuk Delivery</h2>
@@ -525,7 +516,7 @@
 	                                            <img class="img-select" src="Img/arrow-black.svg" alt="">
 	                                        </form>                                
 	                                    </div>
-	                                    <a id="btn-step1" class="btn btn-primary btn-buy btn-yourcart web-block nav-link" data-toggle="tab"  href="#step2" role="tab">Continue</a>
+	                                    <a id="btn-step1" class="btn-customer primary btn col-5 web-block" href="#step2" data-toggle="tab"  href="#step2" role="tab">Continue</a> 
 	                                </div>
 	                            </div>
 	                        </div>
@@ -600,14 +591,16 @@
 	                                        <p>Delivery Fee:</p>
 	                                        <p>US$ 15</p>
 	                                    </div>
-	                                    <div class="text-total d-flex justify-content-between">                                     
-	                                        <div>
-	                                            <p class="color-gray">All price are inclusive Tax 10%</p>
-	                                            <div class="d-flex promo-code">
-	                                                <input type="text" class="form-control code" id="formGroupExampleInput" placeholder="Promo Code">
-	                                                <a class="btn btn-primary btn-buy btn-yourcart web-block" href="#" role="button">Continue</a>
-	                                            </div>
-	                                        </div>
+	                                    <div class="text-total d-flex justify-content-between">         
+											<div>
+												<p class="color-gray">All price are inclusive Tax 10%</p>
+	                                            <form >
+	                                            	<div class="form-group d-flex promo-code">
+	                                            		<input type="text" class="form-control code" id="formGroupExampleInput" placeholder="Promo Code">
+	                                                	<a class="btn-customer btn-yourcart btn col-5" href="#" role="button">Continue</a>
+	                                            	</div>
+	                                            </form>
+											</div>
 	                                        <div class="total-selectcart">
 	                                            <h3>Total</h3>
 	                                            <h1 class="text-right">US$ 55</h1>
@@ -637,47 +630,47 @@
 	                                    </a>
 	                                </div>                              
 	                                <form class="method">
-	                                    <label>Payment Method</label>
-	                                    <div id="credit-card" class="col-9 col-select">
-	                                        <div class="wrap-select">
-	                                            <select class="selectpicker" title="Select Payment Method">
-	                                                <option>Credit Cards</option>
-	                                                <option>Ketchup</option>
-	                                                <option>Relish</option>
-	                                            </select>
-	                                            <img class="img-select" src="Img/arrow-black.svg" alt="">
-	                                        </div> 
-	                                    </div>
+	                                	<div class="form-group">
+	                                		<label>Payment Method</label>
+		                                    <div id="credit-card" class="col-9 col-select">
+		                                        <div class="wrap-select">
+		                                            <select class="selectpicker" title="Select Payment Method">
+		                                                <option>Credit Cards</option>
+		                                                <option>Ketchup</option>
+		                                                <option>Relish</option>
+		                                            </select>
+		                                            <img class="img-select" src="Img/arrow-black.svg" alt="">
+		                                        </div> 
+		                                    </div>
+	                                	</div>	                                    
 	                                </form>
-	                                <div id="show-credit-card" class="d-none">
-	                                    <form class="wrap-check save-card">
+	                                <form id="show-credit-card" class="d-none form-step2">
+	                                    <div class="form-group wrap-check save-card">
 	                                        <label class="custom-control custom-checkbox">
 	                                            <input type="checkbox" class="custom-control-input">
 	                                            <span class="custom-control-indicator"></span>
 	                                            <span class="custom-text">Save My Card</span>
 	                                        </label>
-	                                    </form>
-	                                    <form class="name-customer">
-	                                        <input type="text" class="form-control" id="validationCustom01" value="John Doe" required="">
-	                                    </form>
-	                                    <form class="name-customer visa justify-content-between">                                    
-	                                        <input type="text" class="form-control" id="validationCustom01" value="4410 1234 1234 1234" required="">                                    
+	                                    </div>
+	                                    <input type="text" class="form-control" value="John Doe">                                  
+	                                    <div class="name-customer visa justify-content-between">                                    
+	                                        <input type="text" class="form-control" value="4410 1234 1234 1234">                                    
 	                                        <img src="Img/visa.png" alt="">
-	                                    </form>
-	                                    <form class="wrap-datepass d-flex small-row">
-	                                        <div class="col-3 col-small">
-	                                            <input type="text" class="form-control" id="validationCustom01" value="02/21" required="">
+	                                    </div>
+	                                    <form class="form-group wrap-datepass d-flex small-row">
+	                                        <div class="col-3 col-collap">
+	                                            <input type="text" class="form-control" value="02/21">
 	                                        </div>
-	                                        <div class="col-3 col-small">
-	                                            <input type="password" class="form-control" id="validationCustom01" value="***" required="">
-	                                        </div>                                  
-	                                    </form>
-	                                    <a id="btn-step2" class="nav-link btn btn-buy btn-yourcart btn-payment btn-pay d-flex justify-content-center hidden-mobi" href="#step3" data-toggle="tab" role="tab">
-	                                        <img src="Img/block.svg">
-	                                        <p>Pay Now</p>
-	                                    </a>
-	                                </div>
-	                                <a id="continue-disabled" class="btn btn-primary btn-buy btn-yourcart btn-payment btn-gray web-block" href="#" role="button">Continue</a>
+	                                        <div class="col-3 col-collap">
+	                                            <input type="password" class="form-control" value="***">
+	                                        </div>
+	                                        <a id="btn-step2" class="btn-customer primary-icon btn col-4 hidden-mobi"  href="#step3" data-toggle="tab" role="tab">
+								                <img src="Img/block.svg">
+								                <p>Pay Now</p>
+								            </a>                                  
+	                                    </form>	                               
+							            <a id="continue-disabled" class="btn-customer btn-disabled btn col-4 web-block" href="#" role="button">continue</a>
+	                                </form>
 	                            </div>
 	                        </div>                          
 	                    </div>
@@ -785,8 +778,8 @@
 	                            </div>
 	                        </div>                      
 	                    </div>
-	                    <div class="btn-invoice d-flex justify-content-center">
-	                        <a class="btn btn-primary btn-buy btn-yourcart" href="#" role="button">Pay Now</a>      
+	                    <div class="btn-invoice d-flex justify-content-center">	                        
+	                        <a class="btn-customer primary btn col-2" href="#" role="button">Pay Now</a>      
 	                    </div>
 	                    <p class="note-invoice text-center">Note: You can also find menu “My Order” in the header menu under your profile name.</p>
                 	</div>

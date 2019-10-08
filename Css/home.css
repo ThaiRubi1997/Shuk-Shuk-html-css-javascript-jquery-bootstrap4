@@ -2423,6 +2423,9 @@ input.input-error{
 	line-height: 175%;
 	letter-spacing: -0.006em;
 }
+::-webkit-textarea-placeholder {
+  color: red;
+}
 /*-------------------------------------------------------mobile---------------------------------------------------------*/
 @media (max-width: 576px){
 	.only{
