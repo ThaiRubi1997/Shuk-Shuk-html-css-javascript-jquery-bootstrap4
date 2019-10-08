@@ -2390,10 +2390,10 @@ a.customer-item{
 	border-radius: 4px;
 	height: 48px;
 }
-.from-customer label{
+.form-group label{
 	margin-bottom: 11px;
 }
-.from-customer{
+.form-group{
 	margin-bottom: 16px;
 }
 .form-step1-1 input,.form-step1-1 textarea{
