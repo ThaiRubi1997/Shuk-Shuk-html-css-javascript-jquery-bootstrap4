@@ -18,23 +18,13 @@ $(function()
      			$('.on-off').addClass('on-show');
      		}
     })
-    $('.item-step').click(function(){
-        if ($('.item-step').hasClass("step-active"))
-          {$('.item-step').removeClass('step-active');}
-           $(this).addClass('step-active');   
-    })
-    $('#btn-step1,#item-step-2').click(function () {
-        $('#item-step-2').addClass('step-active');
-        $('#item-step-1,#item-step-3').removeClass('step-active');
-        $('#step1,#step3').removeClass('active');
-        $('#step2').addClass('active');
-    })
-     $('#btn-step2,#btn-mobi-step2').click(function () {
-        $('#item-step-3').addClass('step-active');
-        $('#item-step-1,#item-step-2').removeClass('step-active');
-        $('#step1,#step2').removeClass('active');
-        $('#step3').addClass('active');
-    })
+    // $('.item-step').click(function(){
+    //     if ($('.item-step').hasClass("step-active"))
+    //       {$('.item-step').removeClass('step-active');}
+    //        $(this).addClass('step-active');   
+    // })
+    
+     
      $('#close-step,#change-address').click(function () {
         $('#item-step-1').addClass('step-active');
         $('#item-step-3,#item-step-2').removeClass('step-active');
@@ -76,6 +66,13 @@ $(function()
           $('#show-btn-payment').addClass('d-none')
         }
     })
+ $('.heart').click(function(){
+        if ($(this).find("img").attr("src")=="Img/heart-2.svg")
+          {$(this).find("img").attr("src","Img/Icon 24px.svg")}
+        else{
+          $(this).find("img").attr("src","Img/heart-2.svg")
+        }
+    });
      $(".button-1").on("click", function() {
         var $button = $(this);
         var $parent = $button.parent(); 
@@ -152,6 +149,74 @@ $(function()
                 });
             });
         })
+      $(document).ready(function (){
+            $("#next_nav-Seller").on("click", function() {
+                var $left = $("#nav-seller").css('margin-left');
+                var $width  = $("#nav-seller .wrap-seller-info").css('width');
+                var $maxwidth = parseInt($width)*2+32
+                var $newval = (parseInt($left) - parseInt($width)-16);
+                if ($newval < -$maxwidth) {
+                $newval=0;
+                }
+                $newVal=$newval+"px";
+                 $("#nav-seller").css ({
+                'margin-left' : $newval
+                 });
+            });
+            $("#pre_nav-Seller").on("click", function() {
+                var $left   = $("#nav-seller").css('margin-left');
+                var $width  = $("#nav-seller .wrap-seller-info").css('width');
+                 var $maxwidth = parseInt($width)*2+32
+                var $newval = (parseInt($left) + parseInt($width)+16);
+                if ($newval>0) {
+                $newval     =-$maxwidth;
+                }
+                $newVal     =$newval+"px";
+                $("#nav-seller").css ({
+                'margin-left' : $newval
+                });
+            });
+        })
+      $(document).click( function ( e ){
+            if($('#form-step1 #name').hasClass('valid')&&$('#form-step1 #phone').hasClass('valid')&&$('#form-step1 #address').hasClass('valid')){
+            console.log("đúng");
+            $("#btn-step1").removeClass('btn-disabled')
+            $("#btn-step1").addClass('primary');
+            $('#btn-step1,#item-step-2,#btn-step1-mobi').click(function () {
+              $('#item-step-2').addClass('step-active');
+              $('#item-step-1,#item-step-3').removeClass('step-active');
+              $('#step1,#step3').removeClass('active');
+              $('#step2').addClass('active');
+              $("#item-step-2 a").attr("data-toggle", "tab");
+              $("#btn-step1").attr("data-toggle", "tab");
+              $("#btn-step1-mobi").attr("data-toggle", "tab");
+            })
+            $('#item-step-1').click(function (){
+              $('#item-step-1').addClass('step-active');
+              $('#item-step-3,#item-step-2').removeClass('step-active');
+            })
+            }
+            else{
+            console.log("sai") 
+            } 
+        });
+      $(document).click( function ( e ){
+        if ($('#show-credit-card #name2').hasClass('valid')&&$('#show-credit-card #visa').hasClass('valid')) {
+         console.log("đúng 2");
+        $('#btn-step2,#btn-mobi-step2,#item-step-3').click(function () {
+        $('#item-step-3').addClass('step-active');
+        $('#item-step-1,#item-step-2').removeClass('step-active');
+        $('#step1,#step2').removeClass('active');
+        $('#step3').addClass('active');
+        $("#item-step-3 a").attr("data-toggle", "tab");
+        $("#btn-step2").attr("data-toggle", "tab");
+        $("#btn-mobi-step2").attr("data-toggle", "tab");
+    })
+        }
+        else{
+           console.log("sai 2")
+        }
+      });
       $(function () {
                     var projects = [{
                     value: "Coffee Bean",
@@ -168,11 +233,11 @@ $(function()
                           desc: "Store",
                       }];
 
-                      $("#project").autocomplete({
+                      $("#project,#project-1").autocomplete({
                           minLength: 0,
                           source: projects,
                           focus: function (event, ui) {
-                              $("#project").val(ui.item.label);
+                              $("#project-1").val(ui.item.label);
                               return false;
                           },
                           select: function (event, ui) {
@@ -192,4 +257,6 @@ $(function()
                   });
       jQuery.curCSS = function(element, prop, val) {
 };
+
+
 })
