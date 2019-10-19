@@ -13,7 +13,6 @@
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
 		<script type="text/javascript" src="script/jquery-1.9.1.min.js"></script>
-		
 	</head>
 	<body id="home">
 		<div class="wrapper">
@@ -29,7 +28,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="header-main">
+				<div class="header-main header-item-cart">
 					<div id="cart-mobi-header" class="cart-mobi">			
 						<header class="header-cart-mobi">
 							<div class="container">
@@ -189,19 +188,22 @@
 					    	</button>
 					    	<div class="collapse tablet-hidden web-flex">
 					      		<ul class="navbar-nav ml-auto menu-main">
-					      			<li class="nav-item d-flex heart web">
+					      			<li class="nav-item d-flex heart web align-items-center">
 					          			<img src="Img/Icon 24px.svg">
-					          			<span>0</span>
+					          			<span>5</span>
 					        		</li>
 					        		<div class="wrap-dropdown">
 					        			<li class="nav-item dropdown wrap-cart-web cart">
-									        <a class="nav-link dropdown-toggle d-flex w-100 justify-content-between" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-									          	<div class="content-dropdown d-flex">
-									          		<img src="Img/Vector.svg" alt="">
-									          		<span>Empty</span>
-									          	</div>
-									          	<img class="icon" src="Img/arrow-bottom.svg">
-									        </a>
+									        <a class="nav-link dropdown-toggle d-flex w-100 justify-content-between" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											  	<div class="content-dropdown d-flex">
+											  		<img src="Img/Vector.svg" alt="">
+											  		<div class="total-product">
+											  			<h3>Total Items: 2</h3>
+											  			<p>US$ 55</p>
+											  		</div>
+											  	</div>
+											  	<img class="icon" src="Img/arrow-bottom.svg">
+											</a>
 									        <div class="dropdown-menu cart detail-cart" aria-labelledby="navbarDropdown">
 									        	<div class="wrap-cart-item">
 									        		<div class   ="cart-item dis" href="#">
@@ -259,12 +261,12 @@
 									        	</div>   																		
 												<!-- <div class ="dropdown-divider"></div> -->
 												<h2 class="text-right">Total: $55</h2>
-												<a class="btn btn-primary btn-buy btn-check" href="#" role="button">Check Out</a>
+												<a class="btn-customer primary btn col-12" href="#" role="button">Check Out</a>
 									    </div>								
 								    	</li>
 								    	
 					        		</div> 
-					        		<div class="wrap-login d-flex">
+					        		<div class="wrap-login d-flex align-items-center">
 					        			<li class="nav-item log-in">
 					          			<a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter">Register</a>
 										<div class="modal fade moda-register" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -294,7 +296,7 @@
 																</div>
 																<div class="pass" id="z-password"></div>
 																<input type="text" class="form-control" id="validationCustom01" placeholder="Password, type again please" required>
-																<a class="btn btn-primary btn-buy btn-check btn-login btn-register" href="#" role="button">Register</a>		
+																<a class="btn-customer secondary btn col-12" href="#" role="button">Register</a>		
 																<p class="login-with Register">Or login with:</p>
 																<div class="row">
 																	<div class="col-6"><a href="#"><img src="Img/FB-Sign-In.svg" alt=""></a></div>
@@ -327,7 +329,7 @@
 																		</div>
 																	</div>
 																	<div class="pass invalid-password" id="z-password-1"></div>															        
-																	<a id="click-login"  class=" btn btn-primary btn-buy btn-check btn-login" href="#" role="button" data-dismiss="modal">Login</a>
+																	<a id="click-login"  class=" btn-customer secondary btn col-12" href="#" role="button" data-dismiss="modal">Login</a>
 																	<a class="forgot text-center" href="#"><span>Forgot Password?</span></a>
 																	<p class="login-with">Or login with:</p>
 																	<div class="row">
@@ -342,8 +344,8 @@
 											</div>
 						        		</li>
 					        		</div>
-					        		<li class="nav-item dropdown dropdown-profile d-none customer">
-								        <a class="nav-link dropdown-toggle d-flex justify-content-between" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					        		<li class="nav-item dropdown dropdown-profile d-none customer align-items-center">
+								        <a class="nav-link dropdown-toggle d-flex justify-content-between w-100 customer-item" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								          	<div class="content-dropdown d-flex">
 								          		<span>Boby Haryanto</span>
 								          	</div>
@@ -514,9 +516,113 @@
 				</header>
 			</div>
 			<div class="content">
-				<div class="container">
-					<h1>Wishlist</h1>
-					<p class="text-center wishlist-empty">You don’t have any wishlist yet.</p>
+				<div class="container container-whishlish">
+					<div class="wrap-wishlist d-flex justify-content-between">
+						<h1 class="title-wishlist web-block">Wishlist</h1>
+						<div class="col-md-2 col-sm-12 dropdown-wishlist">
+							<div class="dropdown show">
+								<a class="btn dropdown-toggle btn-dropdown d-flex justify-content-between your-cart-dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<span>Product</span>
+									<img src="Img/arrow-black.svg" alt="">										
+								</a>
+								<div class="dropdown-menu dropdown-detail transform-dropdown-menu" aria-labelledby="dropdownMenuLink" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 46px, 0px); top: 0px; left: 0px; will-change: transform;">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row whishlist">							
+						<div class="col-product col-md-4">
+							<div class="card card-product">
+							    <img class="img-fluid" src="Img/product-2.png" alt="...">
+							    <div class="card-body">
+								    <div class="add-card d-flex">
+							      		<img src="Img/card.svg" alt="">
+							      		<span>Add to Cart</span>
+							      	</div>						
+							    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
+							      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&amp;...</a></h3>			      
+							      	<p class="card-text text-muted"><a href="#">$5.00</a></p>					
+							    </div>
+							</div>
+						</div>
+						<div class="col-product col-md-4">
+							<div class="card card-product">
+							    <img class="img-fluid" src="Img/product-2.png" alt="...">
+							    <div class="card-body">
+								    <div class="add-card d-flex">
+							      		<img src="Img/card.svg" alt="">
+							      		<span>Add to Cart</span>
+							      	</div>						
+							    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
+							      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&amp;...</a></h3>			      
+							      	<p class="card-text text-muted"><a href="#">$5.00</a></p>					
+							    </div>
+							</div>
+						</div>
+						<div class="col-product col-md-4">
+							<div class="card card-product">
+							    <img class="img-fluid" src="Img/product-first.jpg" alt="...">
+							    <p class="sale-off text-center">50% off</p>
+							    <div class="card-body">
+								    <div class="add-card d-flex">
+							      		<img src="Img/card.svg" alt="">
+							      		<span>Add to Cart</span>
+							      	</div>						
+							    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
+							      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&amp;...</a></h3>
+							      	<div class="d-flex">
+							      		<p class="text-sale-off">$10.00</p>	
+							      		<p class="card-text text-muted"><a href="#">$5.00</a></p>		      		
+							      	</div>						      					
+							    </div>
+							</div>
+						</div>
+						<div class="col-product col-md-4">
+							<div class="card card-product">
+							    <img class="img-fluid" src="Img/product-2.png" alt="...">
+							    <div class="card-body">
+								    <div class="add-card d-flex">
+							      		<img src="Img/card.svg" alt="">
+							      		<span>Add to Cart</span>
+							      	</div>						
+							    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
+							      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&amp;...</a></h3>			      
+							      	<p class="card-text text-muted"><a href="#">$5.00</a></p>					
+							    </div>
+							</div>
+						</div>
+						<div class="col-product col-md-4">
+							<div class="card card-product">
+							    <img class="img-fluid" src="Img/product-2.png" alt="...">
+							    <div class="card-body">
+								    <div class="add-card d-flex">
+							      		<img src="Img/card.svg" alt="">
+							      		<span>Add to Cart</span>
+							      	</div>						
+							    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
+							      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&amp;...</a></h3>			      
+							      	<p class="card-text text-muted"><a href="#">$5.00</a></p>					
+							    </div>
+							</div>
+						</div>
+						<div class="col-product col-md-4">
+							<div class="card card-product">
+							    <img class="img-fluid" src="Img/product-2.png" alt="...">
+							    <div class="card-body">
+								    <div class="add-card d-flex">
+							      		<img src="Img/card.svg" alt="">
+							      		<span>Add to Cart</span>
+							      	</div>						
+							    	<p class="card-text seller-name"><a href="#">Seller Name</a></p>
+							      	<h3 class="card-title"><a href="#">Honeycomb Tea Signature by Tea&amp;...</a></h3>			      
+							      	<p class="card-text text-muted"><a href="#">$5.00</a></p>					
+							    </div>
+							</div>
+						</div>						
+					</div>
 				</div>
 			</div>
 			<footer class="web-block">
@@ -581,13 +687,11 @@
 		</div>
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		
-		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 		<script src="https://kit.fontawesome.com/695093ff3f.js"></script>
-		<script type="text/javascript" src="script/menu.js"></script>		
 		<script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.18/jquery-ui.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+		<script type="text/javascript" src="script/menu.js"></script>
 	</body>
 </html>
