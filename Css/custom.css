@@ -109,6 +109,9 @@ span{
 	padding-right: 0;
 	padding-left: 0;
 }
+.d-sm-none{
+	display: block !important;
+}
 /*=====================End base=================================*/
 /*=====================components===============================*/
 /*-----------------Button---------------------------------------*/
@@ -988,6 +991,8 @@ input.number{
 	width: 445px !important;
 	margin-top: 30px !important;
 	top: 82px !important;
+	border: none !important;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
 	 }
 body.store ul.ui-autocomplete:last-of-type{
 	top: 52.5em !important;
@@ -1232,7 +1237,7 @@ span.author{
 .header-cart-mobi{
 	padding-top: 20px;
 	padding-bottom: 20px;
-	box-shadow: 0px 12px 48px rgba(0, 0, 0, 0.04);
+	box-shadow: 0px 4px 16px rgba(34, 40, 49, 0.08);
 	background-color: #ffffff;
 	margin-bottom: 20px;
 	}
@@ -1484,6 +1489,7 @@ a.forgot{
 }
 .body-sidepanel{
 	background-color: rgba(19, 15, 20, 0.7);
+	height: 100%;
 }
 .wrap-body{
 	height: 100%;
@@ -2319,6 +2325,12 @@ a.back{
 }
 .tab-user a:hover{
 	text-decoration: none;
+}
+.click-openfile{
+	cursor: pointer;
+}
+.wrap-address .form-group{
+	padding-left: 0;
 }
 /*end-user*/
 /*store*/
