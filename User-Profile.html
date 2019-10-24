@@ -237,12 +237,12 @@
 			<div id="cart-mobi-header" class="cart-mobi">			
 				<header class="header-cart-mobi">
 					<div class="container">
-					<div class="container wrap-mdi">
-						<p class="text-center">Cart</p>
-						<div onclick="closeCart()" class="close-cart">
-							<img src="Img/mdi_menu.svg" alt="">
+						<div class="container wrap-mdi">
+							<p class="text-center">Cart</p>
+							<div onclick="closeCart()"  class="close-cart">
+								<img src="Img/mdi_menu.svg" alt="">
+							</div>
 						</div>
-					</div>
 					</div>							
 				</header>
 				<div class="body-cart-mobi">
@@ -251,8 +251,8 @@
 							<div class="left d-flex">
 								<img class="img-your-cart img-cart-mobile" src="Img/yourcart-1.png" alt="">
 								<div class="detail-product-yourcart">
-									<span class="name-product">Itern Name</span>
-									<div class="d-flex amount-main">
+									<span class="name-product">Itern Name</span>									
+									<div class="d-flex amount-main amount-details amount-cart">
 										<div class="button-1 col main-reduction"><img src="Img/reduction.svg" alt=""></div>
 										<input type="text" class="input number numbar-main" value="1">
 										<div class="col button-2 main-add"><img src="Img/add.svg" alt=""></div>
@@ -266,13 +266,13 @@
 							<div class="left d-flex">
 								<img class="img-your-cart img-cart-mobile" src="Img/yourcart-1.png" alt="">
 								<div class="detail-product-yourcart">
-									<span class="name-product">Itern Name</span>
-									<div class="d-flex amount-main">
+									<span class="name-product">Itern Name</span>									
+									<div class="d-flex amount-main amount-details amount-cart">
 										<div class="button-1 col main-reduction"><img src="Img/reduction.svg" alt=""></div>
 										<input type="text" class="input number numbar-main" value="1">
 										<div class="col button-2 main-add"><img src="Img/add.svg" alt=""></div>
 									</div>
-								</div>	
+								</div>
 							</div>
 							<h3>US$ 30</h3>
 						</div>
@@ -281,8 +281,8 @@
 							<div class="left d-flex">
 								<img class="img-your-cart img-cart-mobile" src="Img/yourcart-1.png" alt="">
 								<div class="detail-product-yourcart">
-									<span class="name-product">Itern Name</span>
-									<div class="d-flex amount-main">
+									<span class="name-product">Itern Name</span>									
+									<div class="d-flex amount-main amount-details amount-cart">
 										<div class="button-1 col main-reduction"><img src="Img/reduction.svg" alt=""></div>
 										<input type="text" class="input number numbar-main" value="1">
 										<div class="col button-2 main-add"><img src="Img/add.svg" alt=""></div>
@@ -291,12 +291,13 @@
 							</div>
 							<h3>US$ 30</h3>
 						</div>
-						
-						<div class="text-total d-flex justify-content-between">
-							<p>All price are inclusive Tax 10%</p>
-							<h3>Total</h3>
-						</div>
-						<h1 class="text-right">US$ 55</h1>
+						<div class="flex-total align-items-center d-flex">
+							<div class="col">
+								<small>Total</small>
+								<h2>US$ 90</h2>
+							</div>									
+							<button class="btn-customer primary btn col-7" role="button">Check Out</button>
+						</div>					
 					</div>
 				</div>			
 			</div>
