@@ -256,9 +256,9 @@
 	.siler-mobi{
 		margin-left: -30px;
     	margin-right: -30px;
-    	margin-top: -20px;
     	margin-bottom: 20px;
     	position: relative;
+    	margin-top: -19px;
 	}
 	.heart-absolute{
 		top: 69px;
@@ -312,6 +312,7 @@
 		border: none;
 		padding-bottom: 15px;
 		padding-top: 15px;
+		bottom: 0;
 	}
 	.details-sale span.author{
 		margin-bottom: 27px;
@@ -690,6 +691,21 @@
 		position: relative;
 		z-index: 3;
 	}
+	.cart-mobi-product{
+		box-shadow: none !important;
+	}
+	.cart-mobi-product .header-cart-mobi{
+		box-shadow: none;
+		margin-bottom: 9px;
+	}
+	.tab-product{
+		box-shadow: 0px 5px 16px rgba(34, 40, 49, 0.08);
+		height: 36px;
+		padding-left: 15px;
+		margin-right: -21px;
+		margin-left: -21px;
+		margin-bottom: 20px;
+	}
 	/*end-product*/
 	/*cart-mobi*/
 	.your-cart {
@@ -762,6 +778,12 @@
 	}
 	body.store ul.ui-autocomplete:last-of-type{
 	top: 46.5em !important;
+	}
+	.btn-center{
+		justify-content: center;
+	}
+	.cart-fixed{
+		max-width: 97%;
 	}
 
 /*user-profile*/

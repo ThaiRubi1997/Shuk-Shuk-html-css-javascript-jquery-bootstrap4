@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
+        <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
         <script type="text/javascript" src="script/jquery-1.9.1.min.js"></script>	
 	</head>
 	<body id="gray" class="body-user-profile">
@@ -561,8 +562,8 @@
 			                                <div class="row">
 			                                    <div class="col-md-6 col-sm-12">
 			                                       <div class="form-group">
-			                                       		<label class="color-gray">Date of Birth</label>
-														<input id="name" name="name" type="text" class="form-control" placeholder="DD-MM-YY">
+			                                       		<label class="color-gray">Date of Birth</label>			
+														<input id="datepicker" lass="form-control" placeholder="DD-MM-YY" />
 													</div>
 			                                    </div>
 			                                    <div class="col-6 web-block">
@@ -587,23 +588,23 @@
 		                                        	<textarea id="address" name="address" class="form-control" placeholder="Address" rows="5"></textarea>
 		                                        </div>
 			                                   	<div class="form-group col-md-6 col-sm-12">
-			                                		<label>Payment Method</label>			                                   
+			                                		<label>Country</label>			                                   
 			                                        <div class="wrap-select">
 			                                            <select class="selectpicker" title="Country">
-			                                                <option>Credit Cards</option>
-			                                                <option>Ketchup</option>
-			                                                <option>Relish</option>
+			                                                <option>Country</option>
+			                                                <option>Country</option>
+			                                                <option>Country</option>
 			                                            </select>
 			                                            <img class="img-select" src="Img/arrow-black.svg" alt="">
 			                                        </div>				                                   
 			                                	</div>
 			                                   	<div class="form-group col-md-6 col-sm-12">
-			                                		<label>Payment Method</label>                                  
+			                                		<label>Province</label>                                  
 			                                        <div class="wrap-select">
 			                                            <select class="selectpicker" title="Province">
-			                                                <option>Credit Cards</option>
-			                                                <option>Ketchup</option>
-			                                                <option>Relish</option>
+			                                                <option>Province</option>
+			                                                <option>Province</option>
+			                                                <option>Province</option>
 			                                            </select>
 			                                            <img class="img-select" src="Img/arrow-black.svg" alt="">
 			                                        </div>				                                    
@@ -616,7 +617,7 @@
 		                            	</form>
 	                               	</div>
 	                            </div>
-	                            <div id="my-oder" class="container tab-pane fade"><br>
+	                            <div id="my-oder" class="container tab-pane web-block"><br>
 	                             	<div class="col-12  personal-information my-oder">
 										<div class="title-oder d-flex justify-content-between">
 											<h2>My Order</h2>
@@ -652,7 +653,7 @@
 										</div>
 									</div>
 	                            </div>
-	                            <div id="my-oder-detail" class="container tab-pane fade">
+	                            <div id="my-oder-detail" class="container tab-pane web-block">
 	                            	<div class="col-12 col-collap">
 	                            		<div class="personal-information details-oder">
 										<a data-toggle="tab" href="#my-oder" class="back" id="back-to">&lt;- Back To My Order</a>
@@ -833,5 +834,6 @@
 		<script type="text/javascript" src="script/user-profile.js"></script>		
 		<script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.18/jquery-ui.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+        <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
 	</body>
 </html>
