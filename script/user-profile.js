@@ -5,7 +5,7 @@ $(function(){
    $('#datepicker').datepicker({
             uiLibrary: 'bootstrap4'
     });
-	$('#order').click(function(){
+  $('#order').click(function(){
           $('#track-oder').addClass('d-none');
           $('#check-circle').removeClass('d-none');
     })
@@ -26,6 +26,9 @@ $(function(){
         $('#my-oder-detail').removeClass('active');
         $('#view-detail').removeClass('active');
         $('#home').removeClass('active');
+        $("#my-oder").attr("aria-expanded","true");
+        $("#my-oder-detail").attr("aria-expanded","flase");
+        $("#home").attr("aria-expanded","flase");
     })
     $('#view-detail').click(function(){
         $('#my-oder-detail').addClass('active');
@@ -33,24 +36,33 @@ $(function(){
         $('#my-oder').removeClass('active');
         $('#view-detail').addClass('active');
         $('#home').removeClass('active');
+        $("#my-oder-detail").attr("aria-expanded","true");
+        $("#my-oder").attr("aria-expanded","flase");
+        $("#home").attr("aria-expanded","flase");
     })
     $('#li-my-oder').on({
-	    'click': function() {
-	       	$('#icon-order').attr('src','Img/order-black.svg');
+      'click': function() {
+          $('#icon-order').attr('src','Img/order-black.svg');
           $('#my-oder').addClass('active');
           $('#my-oder-detail').removeClass('active');
           $('#view-detail').removeClass('active');
           $('#home').removeClass('active');
-    	}
-	});
-	$('#account-tab').on({
-	    'click': function() {
-	       	$('#icon-order').attr('src','Img/order-gray.svg');
+          $("#my-oder").attr("aria-expanded","true");
+          $("#home").attr("aria-expanded","flase");
+          $("#my-oder-detail").attr("aria-expanded","flase");
+      }
+  });
+  $('#account-tab').on({
+      'click': function() {
+          $('#icon-order').attr('src','Img/order-gray.svg');
           $('#home').addClass('active');
           $('#my-oder-detail').removeClass('active');          
           $('#my-oder').removeClass('active');
           $('#view-detail').removeClass('active');
+          $("#home").attr("aria-expanded","true");
+          $("#my-oder").attr("aria-expanded","flase");
+          $("#my-oder-detail").attr("aria-expanded","flase");
 
-    	}
-	});
+      }
+  });
  })

@@ -426,7 +426,9 @@ input{
 a.btn-dropdown:hover{
 	color: #4E5662;
 }
-
+input#datepicker{
+	border-radius: 4px;
+}
 input.code{
 	width: 160px;
 }
@@ -2419,6 +2421,9 @@ a.back{
 	}
 .store header{
 	margin-bottom: 0;
+}
+.input-group-append{
+	display: none;
 }
 /*end-store*/
 /*product-details*/
