@@ -229,8 +229,8 @@ span{
 	color: #ffffff;
 	display: flex;
 	justify-content: center;
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-top: 12px !important;
+	padding-bottom: 12px !important;
 }
 .secondary-icon:hover{
 	background-color: #30B6A4;
@@ -264,8 +264,8 @@ span{
 	color: #ffffff;
 	display: flex;
 	justify-content: center;
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-top: 12px !important;
+	padding-bottom: 12px !important;
 	border: 1px solid #E4E8E8;
 }
 
@@ -278,8 +278,8 @@ span{
 .btn-icon{
 	display: flex;
 	justify-content: center;
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-top: 12px !important;
+	padding-bottom: 12px !important;
 	border: 1px solid #E4E8E8;
 }
 .tertiary-icon p{
@@ -1848,8 +1848,8 @@ a.coming-soon span{
 	border-radius: 25px;
 	display: flex;
 	justify-content: center;
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-top: 12px !important;
+	padding-bottom: 12px !important;
 	border: 1px solid #E4E8E8;
 	width: 160px;
 }
