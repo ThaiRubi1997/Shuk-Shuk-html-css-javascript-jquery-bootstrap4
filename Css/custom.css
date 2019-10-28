@@ -156,8 +156,8 @@ span{
 }
 .btn-customer{
 	text-align: center;
-	padding-top: 15px;
-	padding-bottom: 14px;
+	padding-top: 15px !important;
+	padding-bottom: 14px !important;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
@@ -208,8 +208,8 @@ span{
 	color: #ffffff;
 	display: flex;
 	justify-content: center;
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-top: 12px !important;
+	padding-bottom: 12px !important;
 }
 .primary-icon:hover{
 	background-color: #413EC1;
