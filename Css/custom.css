@@ -4,7 +4,7 @@ body{
 	font-family: 'Inter Regular';
 }
 body#gray{
-	background-color: #E5E5E5;
+	background-color: #F6F8F8;
 }
 .container{
 	max-width: 1184px;
@@ -113,6 +113,9 @@ span{
 }
 .color-red{
 	color: #EB4242;
+}
+.color-custom{
+	color: #30B6A4;
 }
 .col-select{
 	padding-right: 0;
@@ -382,6 +385,8 @@ a.load-more{
 }
 .wrap-select div.dropdown-menu{
 	transform: translate3d(0px, 48px, 0px) !important;
+	border: none;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
 }
 /*end-dropdown*/
 .input-customer{
@@ -1517,6 +1522,8 @@ a.forgot{
 }
 .wrap-body{
 	height: 100%;
+	overflow: hidden;
+	flex-flow: row wrap;
 }
 .col-sidepanel{
 	padding-left: 0;
@@ -2243,7 +2250,7 @@ span.flag-icon{
 	display: block;
 	margin-bottom: auto;
 	margin-top: auto;
-	margin-left: 16px;x
+	margin-left: 16px;
 }
 .personal-information{
 	margin-left: -15px;
