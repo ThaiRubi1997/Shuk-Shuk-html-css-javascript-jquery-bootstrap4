@@ -6,6 +6,9 @@ body{
 body#gray{
 	background-color: #F6F8F8;
 }
+.gray-dark{
+	background-color: #E5E5E5;
+}
 .container{
 	max-width: 1184px;
 	padding: 0;
@@ -73,6 +76,12 @@ html, body {
 .h-48px{
 	height: 48px !important;
 }
+.submit{
+	cursor: pointer;
+}
+.open-file{
+	cursor: pointer;
+}
 label{
 	margin-bottom: 0;
 	color: #222831;
@@ -126,6 +135,9 @@ span{
 }
 .mb-1{
 	margin-bottom: 16px !important;
+}
+.mt-30px{
+	margin-top: 30px;
 }
 /*=====================End base=================================*/
 /*=====================components===============================*/
@@ -2549,6 +2561,152 @@ ul.detail-review{
 	color: #413EC1;
 }
 /*end-product-detail*/
+/*messages*/
+.Messages{
+	height: 532px;
+	border-radius: 8px;
+	margin-bottom: 31px;
+}
+ul.chat-box{
+	margin: 0;
+	padding: 0;
+	max-height: 459px;
+	overflow-y: auto;
+	margin-right: 3px;
+	list-style-type: none;
+}
+ul.chat-box li{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+ul.chat-box li a{
+	padding-bottom: 14px;
+	padding-top: 16px;
+	padding-left: 16px;
+	padding-right: 13px;
+	display: block;
+}
+ul.chat-box li a.active{
+	background-color: #F6F8F8;
+}
+.item-chat img{
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin-right: 12px;
+	border-radius: 50%;
+}
+ul.chat-box hr{
+	margin-left: 16px;
+	margin-right: 13px;
+	width: 100%;
+}
+.Messages hr{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.Messages .left h3{
+	display: block;
+	margin-left: 24px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+ul.chat-box li a{
+	text-decoration: none;
+}
+.Messages .left{
+	border-right: 1px solid #E4E8E8;
+	padding-right: 0;
+}
+.dot-red{
+	width: 6px;
+	height: 6px;
+	background-color: #EB4242;
+	border-radius: 50%;
+}
+.chat-box::-webkit-scrollbar {
+    width: 4px;
+    background-color: #ffffff;
+}
+.chat-box::-webkit-scrollbar-thumb {
+    background-color: #E4E8E8;
+    border-radius: 2px;
+}
+.item-chat p{
+	text-decoration: none !important;
+}
+.name-room img{
+	margin-right: 12px;
+}
+.right-room{
+	background-color: #F6F8F8;
+	border-radius: 0 8px 8px 0;
+}
+.name-room{
+	background-color: #ffffff;
+	padding: 11px 16px 12px 16px;
+}
+.detail-message{
+	background-color: #ffffff;
+	border-radius: 4px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+	padding: 12px;
+	margin-left: 24px;
+	margin-top: 24px;
+	width: 240px;
+	margin-right: 4px;
+}
+.mess-time{
+	margin-top: 24px;
+}
+.alert-none{
+	background-color: #ffffff;
+	padding: 10px 12px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+}
+.content-box-room{
+	position: relative;
+	height: 420.5px;
+}
+.alert-mess{
+	position: absolute;
+	bottom: 5px;
+	max-width: 96%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.send .input-group-text{
+	background-color: #ffffff !important;
+	border: none !important;
+}
+.send .input-group{
+	height: 55px;
+}
+.send input{
+	height: 100%;
+	max-height: 100%;
+}
+.send input{
+	border: none;
+}
+.right{
+	overflow: hidden;
+}
+.name-room img{
+	width: 32px;
+	height: 32px;
+}
+.name-room p{
+	line-height: 17px;
+}
+.select-message{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+/*end-messages*/
 /*remain*/
 .wrap-img{
 	border-radius: 8px;
