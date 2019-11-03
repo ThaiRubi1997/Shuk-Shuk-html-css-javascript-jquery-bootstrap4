@@ -24,4 +24,10 @@ $(function () {
  $('#click-Overview').click(function() {
  	$('#Reviews').removeClass('active');
  })
+ $('.img-review').click(function(){
+    if ($('#demo-image').hasClass('w-50')) {
+        $('#demo-image').removeClass('w-50')
+    }
+    else($('#demo-image').addClass('w-50'));    
+ });
 });

@@ -133,7 +133,8 @@
                 var elementHeight = ((height - ((pgwSlider.slideCount - 1) * 6)) / pgwSlider.slideCount);
                 var elementWidth = (100 / pgwSlider.slideCount);
                 pgwSlider.plugin.find('.ps-list > li').css({ width: elementWidth + '%' });
-
+                pgwSlider.plugin.find('.ps-current').attr("data-toggle", "modal");
+                pgwSlider.plugin.find('.ps-current').attr('data-target','#img-demo');
                 // Adjust main container
                 if (typeof animate != 'undefined' && animate && pgwSlider.config.maxHeight == null) {
 
