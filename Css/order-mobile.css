@@ -1684,6 +1684,28 @@ p.or-with{
 	font-size: 16px;
 	font-weight: 600;
 }
+.tab-mobi ul{
+	margin-left: -16px;
+}
+.tab-mobi li a{
+	padding-bottom: 16px;
+	color: #ACB4B4;
+	font-weight: 600;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: 0.2s;
+}
+.tab-mobi li a{
+	text-decoration: none !important;
+}
+.tab-mobi li a.active{
+	color: #413EC1;
+	border-bottom: 2px solid #413EC1;
+
+}
+.heder-tab{
+	padding-bottom: 15px;
+}
 /*order-detail*/
 .paid{
 	padding: 6px 12px;

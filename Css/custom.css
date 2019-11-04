@@ -73,6 +73,12 @@ html, body {
 .mb-2{
 	margin-bottom: 32px !important;
 }
+.mb-30px{
+	margin-bottom: 30px;
+}
+.mt-20px{
+	margin-top: 20px;
+}
 .h-48px{
 	height: 48px !important;
 }
@@ -860,6 +866,30 @@ a.closebtn{
 	margin-right: auto;
 }
 /*end-header-main*/
+/*tab-header*/
+.tab-mobi ul{
+	margin-left: -16px;
+}
+.tab-mobi li a{
+	padding-bottom: 16px;
+	color: #ACB4B4;
+	font-weight: 600;
+	padding-left: 35px;
+	padding-right: 35px;
+	transition: 0.2s;
+}
+.tab-mobi li a{
+	text-decoration: none !important;
+}
+.tab-mobi li a.active{
+	color: #413EC1;
+	border-bottom: 2px solid #413EC1;
+
+}
+.heder-tab{
+	padding-bottom: 15px !important;
+}
+/*end tab-header*/
  /*----------------End header------------------------------------*/
  /*----------------footer------------------------------------*/
  .menu-footer ul{

@@ -658,7 +658,15 @@
 		color: #413EC1;
 		cursor: pointer;
 	}
-
+	.profile-picture{
+		margin-bottom: 30px;
+	}
+	.personal-information{
+		padding-top: 30px;
+	}
+	.step-accound .form-group{
+		margin-bottom: 20px;
+	}
 	/*enduser-profile*/
 	/*product-detail*/
 	ul.detail-review{
