@@ -5,10 +5,6 @@ $(function(){
    $('#datepicker').datepicker({
             uiLibrary: 'bootstrap4'
     });
-  $('#order').click(function(){
-          $('#track-oder').addClass('d-none');
-          $('#check-circle').removeClass('d-none');
-    })
     $('#edit-accout').click(function(){
           $('#page-accout').addClass('d-none');
           $('#tab-mobi').removeClass('d-sm-none');
@@ -20,26 +16,7 @@ $(function(){
           $('#tab-mobi').addClass('d-sm-none');
           $('#header-1').removeClass('d-none');
           $('#header-2').addClass('d-none');
-    })
-    $('#back-to').click(function(){
-        $('#my-oder').addClass('active');
-        $('#my-oder-detail').removeClass('active');
-        $('#view-detail').removeClass('active');
-        $('#home').removeClass('active');
-        $("#my-oder").attr("aria-expanded","true");
-        $("#my-oder-detail").attr("aria-expanded","flase");
-        $("#home").attr("aria-expanded","flase");
-    })
-    $('#view-detail').click(function(){
-        $('#my-oder-detail').addClass('active');
-        $('#my-oder-detail').removeClass('fade');
-        $('#my-oder').removeClass('active');
-        $('#view-detail').addClass('active');
-        $('#home').removeClass('active');
-        $("#my-oder-detail").attr("aria-expanded","true");
-        $("#my-oder").attr("aria-expanded","flase");
-        $("#home").attr("aria-expanded","flase");
-    })
+    })   
     $('#li-my-oder').on({
       'click': function() {
           $('#icon-order').attr('src','Img/order-black.svg');
