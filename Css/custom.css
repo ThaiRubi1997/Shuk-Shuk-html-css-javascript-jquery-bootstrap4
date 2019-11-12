@@ -118,9 +118,7 @@ span{
 	line-height: 21px;
 	letter-spacing: -0.011em;
 }
-::-webkit-textarea-placeholder {
-  color: red;
-}
+
 .col-small{
 	padding-left: 8px;
 	padding-right: 8px;
@@ -433,9 +431,7 @@ input.input-error{
 .custom-control-input:focus~.custom-control-indicator{
 	box-shadow: none;
 }
-.custom-control-indicator:active,.custom-control-indicator:.btn:focus{
-	 outline:none !important;
-}
+
 input{
 	max-height: 48px;
 }
@@ -1089,7 +1085,7 @@ ul.ui-autocomplete li.ui-menu-item:last-child{
 a.ui-corner-all{
 	background-image: none !important;
 	border: none !important;
-	background-color: none !important;
+	/*background-color: none !important;*/
 	background: none !important;
 }
 .ui-corner-all{
@@ -1439,7 +1435,6 @@ span.author{
 }
 .login-title{
 	margin-bottom: 19px;
-	margin-top: 
 }
 .login-title span{
 	color: #413EC1;
