@@ -1738,6 +1738,9 @@ img.img-invoice{
 	padding: 15px 20px;
 	background-color: #F6F8F8;
 }
+.heder-tab {
+    padding-bottom: 15px !important;
+}
 .mb-18px{
 	margin-bottom: 18px;
 }
@@ -1749,6 +1752,9 @@ img.img-invoice{
 }
 .mb-30px{
 	margin-bottom: 30px;
+}
+.mb-59px{
+	margin-bottom: 59px;
 }
 /*end-order-detail*/
 /*end-order*/
