@@ -29,6 +29,24 @@ $(function(){
           $("#my-oder-detail").attr("aria-expanded","flase");
       }
   });
+    $('#back-to').on({
+      'click': function() {
+          $('#my-oder').addClass('active');
+          $('#my-oder-detail').removeClass('active');
+          $('.view-detail').removeClass('active');
+          $("#my-oder").attr("aria-expanded","true");
+          $("#my-oder-detail").attr("aria-expanded","flase");
+      }
+  });
+    $('.view-detail').on({
+      'click': function() {
+          $('#my-oder').removeClass('active');
+          $('#my-oder-detail').addClass('active');
+          $(this).addClass('active');
+          $("#my-oder").attr("aria-expanded","flase");
+          $("#my-oder-detail").attr("aria-expanded","true");
+      }
+  });
   $('#account-tab').on({
       'click': function() {
           $('#icon-order').attr('src','Img/order-gray.svg');
@@ -39,7 +57,6 @@ $(function(){
           $("#home").attr("aria-expanded","true");
           $("#my-oder").attr("aria-expanded","flase");
           $("#my-oder-detail").attr("aria-expanded","flase");
-
       }
   });
  })

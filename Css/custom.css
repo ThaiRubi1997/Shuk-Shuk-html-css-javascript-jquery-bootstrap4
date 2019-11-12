@@ -79,6 +79,9 @@ html, body {
 .mt-20px{
 	margin-top: 20px;
 }
+.mb-23px{
+	margin-bottom: 23px;
+}
 .h-48px{
 	height: 48px !important;
 }
@@ -1538,7 +1541,6 @@ a.forgot{
 .wrap-scroll-seller{
 	width: 100%;
     overflow: hidden;
-    height: 216px;
     position: relative;
 }
 /*end-scroll*/
@@ -2225,6 +2227,15 @@ ul.tab-user{
 .active .order i{
 	color: #4E5662;
 }
+.order{
+	background-color: none;
+} 
+.active .order p{
+	color: #4E5662;
+}
+.active .order i{
+	color: #4E5662;
+}
 .order i{
 	color: #ACB4B4;
 	font-size: 24px;
@@ -2416,6 +2427,19 @@ a.back{
 .Active-Order p.color-custom{
 	font-size: 16px;
 	font-weight: 600;
+}
+.title-oder{
+	margin-bottom: 32px;
+}
+.tab-web li a{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 18px;
+}
+.Active-Order hr{
+	margin-top: 15px;
+	margin-bottom: 23px;
+	margin-left: 35px;
 }
 /*end-user*/
 /*store*/
