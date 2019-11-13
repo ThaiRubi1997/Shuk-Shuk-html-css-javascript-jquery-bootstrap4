@@ -118,7 +118,9 @@ span{
 	line-height: 21px;
 	letter-spacing: -0.011em;
 }
-
+::-webkit-textarea-placeholder {
+  color: red;
+}
 .col-small{
 	padding-left: 8px;
 	padding-right: 8px;
@@ -431,7 +433,9 @@ input.input-error{
 .custom-control-input:focus~.custom-control-indicator{
 	box-shadow: none;
 }
-
+.custom-control-indicator:active,.custom-control-indicator:.btn:focus{
+	 outline:none !important;
+}
 input{
 	max-height: 48px;
 }
@@ -1085,7 +1089,7 @@ ul.ui-autocomplete li.ui-menu-item:last-child{
 a.ui-corner-all{
 	background-image: none !important;
 	border: none !important;
-	/*background-color: none !important;*/
+	background-color: none !important;
 	background: none !important;
 }
 .ui-corner-all{
@@ -1435,6 +1439,7 @@ span.author{
 }
 .login-title{
 	margin-bottom: 19px;
+	margin-top: 
 }
 .login-title span{
 	color: #413EC1;
@@ -1554,7 +1559,9 @@ a.forgot{
 	z-index: 100; 
 	top: 0;
 	left: 0;
-	overflow-x: hidden; 
+	bottom: 0;
+	overflow-x: hidden;
+	overflow-y: scroll; 
 	transition: 0.5s;
 	height: 100%; 
 }
@@ -1574,7 +1581,7 @@ a.forgot{
 .sp-loin{
 	height:33.3333333%;
 	max-height: 33.3333333%;
-	padding: 32px 20px;
+	padding: 32px 0;
 	background-color: #F6F8F8;
 }
 p.or-with{
