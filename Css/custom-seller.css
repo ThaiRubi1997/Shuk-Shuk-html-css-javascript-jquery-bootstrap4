@@ -545,7 +545,7 @@ input.code{
 }
 .custom-checkbox span.custom-text{
 	margin-left: 12px;
-	padding-top: 0px;
+	padding-top: 5px;
 }
 .custom-control-indicator:focus{
 	border: none;
@@ -670,8 +670,10 @@ a.logo{
 .header-main form button{
 	padding: 0;
     position: absolute;
+    top: 50%;
     right: 15px;
-    background-color: #ffff;;
+    background-color: #ffff;
+    transform: translate(-50%,-50%);
 }
 .header-main form button{
 	color: #413EC1;
@@ -1775,6 +1777,9 @@ ul.pagination{
 	padding-bottom: 4px !important;
 	max-height: 32px;
 }
+.add-photo{
+	cursor:pointer;
+}
 /* end Product Management / Edit Product */
 /*end-page*/
 /*seller*/
@@ -2044,7 +2049,6 @@ p.body-seller-home-empty{
 	padding: 14px 16px;
 }
 .form-input-product{
-	
 }
 .check-edit input{
 	width: 20px;
@@ -2096,7 +2100,7 @@ p.body-seller-home-empty{
 	margin-bottom: 7px;
 }
 .row-add-photo{
-	margin-bottom: 59px;
+	margin-bottom: 43px;
 }
 .btn-gray{
 	background-color: #E4E8E8 !important;;
@@ -2187,3 +2191,6 @@ p.body-seller-home-empty{
 	margin-bottom: 16px;
 }
 /*end-seller*/
+/*select*/
+
+/*end select*/
