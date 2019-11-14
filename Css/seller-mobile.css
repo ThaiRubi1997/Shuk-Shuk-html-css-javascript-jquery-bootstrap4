@@ -169,6 +169,15 @@
 		width: 100%;
 	}
 	/*end-add-product*/
+	.wrap-scroll{
+		overflow-x: scroll;
+	}
+	.table-home-seller{
+		width: 1160px;
+	}
+	p.body-seller-home-empty{
+		text-align: left;
+	}
 }
 @media (min-width: 1000px) and (max-width: 1100px){
 	.container{
