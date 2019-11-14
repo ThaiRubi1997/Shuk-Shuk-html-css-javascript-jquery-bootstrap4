@@ -1592,8 +1592,8 @@ a.forgot{
 	padding-right: 0;
 }
 .sp-loin{
-	height:33.33333%;
-	max-height: 33.3333%;
+	height:50%;
+	max-height: 50%;
 	padding: 32px 20px;
 	background-color: #F6F8F8;
 }
@@ -2189,6 +2189,9 @@ p.body-seller-home-empty{
 .bg-cover-store{
 	margin-top: 8px;
 	margin-bottom: 16px;
+}
+.body-edit-product .custom-checkbox span.custom-text{
+	padding-top: 0;
 }
 /*end-seller*/
 /*select*/
