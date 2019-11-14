@@ -671,6 +671,15 @@
 	.step-accound .form-group{
 		margin-bottom: 20px;
 	}
+	.personal-information{
+		background-color: transparent;
+		padding: 0 0;
+		padding-top: 30px;
+		box-shadow: none;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 42px;
+	}
 	/*enduser-profile*/
 	/*product-detail*/
 	ul.detail-review{
@@ -711,6 +720,7 @@
 		margin-bottom: 9px;
 	}
 	.tab-product{
+		box-shadow: 0px 5px 16px rgba(34, 40, 49, 0.08);
 		height: 36px;
 		padding-left: 15px;
 		margin-right: -21px;
