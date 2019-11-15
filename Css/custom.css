@@ -2019,6 +2019,10 @@ h1.title-wishlist{
 	padding-left: 0;
 	padding-right: 0;
 }
+.row.whishlist{
+		margin-left: -8px;
+		margin-right: -8px;
+	}
 /*----------------end-wishlist--------------------------*/
 /*payment*/
 .from-information input{
