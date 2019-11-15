@@ -50,7 +50,7 @@ p{
 	letter-spacing: -0.011em;
 }
 html, body {
-	width: 100%;height: 100%;
+	width: 100%;
 }
 .web-block{
 	display: block;
@@ -1763,10 +1763,10 @@ p.or-with{
 	background-image: url(../Img/bg-category-1.jpg);
 }
 .bg-category-2{
-	background-image: url(../Img/bg-category-2.png);
+	background-image: url(../Img/bg-category-2.jpg);
 }
 .bg-category-3{
-	background-image: url(../Img/bg-category-3.png);
+	background-image: url(../Img/bg-category-3.jpg);
 }
 .category .detail{
 	border-radius: 8px;
@@ -2881,7 +2881,7 @@ ul.chat-box li a{
 	margin-left: 6px;
 }
 .wrap-seller-info{
-	background-image: url(../Img/bg-info-1.png);
+	background-image: url(../Img/bg-info-1.jpg);
 	width: 480px;
 	height: 100%;
 	padding: 24px;
