@@ -365,7 +365,7 @@
 		margin-bottom: 15px;
 	}
 	.tax{
-		max-width: 160px;
+		max-width: 150px;
 	}
 	.grand-total .wrap-total{
 		margin-bottom: 38px;
@@ -521,7 +521,7 @@
 		margin-bottom: 20px;
 	}
 	.wrap-seller-info{
-		background-image: url(../Img/bg-info-mobi.png);
+		background-image: url(../Img/bg-info-mobi.jpg);
 		width: 248px;
 		min-width: 248px;
 		height: 248px;
@@ -768,6 +768,12 @@
 		bottom: 58px;
 	}
 	/*end-messages-room*/
+	/*wishlist*/
+	.row.whishlist{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	/*end-wishlish*/
 }
 
 @media (min-width: 1000px) and (max-width: 1100px){
