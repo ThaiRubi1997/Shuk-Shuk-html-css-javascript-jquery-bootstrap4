@@ -82,6 +82,9 @@ html, body {
 .mb-30px{
 	margin-bottom: 30px;
 }
+.mt-16px{
+	margin-top: 16px;
+}
 .mt-20px{
 	margin-top: 20px;
 }
@@ -450,6 +453,13 @@ input.input-error{
 }
 input{
 	max-height: 48px;
+	color: #4E5662;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.011em;
+	min-height: 48px;
 }
 .error{
 	color: #EB4242;
@@ -1780,6 +1790,51 @@ ul.pagination{
 .add-photo{
 	cursor:pointer;
 }
+/*seller-registration*/
+.header-seller-registration{
+	margin-bottom: 52px !important;
+}
+.btn-group {
+    width: 100%;
+}
+.phone .wrap-select {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 16px;
+}
+.profile-name .filter-option-inner span.flag-icon {
+    box-shadow: 0px 2px 4px rgba(34, 40, 49, 0.12);
+    padding: 0;
+}
+.wrap-select div.dropdown-menu {
+    transform: translate3d(0px, 48px, 0px) !important;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+}
+.wrap-flag img {
+    top: 20px;
+    right: 8px;
+}
+.img-select {
+    display: block;
+    position: absolute;
+}
+.dropup .dropdown-toggle::after{
+	display: none;
+}
+.input-group-append{
+	display: none;
+}
+.phone button {
+    border-radius: 4px 0px 0px 4px;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-right: none;
+}
+.phone input {
+    border-radius: 0px 4px 4px 0px;
+}
+/*end-seller-registration*/
 /* end Product Management / Edit Product */
 /*end-page*/
 /*seller*/
@@ -1804,8 +1859,11 @@ a:hover{
 .icon-hd-seller{
 	margin-left: 10px;
 }
-.step-active-color .number {
+.detail-step a.active .number {
     background-color: #30B6A4 !important;
+}
+.detail-step a.active .text{
+	color: #4E5662;
 }
 .gray-name{
 	color: #ACB4B4;
@@ -1829,9 +1887,10 @@ a:hover{
 	text-align: center;
 	color: #30B6A4;
 	position: absolute;
-	left: 39%;
-	top: 14px;
-	font-weight: 500;	
+	left:50%;
+	top: 50%;
+	font-weight: 500;
+	transform: translate(-50%,-50%);	
 }
 .wrap-update-img .input-group{
 	width: 100%;
@@ -1877,9 +1936,6 @@ p.about-seller{
 .update-photo p{
 	color: #ACB4B4;
 	font-weight: 500;
-}
-.upload-store p{
-	left: 32%;
 }
 .sl-regis-information{
 	margin-bottom: 88px;
@@ -1933,7 +1989,7 @@ p.color-red{
 	padding-bottom: 32px;
 }
 .bg-cover-seller-1{
-	background-image: url(../Img/bg-cover-store.jpg);
+	background-image: url(../Img/bg-cover-store.png);
 }
 .header-seller{
 	margin-bottom: 0;
@@ -2194,6 +2250,8 @@ p.body-seller-home-empty{
 	padding-top: 0;
 }
 /*end-seller*/
-/*select*/
-
-/*end select*/
+/*registration*/
+.sl-regis-information .form-group{
+	margin-bottom: 32px;
+}
+/*end registration*/

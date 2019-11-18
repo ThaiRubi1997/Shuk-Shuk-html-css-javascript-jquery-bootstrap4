@@ -213,19 +213,19 @@
 				<div class="container">
 					<ul class="nav step d-flex justify-content-center">
 						<li id="li-step-1" class="detail-step d-flex detail-step-w20 step-active-color">
-							<a class="item-step nav-link d-flex" data-toggle="tab" href="#tab-1">                         
+							<a id="item-step-1" class="item-step active nav-link d-flex" data-toggle="tab" href="#tab-1">      
 		                        <span class="d-block rounded-circle number">1</span>
 		                        <span class="text">Delivery Information</span>                            
 		                    </a>							
 						</li>
 						<li id="li-step-2" class="detail-step d-flex detail-step-w20">
-							<a class="nav-link d-flex" data-toggle="tab" href="#tab-2">                          
+							<a id="item-step-2" class="nav-link d-flex" data-toggle="tab" href="#tab-2">                       
 		                        <span class="d-block rounded-circle number">2</span>
 		                        <span class="text">Payment Method</span>                        
 		                    </a>
 						</li>
 						<li id="li-step-3" class="detail-step d-flex">
-							<a class="nav-link d-flex" data-toggle="tab" href="#tab-3">                           
+							<a id="item-step-3" class="nav-link d-flex" data-toggle="tab" href="#tab-3">                       
 		                        <span class="d-block rounded-circle number">3</span>
 		                        <span class="text">Complete Order</span>                       
 		                    </a>
@@ -235,217 +235,228 @@
 						<div id="tab-1" class="tab-pane active">
 							<div class="container">
 								<div class="body-seller-refistration">
-								<div class="seller-information">
-									<h2>Seller Information</h2>
-									<p class="about-seller d-block">Sed sodales risus sed fermentum, vitae et ipsum purus laoreet. Proin laoreet velit risus tellus. Eget eget ante turpis etiam malesuada ultrices. In maecenas est justo in sollicitudin.</p>
-								</div>
-								<div class="col-5 sl-regis-information  max-w-400">
-									<div class="detail-form">
-										<div class="row">
-											<div class="col-6">
-												<label class="gray-name">First Name *</label>
-												<input type="text" class="form-control" id="validationCustom01" value="Boby" required="">
+									<div class="seller-information">
+										<h2>Seller Information</h2>
+										<p class="about-seller d-block">Sed sodales risus sed fermentum, vitae et ipsum purus laoreet. Proin laoreet velit risus tellus. Eget eget ante turpis etiam malesuada ultrices. In maecenas est justo in sollicitudin.</p>
+									</div>
+									<div class="col-5 sl-regis-information  max-w-400">
+										<form>
+											<div class="group">
+												<div class="row">
+													<div class="col-6 form-group">
+														<label class="gray-name">First Name *</label>
+														<input type="text" class="form-control" id="validationCustom01" value="Boby" required="">
+													</div>
+													<div class="col-6 form-group">
+														<label class="gray-name">Last Name *</label>
+														<input type="text" class="form-control" id="validationCustom01" value="Haryanto" required="">
+													</div>
+												</div>
+											</div>						
+											<div class="form-group">
+												<label class="gray-name">Email Address *</label>
+												<input type="text" class="form-control" id="validationCustom01" placeholder="Email" value="email@gmail.com" required="">
 											</div>
-											<div class="col-6">
-												<label class="gray-name">Last Name *</label>
-												<input type="text" class="form-control" id="validationCustom01" value="Haryanto" required="">
+											<div class="form-group">
+				                           		<label class="color-gray">Date of Birth</label>			
+												<input id="datepicker" lass="form-control" placeholder="DD-MM-YY" />
 											</div>
-										</div>
-									</div>						
-									<div class="detail-form">
-										<label class="gray-name">Email Address *</label>
-										<input type="text" class="form-control" id="validationCustom01" placeholder="Email" value="email@gmail.com" required="">
-									</div>
-									<div class="form-group">
-		                           		<label class="color-gray">Date of Birth</label>			
-										<input id="datepicker" lass="form-control" placeholder="DD-MM-YY" />
-									</div>
-									<div class="detail-form">
-										<div class="note form-group profile-name">
-		                                    <label class="color-gray">Phone Number</label>
-		                                    <div class="btn-group phone">                                       
-		                                       <div class="wrap-select wrap-flag col-2">
-		                                            <select class="selectpicker">
-												        <option data-content='<span class="flag-icon flag-icon-id"></span>'></option>
-												        <option  data-content='<span class="flag-icon flag-icon-vn"></span>'></option>
-												    </select>
-		                                            <img class="img-select" src="Img/arrow-black.svg" alt="">
-		                                        </div>
-		                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Phone Number">
-		                                    </div>                                  
-		                                </div>
-									</div>
-									<div class="detail-form">
-										<label class="gray-name">Country of Citizenship *</label>
-										<input type="text" class="form-control" id="validationCustom01" placeholder="Email" value="Indonesia" required="">
-									</div>
-									<div class="detail-form">
-										<label class="gray-name">Country of Residence *</label>
-										<input type="text" class="form-control" id="validationCustom01" placeholder="Email" value="Indonesia" required="">
-									</div>
-									<div class="detail-form">
-										<label class="gray-name">ID Number *</label>
-										<input type="text" class="form-control" id="validationCustom01" placeholder="Email" value="Indonesia" required="">
-									</div>
-									<div class="detail-form wrap-update-img">
-										<p>Upload ID Photo</p>
-										<div class="input-group">								
-											<div class    ="custom-file">
-												<input type   ="file" class="custom-file-input update-img" id="inputGroupFile03" value="Update">				
+											<div class="form-group">
+												<div class="note form-group profile-name">
+				                                    <label class="color-gray">Phone Number</label>
+				                                    <div class="btn-group phone">                                       
+				                                       <div class="wrap-select wrap-flag col-2">
+				                                            <select class="selectpicker">
+														        <option data-content='<span class="flag-icon flag-icon-id"></span>'></option>
+														        <option  data-content='<span class="flag-icon flag-icon-vn"></span>'></option>
+														    </select>
+				                                            <img class="img-select" src="Img/arrow-black.svg" alt="">
+				                                        </div>
+				                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Phone Number">
+				                                    </div>                                  
+				                                </div>
 											</div>
-										</div>
-									</div>									
+											<div class="form-group">
+												<label class="gray-name">Country of Citizenship *</label>
+												<input type="text" class="form-control" id="validationCustom01" placeholder="Email" value="Indonesia" required="">
+											</div>
+											<div class="form-group">
+												<label class="gray-name">Country of Residence *</label>
+												<input type="text" class="form-control" id="validationCustom01" placeholder="Email" value="Indonesia" required="">
+											</div>
+											<div class="form-group">
+												<label class="gray-name">ID Number *</label>
+												<input type="text" class="form-control" id="validationCustom01" placeholder="Email" value="Indonesia" required="">
+											</div>
+											<div class="form-group">
+												<label class="color-gray mt-16px">Proof of ID</label>
+												<div class="detail-form wrap-update-img">
+													<p>Upload ID Photo</p>
+													<div class="input-group">								
+														<div class    ="custom-file">
+															<input type   ="file" class="custom-file-input update-img" id="inputGroupFile03" value="Update">				
+														</div>
+													</div>
+												</div>
+												
+											</div>
+										</form>									
+									</div>
+									<hr>
+									<div class="d-flex justify-content-center">
+										<div class="col-5  max-w-400">	
+											<div class="row">
+												<div class="col-6"><p class="pt-3">Step 1 of 3</p></div>
+												<div class="col-6"><a id="btn-step1" class="btn-customer secondary btn" href="#tab-2" data-toggle="tab">Continue</a></div>
+											</div>	
+										</div>													
+									</div>
 								</div>
-								<hr>
-								<div class="d-flex justify-content-center">
-									<div class="col-5  max-w-400">	
-										<div class="row">
-											<div class="col-6"><p class="pt-3">Step 1 of 3</p></div>
-											<div class="col-6"><a class="btn-customer secondary btn" href="#" role="button">Continue</a></div>
-										</div>	
-									</div>													
-								</div>
-							</div>
 							</div>							
 						</div>
 						<div id="tab-2" class="tab-pane">
 							<div class="container">
 								<div class="body-seller-refistration">
-								<div class="seller-information">
-									<h2>Store Information</h2>
-									<p class="about-seller d-block">Sed sodales risus sed fermentum, vitae et ipsum purus laoreet. Proin laoreet velit risus tellus. Eget eget ante turpis etiam malesuada ultrices. In maecenas est justo in sollicitudin.</p>
-								</div>
-								<div class="col-5 sl-regis-information  max-w-400">
-									<div class="detail-form">
-										<label class="gray-name">Type of Seller (Individual/NGO/Company)</label>
-										<div class="dropdown dropdown-filter ">
-											 <a class="btn dropdown-toggle btn-dropdown d-flex justify-content-between" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											    <span>Type of Seller</span>
-											    <img src="Img/arrow-black.svg" alt="">										
-											 </a>
-											 <div class="dropdown-menu dropdown-detail" aria-labelledby="dropdownMenuLink">
-											    <a class="dropdown-item" href="#">Action</a>
-											    <a class="dropdown-item" href="#">Another action</a>
-											    <a class="dropdown-item" href="#">Something else here</a>
-											 </div>
-										</div>
+									<div class="seller-information">
+										<h2>Store Information</h2>
+										<p class="about-seller d-block">Sed sodales risus sed fermentum, vitae et ipsum purus laoreet. Proin laoreet velit risus tellus. Eget eget ante turpis etiam malesuada ultrices. In maecenas est justo in sollicitudin.</p>
 									</div>
-									<label class="gray-name">Proof of NGO/Company seller only</label>						
-									<div class="detail-form wrap-update-img update-photo">
-										<p>Upload ID Photo</p>
-										<div class="input-group">								
-											<div class="custom-file">
-												<input type="file" class="custom-file-input update-img" id="inputGroupFile03" value="Update">				
+									<div class="col-5 sl-regis-information  max-w-400">
+										<form>
+											<div class="form-group">
+												<label class="gray-name">Type of Seller (Individual/NGO/Company)</label>
+												 <div class="wrap-select">
+		                                            <select class="selectpicker" title="Country">
+		                                              <option>Mustard</option>
+		                                              <option>Ketchup</option>
+		                                              <option>Relish</option>
+		                                            </select>
+		                                            <img class="img-select" src="Img/arrow-black.svg" alt="">
+		                                        </div>
 											</div>
-										</div>
-									</div>
-									<div class="detail-form">
-										<label class="gray-name">Type of Industry</label>
-										<div class="dropdown dropdown-filter ">
-											 <a class="btn dropdown-toggle btn-dropdown d-flex justify-content-between" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											    <span>Type of Industry</span>
-											    <img src="Img/arrow-black.svg" alt="">										
-											 </a>
-											 <div class="dropdown-menu dropdown-detail" aria-labelledby="dropdownMenuLink">
-											    <a class="dropdown-item" href="#">Action</a>
-											    <a class="dropdown-item" href="#">Another action</a>
-											    <a class="dropdown-item" href="#">Something else here</a>
-											 </div>
-										</div>
-									</div>
-									<div class="detail-form">
-										<label class="gray-name">Product Category Type</label>
-										<div class="dropdown dropdown-filter ">
-											 <a class="btn dropdown-toggle btn-dropdown d-flex justify-content-between" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											    <span>Product Category Type</span>
-											    <img src="Img/arrow-black.svg" alt="">										
-											 </a>
-											 <div class="dropdown-menu dropdown-detail" aria-labelledby="dropdownMenuLink">
-											    <a class="dropdown-item" href="#">Action</a>
-											    <a class="dropdown-item" href="#">Another action</a>
-											    <a class="dropdown-item" href="#">Something else here</a>
-											 </div>
-										</div>
-									</div>
-									<div class="detail-form">
-										<label class="gray-name">Store Name *</label>
-										<input type="text" class="form-control" id="validationCustom01" placeholder="Type your store name"  required="">
-									</div>
-									<div class="detail-form">
-										<label class="gray-name">Email Address *</label>
-										<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Type your store description (Keep it short and obvious)" rows="5"></textarea>
-									</div>
-									<label class="gray-name">Store Profile Photo</label>				
-									<div class="detail-form wrap-update-img upload-store">
-										<p>Upload Store Profile Picture</p>
-										<div class="input-group">								
-											<div class    ="custom-file">
-												<input type   ="file" class="custom-file-input update-img" id="inputGroupFile03" value="Update">				
+											<div class="form-group">
+												<label class="gray-name">Proof of NGO/Company seller only</label>				
+												<div class="detail-form wrap-update-img update-photo">
+													<p>Upload ID Photo</p>
+													<div class="input-group">								
+														<div class="custom-file">
+															<input type="file" class="custom-file-input update-img" id="inputGroupFile03" value="Update">				
+														</div>
+													</div>
+												</div>
+											</div>										
+											<div class="form-group">
+												<label class="gray-name">Type of Industry</label>
+												 <div class="wrap-select">
+		                                            <select class="selectpicker" title="Country">
+		                                              <option>Mustard</option>
+		                                              <option>Ketchup</option>
+		                                              <option>Relish</option>
+		                                            </select>
+		                                            <img class="img-select" src="Img/arrow-black.svg" alt="">
+		                                        </div>
 											</div>
-										</div>
-									</div>									
+											<div class="form-group">
+												<label class="gray-name">Product Category Type</label>
+												 <div class="wrap-select">
+		                                            <select class="selectpicker" title="Country">
+		                                              <option>Mustard</option>
+		                                              <option>Ketchup</option>
+		                                              <option>Relish</option>
+		                                            </select>
+		                                            <img class="img-select" src="Img/arrow-black.svg" alt="">
+		                                        </div>
+											</div>
+											<div class="form-group">
+												<label class="gray-name">Store Name *</label>
+												<input type="text" class="form-control" id="validationCustom01" placeholder="Type your store name"  required="">
+											</div>
+											<div class="form-group">
+												<label class="gray-name">Email Address *</label>
+												<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Type your store description (Keep it short and obvious)" rows="5"></textarea>
+											</div>
+											<div class="form-group">
+												<label class="gray-name">Store Profile Photo</label>				
+												<div class="detail-form wrap-update-img">
+													<p>Upload Store Profile Picture</p>
+													<div class="input-group">								
+														<div class    ="custom-file">
+															<input type   ="file" class="custom-file-input update-img" id="inputGroupFile03" value="Update">				
+														</div>
+													</div>
+												</div>
+											</div>										
+										</form>									
+									</div>
+									<hr>
+									<div class="d-flex justify-content-center">
+										<div class="col-5  max-w-400">	
+											<div class="row">
+												<div class="col-6"><p class="pt-3">Step 2 of 3</p></div>
+												<div class="col-6"><a id="btn-step2" class="btn-customer secondary btn" href="#tab-3" data-toggle="tab">Continue</a></div>
+											</div>	
+										</div>													
+									</div>
 								</div>
-								<hr>
-								<div class="d-flex justify-content-center">
-									<div class="col-5  max-w-400">	
-										<div class="row">
-											<div class="col-6"><p class="pt-3">Step 2 of 3</p></div>
-											<div class="col-6"><a class="btn btn-primary btn-buy btn-save" href="#" role="button">Continue</a></div>
-										</div>	
-									</div>													
-								</div>
-							</div>
 							</div>
 						</div>
 						<div id="tab-3" class="tab-pane">
 							<div class="container">
 								<div class="body-seller-refistration">
-						<div class="seller-information">
-							<h2>Finishing Your Registration</h2>
-							<p class="about-seller d-block">Sed sodales risus sed fermentum, vitae et ipsum purus laoreet. Proin laoreet velit risus tellus. Eget eget ante turpis etiam malesuada ultrices. In maecenas est justo in sollicitudin.</p>
-						</div>
-						<div class="col-5 sl-regis-information max-w-400">
-							<div class="detail-checkbox">
-								<label class="gray-name">Preferred Payment Method</label>
-								<div class="click-seller-registration d-flex">
-									<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-									<p>Same As My Contact</p>
+									<div class="seller-information">
+										<h2>Finishing Your Registration</h2>
+										<p class="about-seller d-block">Sed sodales risus sed fermentum, vitae et ipsum purus laoreet. Proin laoreet velit risus tellus. Eget eget ante turpis etiam malesuada ultrices. In maecenas est justo in sollicitudin.</p>
+									</div>
+									<form>
+										<div class="col-5 sl-regis-information max-w-400">
+											<div class="detail-checkbox form-group">
+												<label class="color-gray">Preferred Payment Method</label>
+												<div class="wrap-check">
+		                                            <label class="custom-control custom-checkbox">	                          
+		                                                <input type="checkbox" class="custom-control-input">
+		                                                <span class="custom-control-indicator"></span>
+		                                                <span class="custom-text">Bank Transfer (Virtual Account)</span>
+		                                            </label>
+		                                        </div>
+												<div class="wrap-check">
+		                                            <label class="custom-control custom-checkbox">	                          
+		                                                <input type="checkbox" class="custom-control-input">
+		                                                <span class="custom-control-indicator"></span>
+		                                                <span class="custom-text">Credit Card (Visa, MasterCard)</span>
+		                                            </label>
+		                                        </div>
+												<div class="wrap-check">
+		                                            <label class="custom-control custom-checkbox">	                          
+		                                                <input type="checkbox" class="custom-control-input">
+		                                                <span class="custom-control-indicator"></span>
+		                                                <span class="custom-text">E-Wallet (OVO)</span>
+		                                            </label>
+		                                        </div>								
+											</div>							
+											<div class="form-group">
+												<label class="gray-name">Preferred Delivery Method</label>
+												<div class="wrap-select">
+		                                            <select class="selectpicker" title="Select Duration">
+		                                              <option>Mustard</option>
+		                                              <option>Ketchup</option>
+		                                              <option>Relish</option>
+		                                            </select>
+		                                            <img class="img-select" src="Img/arrow-black.svg" alt="">
+		                                        </div>
+											</div>
+											<p class="color-red">We recommend you to use Shukshuk Delivery. We’re not responsible to guarantee the product shipping if you’re using self-delivery.</p>
+										</div>
+									</form>
+									<hr>
+									<div class="d-flex justify-content-center">
+										<div class="col-5 max-w-400">	
+											<div class="row">
+												<div class="col-6"><p class="pt-3">Step 3 of 3</p></div>
+												<div class="col-6"><a id="btn-step3" class="btn-customer secondary btn" href="#">Continue</a></div>
+											</div>	
+										</div>													
+									</div>
 								</div>
-								<div class="click-seller-registration d-flex">
-									<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-									<p>Card Payment</p>
-								</div>
-								<div class="click-seller-registration d-flex">
-									<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-									<p>E-Wallet (GO-PAY, OVO)</p>
-								</div>								
-							</div>							
-							<div class="detail-form">
-								<label class="gray-name">Type of Industry</label>
-								<div class="dropdown dropdown-filter ">
-									 <a class="btn dropdown-toggle btn-dropdown d-flex justify-content-between" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									    <span>Type of Industry</span>
-									    <img src="Img/arrow-black.svg" alt="">										
-									 </a>
-									 <div class="dropdown-menu dropdown-detail" aria-labelledby="dropdownMenuLink">
-									    <a class="dropdown-item" href="#">Action</a>
-									    <a class="dropdown-item" href="#">Another action</a>
-									    <a class="dropdown-item" href="#">Something else here</a>
-									 </div>
-								</div>
-							</div>
-							<p class="color-red">We recommend you to use Shukshuk Delivery. We’re not responsible to guarantee the product shipping if you’re using self-delivery.</p>																
-						</div>
-						<hr>
-						<div class="d-flex justify-content-center">
-							<div class="col-5 max-w-400">	
-								<div class="row">
-									<div class="col-6"><p class="pt-3">Step 2 of 3</p></div>
-									<div class="col-6"><a class="btn btn-primary btn-buy btn-save" href="#" role="button">Continue</a></div>
-								</div>	
-							</div>													
-						</div>
-					</div>
 							</div>
 						</div>
 					</div>				
@@ -462,10 +473,11 @@
 		<script type="text/javascript" src="script/menu.js"></script>		
 		<script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.18/jquery-ui.js"></script>
 		<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="script/seller-Registration.js"></script>
 		<script>
         $('#datepicker').datepicker({
             uiLibrary: 'bootstrap4'
         });
-    </script>
+    	</script>
 	</body>
 </html>
