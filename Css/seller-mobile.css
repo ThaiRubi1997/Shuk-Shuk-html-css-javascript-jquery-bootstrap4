@@ -188,6 +188,11 @@
 	.body-edit-product .wrap-check label.custom-control{
 		padding-left: 0 !important;
 	}
+	.header-main form button{
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+		right: 10px;
+	}
 	/*end-store*/
 }
 @media (min-width: 1000px) and (max-width: 1100px){
@@ -208,6 +213,9 @@
 		height: auto;
 		padding-top: 20px;
 		padding-bottom: 20px;
+	}
+	.detail-step-w20 {
+    flex: 0 0 33.3333%;
 	}
 
 }
@@ -254,4 +262,7 @@
 		margin-bottom: 16px;
 		width: 100%;
 	}
+	.detail-step-w20 {
+    flex: 0 0 33.3333%;
+}
 }

@@ -59,7 +59,7 @@ $(function(){
     })
     $(document).click( function ( e ){
         if($('#form-step1 #name').hasClass('valid')&&$('#form-step1 #phone').hasClass('valid')&&$('#form-step1 #address').hasClass('valid')){
-        console.log("đúng");
+       ;
         $("#btn-step1").removeClass('btn-disabled')
         $("#btn-step1").addClass('primary');
         $('#btn-step1,#item-step-2,#btn-step1-mobi').click(function () {
