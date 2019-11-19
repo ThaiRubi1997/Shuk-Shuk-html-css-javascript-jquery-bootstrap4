@@ -76,9 +76,6 @@ $(function(){
           $('#item-step-3,#item-step-2').removeClass('step-active');
         })
         }
-        else{
-        console.log("sai") 
-        } 
     });
      $(document).click( function ( e ){
         if ($('#show-credit-card #name2').hasClass('valid')&&$('#show-credit-card #visa').hasClass('valid')) {

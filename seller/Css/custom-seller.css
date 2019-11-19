@@ -571,9 +571,11 @@ input.code{
 .custom-checkbox.custom-crile .custom-control-input:checked~.custom-control-indicator{
 	background-color: #ffffffff;
 	background-image: none;
-	border: 6px solid #30B6A4;
+	border: 2px solid #30B6A4;
 	transition: 0.2s;
-
+}
+.checked .custom-control-indicator{
+	border: 6px solid #30B6A4 !important;
 }
 .bootstrap-select{
 	width: 100% !important;
@@ -1604,7 +1606,7 @@ a.forgot{
 .sp-loin{
 	height:50%;
 	max-height: 50%;
-	padding: 32px 20px;
+	padding: 32px 10px;
 	background-color: #F6F8F8;
 }
 p.or-with{
@@ -1990,6 +1992,9 @@ p.color-red{
 }
 .bg-cover-seller-1{
 	background-image: url(../Img/bg-cover-store.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 .header-seller{
 	margin-bottom: 0;

@@ -100,7 +100,7 @@
 		margin-left: 0;
 	}
 	ul.home-seller li{
-		margin-right: 15px;
+		margin-right: 10px;
 	}
 	.header-sellersHome .row{
 		margin-left: 0;
@@ -194,6 +194,31 @@
 		right: 10px;
 	}
 	/*end-store*/
+	.wrap-my-store{
+		flex-direction: column;
+	}
+	.my-store{
+		margin-bottom: 16px;
+		max-width: 100%;
+	}
+	.body-seller-refistration{
+		margin-left: -40px;
+		margin-right: -40px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.item-step span.text{
+		display: none;
+	}
+	.detail-step span.text{
+		display: none;
+	}
+	.header-seller-registration{
+		margin-bottom: 20px !important;
+	}
+	.step{
+		margin-bottom: 20px;
+	}
 }
 @media (min-width: 1000px) and (max-width: 1100px){
 	.container{
