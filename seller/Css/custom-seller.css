@@ -2259,4 +2259,9 @@ p.body-seller-home-empty{
 .sl-regis-information .form-group{
 	margin-bottom: 32px;
 }
+.review{
+	margin-left: 30px;
+	margin-top: -32px;
+	margin-bottom: 16px;
+}
 /*end registration*/
