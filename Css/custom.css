@@ -3,6 +3,9 @@ body{
 	font-size: 14px;
 	font-family: 'Inter Regular';
 }
+.btn-customer{
+	min-width: 130px !important; 
+}
 body#gray{
 	background-color: #F6F8F8;
 }
@@ -87,6 +90,11 @@ html, body {
 }
 .submit{
 	cursor: pointer;
+}
+.send .submit img{
+	display: block;
+	margin-right: 10px;
+
 }
 .open-file{
 	cursor: pointer;
@@ -426,12 +434,13 @@ input.input-error{
 	border: 1px solid #EB4242;
 }
 .custom-control:focus{
-	outline:none;
+	outline:none !important;
 }
-.custom-control-input:focus~.custom-control-indicator{
+.custom-control-input:focus~.custom-control-label{
 	box-shadow: none;
+	outline:none !important;
 }
-.custom-control-indicator:active,.custom-control-indicator.btn:focus{
+.custom-control-label:active,.custom-control-label.btn:focus{
 	 outline:none !important;
 }
 input{
@@ -510,20 +519,29 @@ input.code{
 	margin-right: 0;
 }
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #caca4c;
+    background-color: #30B6A4;
+    border: 2px solid #30B6A4;
+}
+.custom-control-label::after{
+	top: -2px;
+	left: -14px;
+	width: 20px;
+	height: 20px;
 }
 .custom-control-input:checked~.custom-control-label::before {
     color: #fff;
-    background-color: #caca4c;
+    background-color: #ffff;
 }
-.custom-control-indicator{
-	width: 20px;
-	height: 20px;
+.custom-control-label:before{
+	width: 20px !important;
+	height: 20px !important;
 	border: 2px solid #30B6A4;
 	border-radius: 4px;
 	background-color: #ffffff;
+	top: -2px;
+	left: -15px;
 }
-.custom-crile span.custom-control-indicator{
+.custom-crile span.custom-control-label:before{
 	border-radius: 50%;
 	border: 2px solid #30B6A4;
 	background-color: #ffffff !important;
@@ -533,18 +551,18 @@ input.code{
 	margin-left: 12px;
 	padding-top: 5px;
 }
-.custom-control-indicator:focus{
-	border: none;
-	box-shadow: none;
+.custom-control-label:focus{
+	border: none !important;
+	box-shadow: none !important;
 }
-.custom-control-input:checked~.custom-control-indicator{
+.custom-control-input:checked~.custom-control-label::before{
 	background-color: #30B6A4;
 	border: none;
 }
 .dropdown-item{
 	padding-left: 17px;
 }
-.custom-checkbox.custom-crile .custom-control-input:checked~.custom-control-indicator{
+.custom-checkbox.custom-crile .custom-control-input:checked~.custom-control-label:before{
 	background-color: #ffffffff;
 	background-image: none;
 	border: 6px solid #30B6A4;
@@ -2732,7 +2750,7 @@ ul.chat-box li a{
 	padding: 12px;
 	margin-left: 24px;
 	margin-top: 24px;
-	width: 240px;
+	width: 227px;
 	margin-right: 4px;
 }
 .mess-time{

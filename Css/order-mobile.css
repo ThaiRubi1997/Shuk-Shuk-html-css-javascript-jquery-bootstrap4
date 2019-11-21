@@ -10,6 +10,9 @@ body#gray{
 	max-width: 1184px;
 	padding: 0;
 }
+.btn-customer{
+	min-width: 120px !important; 
+}
 h1{
 	font-size: 36px;
 	line-height: 44px;

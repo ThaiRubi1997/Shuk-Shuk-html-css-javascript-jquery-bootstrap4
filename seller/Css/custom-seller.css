@@ -13,6 +13,9 @@ body#gray{
 	max-width: 1184px;
 	padding: 0;
 }
+.btn-customer{
+	min-width: 130px !important; 
+}
 h1{
 	font-size: 36px;
 	line-height: 44px;
@@ -443,12 +446,12 @@ input.input-error{
 	border: 1px solid #EB4242;
 }
 .custom-control:focus{
-	outline:none;
+	outline:none !important;
 }
-.custom-control-input:focus~.custom-control-indicator{
+.custom-control-input:focus~.custom-control-label:before{
 	box-shadow: none;
 }
-.custom-control-indicator:active,.custom-control-indicator:.btn:focus{
+.custom-control-label:before:active,.custom-control-label:before:.btn:focus{
 	 outline:none !important;
 }
 input{
@@ -534,20 +537,28 @@ input.code{
 	margin-right: 0;
 }
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #caca4c;
+    background-color: #30B6A4;
+}
+.custom-control-label::after{
+	width: 20px;
+	height: 20px;
+	top: 0px;
+	left: -14px;
 }
 .custom-control-input:checked~.custom-control-label::before {
     color: #fff;
-    background-color: #caca4c;
+    background-color: #30B6A4;
 }
-.custom-control-indicator{
+.custom-control-label:before{
 	width: 20px;
 	height: 20px;
 	border: 2px solid #30B6A4;
 	border-radius: 4px;
 	background-color: #ffffff;
+	top: 0;
+	left: -15px;
 }
-.custom-crile span.custom-control-indicator{
+.custom-crile span.custom-control-label:before{
 	border-radius: 50%;
 	border: 2px solid #30B6A4;
 	background-color: #ffffff !important;
@@ -557,24 +568,24 @@ input.code{
 	margin-left: 12px;
 	padding-top: 5px;
 }
-.custom-control-indicator:focus{
+.custom-control-label:before:focus{
 	border: none;
 	box-shadow: none;
 }
-.custom-control-input:checked~.custom-control-indicator{
+.custom-control-input:checked~.custom-control-label:before{
 	background-color: #30B6A4;
 	border: none;
 }
 .dropdown-item{
 	padding-left: 17px;
 }
-.custom-checkbox.custom-crile .custom-control-input:checked~.custom-control-indicator{
+.custom-checkbox.custom-crile .custom-control-input:checked~.custom-control-label:before{
 	background-color: #ffffffff;
 	background-image: none;
 	border: 2px solid #30B6A4;
 	transition: 0.2s;
 }
-.checked .custom-control-indicator{
+.checked .custom-control-label:before{
 	border: 6px solid #30B6A4 !important;
 }
 .bootstrap-select{
