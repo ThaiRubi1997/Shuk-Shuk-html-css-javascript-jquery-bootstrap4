@@ -2264,4 +2264,11 @@ p.body-seller-home-empty{
 	margin-top: -32px;
 	margin-bottom: 16px;
 }
+.phone{
+	position: relative;
+}
+#phone-error{
+	position: absolute;
+	bottom: -8px;
+}
 /*end registration*/

@@ -27,6 +27,12 @@ $(function(){
     }
    });
   })
+   $('#btn-step1').click(function() {
+        $("#form-step-1").valid(); //validate form 1
+    });
+   $('#btn-step2').click(function() {
+        $("#form-step-2").valid(); //validate form 2
+    });
   $(document).click( function ( e ){
         if($('#form-step-1 #firstname').hasClass('valid')&&$('#form-step-1 #lastname').hasClass('valid')
             &&$('#form-step-1 #email').hasClass('valid')&&$('#form-step-1 #phone').hasClass('valid')

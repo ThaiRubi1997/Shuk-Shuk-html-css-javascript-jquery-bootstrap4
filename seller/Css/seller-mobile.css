@@ -219,6 +219,10 @@
 	.step{
 		margin-bottom: 20px;
 	}
+	.review{
+		margin-left: 10px;
+		margin-top: 20px;
+	}
 }
 @media (min-width: 1000px) and (max-width: 1100px){
 	.container{
