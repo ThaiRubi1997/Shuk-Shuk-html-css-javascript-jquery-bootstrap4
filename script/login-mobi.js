@@ -1,26 +1,4 @@
-function checkmail() {
-	var mail = document.getElementById('email').value;
-    if (mail=="") {
-        document.getElementById('z-email').innerHTML = "<span>Email address cannot be empty</span>";
-        document.getElementById("email").classList.add("is-invalid");
-    }
-    else{
-      document.getElementById('z-email').innerHTML = "";
-      document.getElementById("email").classList.remove("is-invalid");
-    }
-    
-}
-function checkpass1() {
-  var pass = document.getElementById('password-1').value.length;
-  if (pass<8){
-      document.getElementById('z-password-1').innerHTML = "<span>Your password must be longer than 8 characters</span>";
-      document.getElementById("password-1").classList.add("is-invalid");
-    }
-    else{
-      document.getElementById('z-password-1').innerHTML ="";
-      document.getElementById("password-1").classList.remove("is-invalid");
-    }
-}
+
 function myFunction() {
   var x = document.getElementById("password");
   if (x.type === "password") {
@@ -30,6 +8,40 @@ function myFunction() {
   }
 }
 $(function(){
+  $(document).ready(function() {
+     $('#logins').validate({
+    rules: {
+       email: "required",
+        password: "required",
+    },
+     messages: {
+        email: "Cannot be empty",
+        password: "Cannot be empty",
+    }
+   });
+      $('#click-login').click(function() {
+        $("#logins").valid(); //validate form 1
+    });
+      $('#form-register').validate({
+    rules: {
+       firstname: "required",
+        lastname: "required",
+        email: "required",
+        password: "required",
+        
+    },
+     messages: {
+        firstname: "Cannot be empty",
+        lastname: "Cannot be empty",
+        email: "Cannot be empty",
+        password: "Cannot be empty",
+        
+    }
+   });
+      $('#click-register').click(function() {
+        $("#form-register").valid(); //validate form 1
+    });
+  });
 	 $("#show_hide_password i").on('click', function() {
         if($('#show_hide_password input').attr("type") == "text"){
             $('#show_hide_password input').attr('type', 'password');

@@ -338,8 +338,8 @@
 		flex-direction: column;
 		align-items: flex-start !important;
 	}
-	.form-step1-1 .wrap-check{
-		margin-bottom: 23px;
+	label.custom-checkbox{
+		margin-bottom: 0
 	}
 	.mb-text{
 		margin-bottom: 21px;
@@ -680,6 +680,15 @@
 		padding-right: 20px;
 		padding-bottom: 42px;
 	}
+	.form-check{
+		padding-left: 5px;
+	}
+	.custom-checkbox{
+		padding-left: 15px;
+	}
+	.form-group label.person{
+		margin-bottom: 22px;
+	} 
 	/*enduser-profile*/
 	/*product-detail*/
 	ul.detail-review{
