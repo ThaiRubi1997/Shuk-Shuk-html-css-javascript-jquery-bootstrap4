@@ -37,6 +37,8 @@ $(function(){
         if($('#form-step-1 #firstname').hasClass('valid')&&$('#form-step-1 #lastname').hasClass('valid')
             &&$('#form-step-1 #email').hasClass('valid')&&$('#form-step-1 #phone').hasClass('valid')
             &&$('#form-step-1 #contry').hasClass('valid')){
+                $("#btn-step1").attr("data-toggle", "tab");
+                $("#li-step-2 a").attr("data-toggle", "tab");
             $('#btn-step1,#li-step-2,#review-step-2').click(function () {
                 $('#item-step-2').addClass('active');
                 $('#review-step-2').addClass('active');
@@ -44,22 +46,20 @@ $(function(){
                 $('#tab-1,#tab-3').removeClass('active');
                 $('#tab-2').addClass('active');
                 $("#tab-2").attr("aria-expanded","true");
-                $("#tab-1,#tab-3").attr("aria-expanded","flase");
-                $("#btn-step1").attr("data-toggle", "tab");
-                $("#li-step-2 a").attr("data-toggle", "tab");
+                $("#tab-1,#tab-3").attr("aria-expanded","flase");                
                 $('#review-step-1').removeClass('active');       
             });  
         }
         if($('#form-step-2 #storename').hasClass('valid')&&$('#form-step-2 #address').hasClass('valid')){
+            $("#btn-step2").attr("data-toggle", "tab");
+            $("#li-step-3 a").attr("data-toggle", "tab");
             $('#btn-step2,#li-step-3').click(function () {
                 $('#item-step-3').addClass('active');
                 $('#item-step-1,#item-step-2').removeClass('active');
                 $('#tab-1,#tab-2').removeClass('active');
                 $('#tab-3').addClass('active');
                 $("#tab-3").attr("aria-expanded","true");
-                $("#tab-1,#tab-2").attr("aria-expanded","flase");
-                $("#btn-step2").attr("data-toggle", "tab");
-                $("#li-step-3 a").attr("data-toggle", "tab");
+                $("#tab-1,#tab-2").attr("aria-expanded","flase");                
                 $('#review-step-1').removeClass('active');
                 $('#review-step-1').removeClass('active');       
             });
