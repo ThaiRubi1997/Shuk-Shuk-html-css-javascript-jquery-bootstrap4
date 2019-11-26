@@ -168,6 +168,10 @@
 	.header-main form button{
 		top: 5px;
 	}
+	.header-cart-mobi {
+		margin-bottom: 30px;
+		box-shadow: none;
+	}
 	.login-menu{
 		margin-top: 40px;
 	}
