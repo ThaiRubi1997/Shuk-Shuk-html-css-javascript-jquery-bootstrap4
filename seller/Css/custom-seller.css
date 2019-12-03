@@ -581,13 +581,28 @@ input.code{
 }
 .custom-checkbox.custom-crile .custom-control-input:checked~.custom-control-label:before{
 	background-color: #ffffffff;
-	background-image: none;
+	border: 6px solid #30B6A4;
+	transition: 0.2s;
+}
+.custom-checkbox.custom-crile .custom-control-label:before{
+	background-color: #ffffffff;
 	border: 2px solid #30B6A4;
 	transition: 0.2s;
 }
-.checked .custom-control-label:before{
-	border: 6px solid #30B6A4 !important;
+.custom-checkbox.custom-crile .custom-control-input:checked~.custom-control-label:after{
+	background-image: none !important;
 }
+.custom-text{
+	width: 100%;
+	display: block;
+	margin-bottom: 0px;
+}
+label.custom-checkbox{
+	margin-bottom: 0;
+}
+/*.checked .custom-control-label:before{
+	border: 6px solid #30B6A4 !important;
+}*/
 .bootstrap-select{
 	width: 100% !important;
 	height: 48px;

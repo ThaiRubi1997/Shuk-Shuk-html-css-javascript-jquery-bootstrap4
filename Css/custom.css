@@ -1584,7 +1584,7 @@ a.forgot{
 }
 .wrap-body{
 	height: 100%;
-	overflow: hidden;
+	overflow: auto;
 	flex-flow: row wrap;
 }
 .col-sidepanel{
