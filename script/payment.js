@@ -66,7 +66,7 @@ $(function(){
                 $("#item-step-2 a").attr("data-toggle", "tab");
                 $("#btn-step1").attr("data-toggle", "tab");
                 $("#btn-step1-mobi").attr("data-toggle", "tab");       
-                $("#btn-step1").removeClass('btn-disabled')
+                $("#btn-step1").removeClass('btn-disabled');
                 $("#btn-step1").addClass('primary');
                 $('#btn-step1,#item-step-2,#btn-step1-mobi').click(function () {
                     $('#item-step-2').addClass('step-active');
