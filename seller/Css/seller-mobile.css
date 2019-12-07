@@ -223,6 +223,23 @@
 		margin-left: 10px;
 		margin-top: 20px;
 	}
+	/*order*/
+	ul.home-seller li{
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-right: 7px;
+	}
+	.wrap-croll{
+		width: 100%;
+		overflow-x: auto;
+	}
+	.tab-orders{
+		width: 550px;
+	}
+	.Active-Order{
+		width: 600px;
+	}
+	/*end-order*/
 }
 @media (min-width: 1000px) and (max-width: 1100px){
 	.container{

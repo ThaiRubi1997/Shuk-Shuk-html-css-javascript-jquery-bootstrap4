@@ -97,6 +97,9 @@ html, body {
 .submit{
 	cursor: pointer;
 }
+.pointer{
+	cursor: pointer;
+}
 .open-file{
 	cursor: pointer;
 }
@@ -381,6 +384,22 @@ a.load-more{
 	color: #ACB4B4;
 	text-decoration-line: line-through;
 	font-weight: 500;
+}
+.btn-small{
+	text-align: center;
+    padding-top: 7px !important;
+    padding-bottom: 8px !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    border-radius: 4px;
+    transition: 0.2s;
+    max-height: 32px;
+    width: 96px;
+} 
+.mr-10px{
+	margin-right: 10px;
 }
 /*-----------------End Button-----------------------------------*/
 /*-----------------alert----------------------------------------*/
@@ -1864,6 +1883,58 @@ ul.pagination{
 }
 /*end-seller-registration*/
 /* end Product Management / Edit Product */
+/*home-orders*/
+.span-number{
+	height: 24px;
+	text-align: center;
+	border-radius: 50%;
+	padding-top: 1px;
+}
+.bg-red{
+	background-color: #EB4242;
+	color: #ffffff;
+}
+.bg-gray{
+	background-color: #E4E8E8;
+	color: #ACB4B4;
+}
+ul.tab-orders li {
+	padding-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 40px;
+	position: relative;
+}
+ul.tab-orders li a{
+	margin-right: 5px;
+	margin-top: auto;
+}
+ul.tab-orders li a.active{
+	color: #30B6A4;
+}
+ul.tab-orders li.active{
+	border-bottom: 2px solid #30B6A4;
+}
+ul.tab-orders li .span-number{
+	position: absolute;
+	top: 0;
+	right: 16px;
+	width: 24px;
+}
+.mr-24px{
+	margin-right: 24px;
+}
+hr.head{
+	margin-top: 0;
+}
+.detail{
+	margin-top: 35px;
+	margin-left: 30px;
+}
+.detail--img{
+	width: 49px;
+	height: 49px;
+}
+/*end-home-order*/
 /*end-page*/
 /*seller*/
 * {
@@ -2028,9 +2099,16 @@ p.color-red{
 ul.home-seller{
 	list-style-type: none;
 	margin-bottom: 0;
+
 }
 ul.home-seller li{
-	margin-right: 50px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 14px;
+    padding-bottom: 14px; 
+}
+ul.home-seller li.menu-li-active{
+	border-bottom: 2px solid #30B6A4;
 }
 ul.home-seller p{
 	color: #ACB4B4;
@@ -2040,8 +2118,6 @@ ul.home-seller p{
 .header-bottom{
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
 	background-color: #ffffff;
-	padding-top: 14px;
-	padding-bottom: 14px;
 }
 .menu-li-active p{
 	color: #30B6A4 !important;
