@@ -816,12 +816,19 @@ li.dropdown-profile{
 	max-width: 176px;
 	background-color: #ffffff;
 	margin: 0;
+	width: 176px;
 }
 li.dropdown-profile .content-dropdown span{
 	color: #413EC1;
 }
 .dropdown-profile .cart-dropdown a{
-	margin-bottom: 18px;
+	margin-bottom: 16px;
+	padding: 0;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.011em;
+	color: #4E5662;
 }
 .dropdown-profile .cart-dropdown a.log-out{
 	margin-bottom: 3px;
@@ -2463,7 +2470,7 @@ a.back{
 /*store*/
 .bg-cover{
 	position: relative;
-	background-image: url(../Img/bg-cover.png);
+	background-image: url(../Img/bg-cover.jpg);
 	background-size: cover;
 	height: 216px; 
 }

@@ -488,7 +488,7 @@
 	}
 	.bg-cover{
 		height: 120px;
-		background-image: url(../Img/bg-cover-mobile.png);
+		background-image: url(../Img/bg-cover-mobile.jpg);
 	}
 	.avatar-store{
 		margin-top: 25px;
@@ -498,6 +498,7 @@
 		margin-bottom: 0;
 		bottom: -20px;
 		box-shadow: 0px 4px 16px rgba(34, 40, 49, 0.08);
+		margin-right: 20px;
 	}
 	.avatar-store .avatra img.img-avatar{
 		width: 88px;
