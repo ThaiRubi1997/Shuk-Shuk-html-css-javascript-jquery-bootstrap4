@@ -608,6 +608,14 @@ input.form-control.is-invalid{
 .invalid-feedback{
 	margin-bottom: 14px;
 }
+.search-product__store{
+	position: relative;
+}
+.search-product button{
+	top: 50%;
+	transform: translateY(-50%);
+	right: 5px !important;
+}
 /*-----------------End Form-------------------------------------*/
 
  /*----------------Nav------------------------------------------*/
@@ -674,7 +682,7 @@ a.logo{
 .header-main form button{
 	padding: 0;
     position: absolute;
-    right: 15px;
+    right: 20px;
     background-color: #ffff;;
 }
 .header-main form button{
