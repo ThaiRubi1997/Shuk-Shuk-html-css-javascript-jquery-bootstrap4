@@ -168,9 +168,31 @@
 	.header-main form button{
 		top: 5px;
 	}
-	.header-cart-mobi {
+	/*.header-cart-mobi {
 		margin-bottom: 30px;
 		box-shadow: none;
+	}*/
+	.icon-cart-mobi{
+		position: relative;
+	}
+	.icon-cart-mobi span{
+		color: #ffffff;
+		background-color: #413EC1;
+		text-align: center;
+		display: block;
+		font-weight: 600;
+		font-size: 10px;
+		line-height: 12px;
+		letter-spacing: -0.011em;
+		position: relative;
+		top: -25px;
+		right: -15px;
+		border-radius: 50%;
+		height: 15px;
+		width: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.login-menu{
 		margin-top: 40px;
