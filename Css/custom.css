@@ -899,6 +899,9 @@ a.closebtn{
 	margin-left: auto;
 	margin-right: auto;
 }
+.h-64px{
+	height: 64px;
+}
 /*end-header-main*/
 /*tab-header*/
 .tab-mobi ul{

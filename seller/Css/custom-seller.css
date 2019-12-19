@@ -13,9 +13,6 @@ body#gray{
 	max-width: 1184px;
 	padding: 0;
 }
-.btn-customer{
-	min-width: 130px !important; 
-}
 h1{
 	font-size: 36px;
 	line-height: 44px;
@@ -122,6 +119,9 @@ a{
 }
 header{
 	margin-bottom: 48px;
+}
+.h-64px{
+	height: 64px;
 }
 .collap-small{
 	padding-left: 8px;
@@ -1820,6 +1820,7 @@ ul.pagination{
 	padding-bottom: 8px !important;
 	max-height: 32px;
 	margin-right: 16px;
+	min-width: 50px !important;
 }
 .header-bottom-edit-product .right .secondary{
 	width: 80px;
@@ -1827,12 +1828,14 @@ ul.pagination{
 	padding-bottom: 8px !important;
 	max-height: 32px;
 	margin-right: 16px;
+	min-width: 50px !important;
 }
 .header-bottom-edit-product .right .primary-icon{
 	width: 128px;
 	padding-top: 4px !important;
 	padding-bottom: 4px !important;
 	max-height: 32px;
+	min-width: 50px !important;
 }
 .add-photo{
 	cursor:pointer;

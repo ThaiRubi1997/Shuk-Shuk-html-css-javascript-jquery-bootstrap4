@@ -133,6 +133,10 @@
 	.table-home-seller{
 		width: 1160px;
 	}
+	.h-64px{
+		height: auto;
+		padding-bottom: 10px;
+	}
 	/*add-product*/
 	.header-bottom-edit-product .container{
 		flex-direction: column;
@@ -143,6 +147,8 @@
 	}
 	.header-bottom-edit-product .left{
 		margin-bottom: 16px;
+		width: 100%;
+		justify-content: space-between;
 	}
 	.group-check{
 		flex-direction: column;
