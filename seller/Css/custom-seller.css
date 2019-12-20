@@ -50,7 +50,7 @@ p{
 	letter-spacing: -0.011em;
 }
 html, body {
-	width: 100%;height: 100%;
+	width: 100%;min-height: 100vh;
 }
 .web-block{
 	display: block;
@@ -171,6 +171,10 @@ span{
 }
 .link{
 	word-break: break-all;
+}
+.header-bottom-edit-product{
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 /*=====================End base=================================*/
 /*=====================components===============================*/
@@ -939,6 +943,24 @@ a.closebtn{
 	margin-left: auto;
 	margin-right: auto;
 }
+.circle {
+    background-color: #EB4242;
+    width: 24px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: -0.004em;
+    line-height: 15px;
+    color: #ffffff;
+    padding-top: 5px;
+}
+.bg-gray{
+	background-color: #E4E8E8 !important;
+}
+.dropdown-profile .dropdown-divider{
+	margin-right: -15px;
+	margin-left: -15px;
+}
 /*end-header-main*/
 /*tab-header*/
 .tab-mobi ul{
@@ -1627,32 +1649,48 @@ a.forgot{
 /*sidepanel*/
 .sidepanel{
 	width: 0;
-	position: fixed; 
-	z-index: 100; 
-	top: 0;
-	left: 0;
-	overflow-x: hidden; 
-	transition: 0.5s;
-	height: 100%; 
+	position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transition: 0.5s;
+    height: 100%;
+    min-height: 100vh 
 }
 .body-sidepanel{
 	background-color: rgba(19, 15, 20, 0.7);
 	height: 100%;
+	min-height: 100vh;
 }
 .wrap-body{
 	height: 100%;
-	overflow: hidden;
-	flex-flow: row wrap;
+    overflow: auto;
+    flex-flow: row wrap;
 }
 .col-sidepanel{
 	padding-left: 0;
 	padding-right: 0;
 }
 .sp-loin{
-	height:50%;
-	max-height: 50%;
+	height:33,33%;
+	max-height: 33,33%;
 	padding: 32px 10px;
 	background-color: #F6F8F8;
+}
+.order {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 34px;
+}
+.order p {
+    line-height: 21px;
+    letter-spacing: -0.011em;
+    margin-left: 0;
+    color: #ACB4B4;
 }
 p.or-with{
 	margin-bottom: 35px;
@@ -1667,14 +1705,14 @@ p.or-with{
 .profile{
 	padding-top: 20px;
 	padding-bottom: 20px;
-	height: 33.33333%;
+	height: 33.333%;
 	max-height: 33.33333%;
 	background-color: #ffffff;
 }
 .footer-sidepannel{
 	background-color: #413EC1;
 	padding: 35px;
-	height: 70%;
+	height: 43.333%;
 }
 .footer-sidepannel p{
 	margin-bottom: 30px;
@@ -2009,6 +2047,9 @@ a:hover{
 	padding-top: 40px;
 	padding-bottom: 16px;
 }
+.body-seller-refistration ul li{
+	width: 100%;
+}
 p.about-seller{
 	max-width: 608px;
 	margin-left: auto;
@@ -2181,10 +2222,7 @@ p.body-seller-home-empty{
 .header-bottom-edit-product .left a{
 	margin-right: 30px;
 }
-.header-bottom-edit-product .left{
-	margin-top: 8px;
-	margin-bottom: 8px;
-}
+
 .body-edit-product{
 	background: #FFFFFF;
 	border-radius: 8px;

@@ -723,7 +723,7 @@
 		padding: 0;
 	}
 	.item-review p{
-		width: 125%;
+		width: 100%;
 		display: block;
 	}
 	.star-peview{
@@ -741,7 +741,7 @@
 		margin-top: 7px;
 	}
 	.left p{
-		width: 125%;
+		width: 100%;
 	}
 	.wrap-review{
 		background-color: #ffffff;

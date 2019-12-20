@@ -2808,9 +2808,7 @@ ul.chat-box li a{
 .send input{
 	border: none;
 }
-.right{
-	overflow: hidden;
-}
+
 .name-room img{
 	width: 32px;
 	height: 32px;
