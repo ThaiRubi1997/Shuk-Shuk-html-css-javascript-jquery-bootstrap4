@@ -8,6 +8,9 @@
 		flex: 0 0 50%;
 		max-width: 50%;
 	}
+	.icon-cart-mobi{
+		width: 50px;
+	}
 	h1{
 		font-style: normal;
 		font-weight: bold;
