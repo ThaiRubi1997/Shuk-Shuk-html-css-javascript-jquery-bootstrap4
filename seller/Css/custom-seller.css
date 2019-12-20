@@ -487,6 +487,9 @@ input{
 	letter-spacing: -0.011em;
 	min-height: 48px;
 }
+input.error{
+	border: 1px solid #EB4242;
+}
 .error{
 	color: #EB4242;
 	font-weight: 600;
