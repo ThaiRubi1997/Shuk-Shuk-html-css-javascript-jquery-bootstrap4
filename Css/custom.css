@@ -1436,8 +1436,10 @@ span.author{
 }
 .your-cart span.name-product{
 	color: #413EC1;
-	margin-bottom: 20px;
 	display: block;
+}
+.product__rp{
+	margin-bottom: 20px;
 }
 .your-cart .product{
 	margin-bottom: 35px;

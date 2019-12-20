@@ -95,6 +95,19 @@
 	.add-card span{
 		padding-left: 0;
 	}
+	.product__rp{
+		flex-direction: column;
+		margin-bottom: 10px;
+	}
+	.your-cart__rp .main-reduction img{
+		padding-top: 17px;
+	}
+	.your-cart__rp input.number{
+		height: 33px;
+	}
+	.your-cart__rp .main-add img{
+		padding-top: 9px;
+	}
 	.card-product .card-body{
 		padding-left: 15px;
 		padding-right: 15px;
